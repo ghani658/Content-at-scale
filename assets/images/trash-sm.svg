@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13.767" height="12.621" viewBox="0 0 13.767 12.621">
+  <g id="Layer_2" data-name="Layer 2" transform="translate(0 0)">
+    <g id="Layer_1" data-name="Layer 1" transform="translate(0 0)">
+      <path id="Path_420" data-name="Path 420" d="M13.193,1.147H10.325V.574A.572.572,0,0,0,9.751,0H4.016a.572.572,0,0,0-.574.574v.572H.574a.574.574,0,0,0,0,1.149H1.721v8.6a1.721,1.721,0,0,0,1.721,1.721h6.884A1.721,1.721,0,0,0,12.046,10.9V2.3h1.147a.574.574,0,1,0,0-1.149ZM10.9,10.9a.574.574,0,0,1-.574.572H3.442a.574.574,0,0,1-.574-.572V2.3H10.9Z" transform="translate(0 0)" fill="#7c828d"/>
+      <path id="Path_421" data-name="Path 421" d="M21.9,24.4a.574.574,0,0,0,.574-.572v-4.59a.574.574,0,1,0-1.149,0v4.59a.574.574,0,0,0,.574.572Z" transform="translate(-16.742 -14.646)" fill="#7c828d"/>
+      <path id="Path_422" data-name="Path 422" d="M37.9,24.4a.574.574,0,0,0,.574-.572v-4.59a.574.574,0,1,0-1.149,0v4.59A.574.574,0,0,0,37.9,24.4Z" transform="translate(-29.3 -14.646)" fill="#7c828d"/>
+    </g>
+  </g>
+</svg>

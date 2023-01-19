@@ -1,0 +1,15 @@
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53">
+  <g id="Group_414" data-name="Group 414" transform="translate(0 0)">
+    <g id="Ellipse_904" data-name="Ellipse 904" fill="#fff800" stroke="#fff" stroke-width="1">
+      <ellipse cx="27" cy="26.5" rx="27" ry="26.5" stroke="none"/>
+      <ellipse cx="27" cy="26.5" rx="26.5" ry="26" fill="none"/>
+    </g>
+    <g id="_18661471221608672866" data-name="18661471221608672866" transform="translate(10 10)">
+      <path id="Path_423" data-name="Path 423" d="M17.416,1a16.357,16.357,0,0,0-5.71,1.021L12.182,3.3A15.107,15.107,0,1,1,7.84,5.817v4.759H9.208V3.736H2.368V5.1h4.19A16.416,16.416,0,1,0,17.416,1Z" transform="translate(-1 -1)"/>
+      <path id="Path_424" data-name="Path 424" d="M18.368,27.312H17V28.68H27.944V27.312H26.576V24.977L23.439,21.84,26.576,18.7V16.368h1.368V15H17v1.368h1.368V18.7L21.5,21.84l-3.137,3.137Zm1.368-9.175V16.368h5.472v1.769l-2.736,2.736Zm2.736,4.67,2.736,2.736v1.769H19.736V25.543Z" transform="translate(-6.056 -5.424)"/>
+      <rect id="Rectangle_408" data-name="Rectangle 408" width="1" height="2" transform="translate(12.784 25.352)"/>
+      <rect id="Rectangle_409" data-name="Rectangle 409" width="1" height="2" transform="translate(15.784 25.352)"/>
+      <rect id="Rectangle_410" data-name="Rectangle 410" width="1" height="2" transform="translate(19.784 25.352)"/>
+    </g>
+  </g>
+</svg>

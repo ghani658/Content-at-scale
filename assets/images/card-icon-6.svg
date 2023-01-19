@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53">
+  <g id="Group_414" data-name="Group 414" transform="translate(-1514 -201)">
+    <g id="Ellipse_906" data-name="Ellipse 906" transform="translate(1514 201)" fill="#fff800" stroke="#fff" stroke-width="1">
+      <circle cx="26.5" cy="26.5" r="26.5" stroke="none"/>
+      <circle cx="26.5" cy="26.5" r="26" fill="none"/>
+    </g>
+    <g id="check-square-svgrepo-com" transform="translate(1529.965 217.171)">
+      <path id="Path_425" data-name="Path 425" d="M9,12.8l3.77,3.77L25.339,4" transform="translate(-1.459 -2.743)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_426" data-name="Path 426" d="M25.623,14.311v8.8a2.514,2.514,0,0,1-2.514,2.514H5.514A2.514,2.514,0,0,1,3,23.109V5.514A2.514,2.514,0,0,1,5.514,3H19.339" transform="translate(-3 -3)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

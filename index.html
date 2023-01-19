@@ -1,0 +1,1688 @@
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Project CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- font family-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> -->
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" />
+
+    <title>Content at Scale</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="d-flex justify-content-between align-items-center px-3 h-100">
+                <div class="logo-menu-area d-flex justify-content-center align-items-center">
+                    <a href="javascript: void(0);" class="res-menu me-3">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                    <div class="logo">
+                        <img src="assets/images/logo-whiteX.png" />
+                    </div>
+                </div>
+                <div class="profile-view-area d-flex">
+                    <a href="javascript: void(0);" class="d-flex align-items-center notifications position-relative">
+                        <img src="assets/images/bell-icon.svg" />
+                        <span class="notification-alert"></span>
+                    </a>
+                    <a href="javascript: void(0);" class="d-flex align-items-center px-4">
+                        <img src="assets/images/avatar.png" class="avatar" />
+                        <strong class="ms-2">jonathan Doe <img src="assets/images/downarrow.svg"
+                                class="ms-1" /></strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Wrapper-->
+    <div class="wrapper d-flex">
+        <!-- Side Bar Main-->
+        <nav id="sidebar">
+            <div class="close-menu"></div>
+            <ul class="list-unstyled components mb-5">
+                <li>
+                    <a href="javascript: void(0)">
+                        <span><img src="assets/images/dashboard.svg" /></span>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="javascript: void(0)">
+                        <span><img src="assets/images/projects.svg" /></span>
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript: void(0)">
+                        <span><img src="assets/images/settings.svg" /></span>
+                        Settings
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Side Bar Main-->
+
+        <!-- Container -->
+        <div id="content" style="display: none;">
+            <div class="projects-page d-flex w-100 h-100">
+                <!-- Editor Area-->
+                <div class="custom-templates-area">
+
+                </div>
+                <!-- Editor Area-->
+
+                <!-- Tabs Area Main-->
+                <div class="tabs-area-main">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <!-- Seo Tab button-->
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="seo-tab" data-bs-toggle="tab" data-bs-target="#seo-tab-pane"
+                                type="button" role="tab" aria-controls="seo-tab-pane" aria-selected="false">SEO</button>
+                        </li>
+                        <!-- Seo Tab button-->
+                        <!-- Research Tab button-->
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="research-tab" data-bs-toggle="tab"
+                                data-bs-target="#research-tab-pane" type="button" role="tab"
+                                aria-controls="research-tab-pane" aria-selected="false">Research</button>
+                        </li>
+                        <!-- Research Tab button-->
+                        <!-- Media Tab button-->
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="media-tab" data-bs-toggle="tab"
+                                data-bs-target="#media-tab-pane" type="button" role="tab" aria-controls="media-tab-pane"
+                                aria-selected="true">Media</button>
+                        </li>
+                        <!-- Media Tab button-->
+                        <!-- History Tab button-->
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="history-tab" data-bs-toggle="tab"
+                                data-bs-target="#history-tab-pane" type="button" role="tab"
+                                aria-controls="history-tab-pane" aria-selected="false">History</button>
+                        </li>
+                        <!-- History Tab button-->
+                    </ul>
+                    <div class="tab-content">
+
+                        <!-- Seo Tab Content-->
+                        <div class="tab-pane fade" id="seo-tab-pane" role="tabpanel" aria-labelledby="seo-tab"
+                            tabindex="0">
+                            <div class="side-bar-tabs d-flex h-100">
+                                <!-- Seo Tab SideBar-->
+                                <div class="scroll-bar-adj">
+                                    <div class="nav flex-column nav-pills" id="pills-tab" role="tablist"
+                                        aria-orientation="vertical">
+
+                                        <!-- Optimize Tab button -->
+                                        <button class="nav-link" id="optimization-tab" data-bs-toggle="pill"
+                                            data-bs-target="#optimization-pill" type="button" role="tab"
+                                            aria-controls="optimization-pill" aria-selected="false">
+                                            <span><img
+                                                    src="assets/images/optimization-icon.svg" /></span>Optimization</button>
+                                        <!-- Optimize Tab button -->
+
+                                        <!-- Checklist Tab button -->
+                                        <button class="nav-link" id="checklist-tab" data-bs-toggle="pill"
+                                            data-bs-target="#checklist-pill" type="button" role="tab"
+                                            aria-controls="checklist-pill" aria-selected="false">
+                                            <span><img
+                                                    src="assets/images/checklist-icon.svg" /></span>Checklist</button>
+                                        <!-- Checklist Tab button -->
+
+                                        <!-- Notes Tab button -->
+                                        <button class="nav-link active" id="notes-tab" data-bs-toggle="pill"
+                                            data-bs-target="#notes-pill" type="button" role="tab"
+                                            aria-controls="notes-pill" aria-selected="true">
+                                            <span><img src="assets/images/notes-icon.svg" /></span>Notes</button>
+                                        <!-- Notes Tab button -->
+                                    </div>
+                                </div>
+                                <!-- Seo Tab SideBar-->
+
+                                <!--Seo Tab Content-->
+                                <div class="tab-content side-bar-content p-4" id="v-pills-tabContent">
+
+                                    <!-- Optimize Tab Content -->
+                                    <div class="tab-pane fade" id="optimization-pill" role="tabpanel"
+                                        aria-labelledby="optimization-tab" tabindex="0">Optimization dummy Text
+                                    </div>
+                                    <!-- Optimize Tab Content -->
+
+                                    <!-- Checklist Tab Content -->
+                                    <div class="tab-pane fade" id="checklist-pill" role="tabpanel"
+                                        aria-labelledby="checklist-tab" tabindex="0">
+                                        <h6 class="tab-title">On-page Checklist</h6>
+                                        <div class="checklist-area-list">
+                                            <ul>
+                                                <li class="verified">Title is optimal length </li>
+                                                <li class="verified">Title includes primary keyword</li>
+                                                <li class="verified">Meta includes primary keyword</li>
+                                                <li class="verified">Meta is optimal length</li>
+                                                <li class="verified">URL includes primary keyword</li>
+                                                <li class="not-verified">1st paragraph includes primary keyword</li>
+                                                <li class="verified">A subheading include primary keyword</li>
+                                                <li class="verified">Primary keyword twice in first 4 paragraphs</li>
+                                                <li class="verified">Featured image + media added</li>
+                                                <li class="verified">Click to Tweet added</li>
+                                                <li class="verified">Periods at end of long list items</li>
+                                                <li class="verified">Paragraphs are 3 sentences or less</li>
+                                                <li class="not-verified">Outbound links exist</li>
+                                                <li class="verified">Featured image + media added</li>
+                                                <li class="not-verified">Placeholder images replaced</li>
+                                                <li class="verified">No images within first/last 3 paragraphs</li>
+                                                <li class="verified">Table of contents in place</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- Checklist Tab Content -->
+
+                                    <!-- Notes Tab Content -->
+                                    <div class="tab-pane fade show active" id="notes-pill" role="tabpanel"
+                                        aria-labelledby="notes-tab" tabindex="0">
+                                        <h6 class="tab-title m-0 my-2">Notes</h6>
+                                        <!--Listing Notes Cards-->
+                                        <div class="listing-cards d-flex flex-column">
+                                            <!--Notes Cards-->
+                                            <div class="Notes-card d-flex mt-3 p-3 justify-content-between">
+                                                <div class="notes-avatar">
+                                                    <img src="assets/images/avatar.png" />
+                                                </div>
+                                                <div class="notes-info">
+                                                    <h6 class="card-title">Jonathan Doe</h6>
+                                                    <span class="issue-date">08/05/2022 10:14:01</span>
+                                                    <p>The fascinating angle is that anybody can see the data, but they
+                                                        can’t corrupt it.</p>
+                                                </div>
+                                                <div class="notes-action dropdown">
+                                                    <button class="dropdown-toggle" id="dropdownAction" type="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span class="dots"></span>
+                                                        <span class="dots"></span>
+                                                        <span class="dots"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownAction">
+                                                        <li>
+                                                            <a class="dropdown-item" href="javascript: void(0);">
+                                                                <img src="assets/images/edit-icon.svg" />
+                                                                Edit
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="javascript: void(0);">
+                                                                <img src="assets/images/edit-icon.svg" />
+                                                                Delete
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!--Notes Cards-->
+
+                                            <!--Notes Cards-->
+                                            <div class="Notes-card d-flex mt-3 p-3 justify-content-between">
+                                                <div class="notes-avatar">
+                                                    <img src="assets/images/avatar.png" />
+                                                </div>
+                                                <div class="notes-info">
+                                                    <h6 class="card-title">Jonathan Doe</h6>
+                                                    <span class="issue-date">10/05/2022 17:26:57</span>
+                                                    <p>My transaction in this ledger is authorized by the digital
+                                                        signature of the owner, which authenticates the transaction and
+                                                        safeguards it from tampering.</p>
+                                                </div>
+                                                <div class="notes-action dropdown">
+                                                    <button class="dropdown-toggle" id="dropdownAction" type="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span class="dots"></span>
+                                                        <span class="dots"></span>
+                                                        <span class="dots"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownAction">
+                                                        <li>
+                                                            <a class="dropdown-item" href="javascript: void(0);">
+                                                                <img src="assets/images/edit-icon.svg" />
+                                                                Edit
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="javascript: void(0);">
+                                                                <img src="assets/images/edit-icon.svg" />
+                                                                Delete
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!--Notes Cards-->
+
+                                            <!--Notes Cards-->
+                                            <div class="Notes-card d-flex mt-3 p-3 justify-content-between">
+                                                <div class="notes-avatar">
+                                                    <img src="assets/images/avatar.png" />
+                                                </div>
+                                                <div class="notes-info">
+                                                    <h6 class="card-title">Jonathan Doe</h6>
+                                                    <span class="issue-date">03/05/2022 09:47:33</span>
+                                                    <p>Research other technological infrastructures!</p>
+                                                </div>
+                                                <div class="notes-action dropdown">
+                                                    <button class="dropdown-toggle" id="dropdownAction" type="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span class="dots"></span>
+                                                        <span class="dots"></span>
+                                                        <span class="dots"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownAction">
+                                                        <li>
+                                                            <a class="dropdown-item" href="javascript: void(0);">
+                                                                <img src="assets/images/edit-icon.svg" />
+                                                                Edit
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="javascript: void(0);">
+                                                                <img src="assets/images/edit-icon.svg" />
+                                                                Delete
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!--Notes Cards-->
+
+                                            <!--Notes Cards-->
+                                            <div class="Notes-card d-flex mt-3 p-3 justify-content-between">
+                                                <div class="notes-avatar">
+                                                    <img src="assets/images/avatar.png" />
+                                                </div>
+                                                <div class="notes-info">
+                                                    <h6 class="card-title">Jonathan Doe</h6>
+                                                    <span class="issue-date">02/05/2022 14:55:09</span>
+                                                    <p>Artificial intelligence and blockchain header should be added.
+                                                    </p>
+                                                </div>
+                                                <div class="notes-action dropdown">
+                                                    <button class="dropdown-toggle" id="dropdownAction" type="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span class="dots"></span>
+                                                        <span class="dots"></span>
+                                                        <span class="dots"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownAction">
+                                                        <li>
+                                                            <a class="dropdown-item" href="javascript: void(0);">
+                                                                <img src="assets/images/edit-icon.svg" />
+                                                                Edit
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="javascript: void(0);">
+                                                                <img src="assets/images/edit-icon.svg" />
+                                                                Delete
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!--Notes Cards-->
+                                        </div>
+                                        <!--Listing Notes Cards-->
+                                        <!--ADD Note area-->
+                                        <div class="add-note-area">
+                                            <h4 class="grey-title">Add Note</h4>
+                                            <textarea></textarea>
+                                            <div class="d-flex justify-content-end">
+                                                <button class="p-btn" type="submit">Add Note</button>
+                                            </div>
+                                        </div>
+                                        <!--ADD Note area-->
+                                    </div>
+                                    <!-- Notes Tab Content -->
+
+                                </div>
+                                <!--Seo Tab Content-->
+                            </div>
+                        </div>
+                        <!-- Seo Tab Content-->
+
+                        <!-- Research Tab Content-->
+                        <div class="tab-pane fade" id="research-tab-pane" role="tabpanel" aria-labelledby="research-tab"
+                            tabindex="0">
+                            Dummy text for Research
+                        </div>
+                        <!-- Research Tab Content-->
+
+                        <!-- Media Tab Content-->
+                        <div class="tab-pane fade show active" id="media-tab-pane" role="tabpanel"
+                            aria-labelledby="media-tab" tabindex="0">
+                            <div class="side-bar-tabs d-flex h-100">
+                                <!-- Media Tab SideBar-->
+                                <div class="scroll-bar-adj">
+                                    <div class="nav flex-column nav-pills" id="pills-tab" role="tablist"
+                                        aria-orientation="vertical">
+                                        <!-- Featured Image Tab button -->
+                                        <button class="nav-link" id="featured-image-tab" data-bs-toggle="pill"
+                                            data-bs-target="#featured-image-pill" type="button" role="tab"
+                                            aria-controls="featured-image-pill" aria-selected="false">
+                                            <span><img src="assets/images/featured-image.svg" /></span>Featured
+                                            Image</button>
+                                        <!-- Featured Image Tab button -->
+
+                                        <!-- AI Generator Tab button -->
+                                        <button class="nav-link" id="ai-generator-tab" data-bs-toggle="pill"
+                                            data-bs-target="#ai-generator-pill" type="button" role="tab"
+                                            aria-controls="ai-generator-pill" aria-selected="false">
+                                            <span><img src="assets/images/ai-genrator-icon.svg" /></span>AI
+                                            Generator</button>
+                                        <!-- AI Generator Tab button -->
+
+                                        <!-- Design Tab button -->
+                                        <button class="nav-link active" id="design-tab" data-bs-toggle="pill"
+                                            data-bs-target="#design-pill" type="button" role="tab"
+                                            aria-controls="design-pill" aria-selected="true">
+                                            <span><img src="assets/images/design-icon.svg" /></span>Design</button>
+                                        <!-- Design Tab button -->
+
+                                        <!-- Elements Tab button -->
+                                        <button class="nav-link" id="elements-tab" data-bs-toggle="pill"
+                                            data-bs-target="#elements-pill" type="button" role="tab"
+                                            aria-controls="elements-pill" aria-selected="false">
+                                            <span><img src="assets/images/elements-icon.svg" /></span>Elements</button>
+                                        <!-- Elements Tab button -->
+
+                                        <!-- Text Tab button -->
+                                        <button class="nav-link" id="text-tab" data-bs-toggle="pill"
+                                            data-bs-target="#text-pill" type="button" role="tab"
+                                            aria-controls="text-pill" aria-selected="false">
+                                            <span><img src="assets/images/text-icon.svg" /></span>Text</button>
+                                        <!-- Text Tab button -->
+
+                                        <!-- Files Tab button -->
+                                        <button class="nav-link" id="files-tab" data-bs-toggle="pill"
+                                            data-bs-target="#files-pill" type="button" role="tab"
+                                            aria-controls="files-pill" aria-selected="false">
+                                            <span><img src="assets/images/files-icon.svg" /></span>Files</button>
+                                        <!-- Files Tab button -->
+
+                                        <!-- Upload Tab button -->
+                                        <button class="nav-link" id="upload-tab" data-bs-toggle="pill"
+                                            data-bs-target="#upload-pill" type="button" role="tab"
+                                            aria-controls="upload-pill" aria-selected="false">
+                                            <span><img src="assets/images/upload-icon.svg" /></span>Uploads</button>
+                                        <!-- Upload Tab button -->
+                                    </div>
+                                </div>
+                                <!-- Media Tab SideBar-->
+
+                                <!--Media Tab Content-->
+                                <div class="tab-content side-bar-content p-4" id="v-pills-tabContent">
+
+                                    <!-- Featured Image Tab Content -->
+                                    <div class="tab-pane fade" id="featured-image-pill" role="tabpanel"
+                                        aria-labelledby="featured-image-tab" tabindex="0">Featured Image dummy
+                                        Text</div>
+                                    <!-- Featured Image Tab Content -->
+
+                                    <!-- AI Generator Tab Content -->
+                                    <div class="tab-pane fade" id="ai-generator-pill" role="tabpanel"
+                                        aria-labelledby="ai-generator-tab" tabindex="0">AI Generator dummy Text
+                                    </div>
+                                    <!-- AI Generator Tab Content -->
+
+                                    <!-- Design Tab Content -->
+                                    <div class="tab-pane fade show active" id="design-pill" role="tabpanel"
+                                        aria-labelledby="design-tab" tabindex="0">
+                                        <h6 class="tab-title m-0 mt-2">Design</h6>
+                                        <div class="filter-search-area py-4 w-100 position-relative">
+                                            <span class="search-icon"><img src="assets/images/search-icon.svg" /></span>
+                                            <input type="text" placeholder="Search Styles" />
+                                            <a href="javascript: void(0);" class="filter-icon">
+                                                <!-- <img src="/assets/images/filter-icon.svg" /> -->
+                                            </a>
+                                        </div>
+
+                                        <!--Inner Subtabs-->
+                                        <div class="inner-subtabs">
+                                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                <!-- Templates Tab button-->
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="templates-tab" data-bs-toggle="tab"
+                                                        data-bs-target="#templates-tab-pane" type="button" role="tab"
+                                                        aria-controls="templates-tab-pane"
+                                                        aria-selected="false">Templates</button>
+                                                </li>
+                                                <!-- Templates Tab button-->
+                                                <!-- Style Tab button-->
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="style-tab" data-bs-toggle="tab"
+                                                        data-bs-target="#style-tab-pane" type="button" role="tab"
+                                                        aria-controls="style-tab-pane"
+                                                        aria-selected="true">Styles</button>
+                                                </li>
+                                                <!-- Style Tab button-->
+                                            </ul>
+                                            <div class="tab-content" id="myTabContent">
+
+                                                <!-- Templates Tab Content-->
+                                                <div class="tab-pane fade" id="templates-tab-pane" role="tabpanel"
+                                                    aria-labelledby="templates-tab" tabindex="0">
+                                                    <!--Category listing-->
+                                                    <div class="category-listing py-4 d-flex flex-nowrap">
+                                                        <button type="button">Metaverse</button>
+                                                        <button type="button">Cryptocurrency</button>
+                                                        <button type="button">Crypto</button>
+                                                        <button type="button">Technology</button>
+                                                    </div>
+                                                    <!--Category listing-->
+                                                </div>
+                                                <!-- Templates Tab Content-->
+                                                <!-- Style Tab Content-->
+                                                <div class="tab-pane fade show active" id="style-tab-pane"
+                                                    role="tabpanel" aria-labelledby="style-tab" tabindex="0">
+                                                    <!--Category listing-->
+                                                    <div class="category-listing py-4 d-flex flex-nowrap">
+                                                        <button type="button">Bold</button>
+                                                        <button type="button">Lively</button>
+                                                        <button type="button">Vibrant</button>
+                                                        <button type="button">Bright</button>
+                                                        <button type="button">Vivid</button>
+                                                    </div>
+                                                    <!--Category listing-->
+
+                                                    <!--style-design-listing -->
+                                                    <div class="select-style-design pt-2 pb-4">
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <h6 class="listing-title m-0">Color Palettes</h6>
+                                                            <a href="javascript: void(0);" class="see-all">see all</a>
+                                                        </div>
+                                                        <div class="loading-scale d-flex pt-3">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <!--style-design-listing -->
+                                                    <!--style-design-listing -->
+                                                    <div class="select-style-design pt-2 pb-4">
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <h6 class="listing-title m-0">Font Sets</h6>
+                                                            <a href="javascript: void(0);" class="see-all">see all</a>
+                                                        </div>
+                                                        <div class="loading-scale d-flex pt-3">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <!--style-design-listing -->
+                                                    <!--style-design-listing -->
+                                                    <div class="select-style-design pt-2 pb-4">
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <h6 class="listing-title m-0">Combinations</h6>
+                                                            <a href="javascript: void(0);" class="see-all">see all</a>
+                                                        </div>
+                                                        <div class="loading-scale d-flex pt-3">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <!--style-design-listing -->
+                                                </div>
+                                                <!-- Style Tab Content-->
+                                            </div>
+                                        </div>
+                                        <!--Inner Subtabs-->
+
+                                    </div>
+                                    <!-- Design Tab Content -->
+
+                                    <!-- Elements Tab Content -->
+                                    <div class="tab-pane fade" id="elements-pill" role="tabpanel"
+                                        aria-labelledby="elements-tab" tabindex="0">
+
+                                    </div>
+                                    <!-- Elements Tab Content -->
+
+                                    <!-- Text Tab Content -->
+                                    <div class="tab-pane fade" id="text-pill" role="tabpanel" aria-labelledby="text-tab"
+                                        tabindex="0">Text dummy Text</div>
+                                    <!-- Text Tab Content -->
+
+                                    <!-- Files Tab Content -->
+                                    <div class="tab-pane fade" id="files-pill" role="tabpanel"
+                                        aria-labelledby="files-tab" tabindex="0">Files dummy Text</div>
+                                    <!-- Files Tab Content -->
+
+                                    <!-- Uploads Tab Content -->
+                                    <div class="tab-pane fade" id="upload-pill" role="tabpanel"
+                                        aria-labelledby="upload-tab" tabindex="0">Uploads dummy Text</div>
+                                    <!-- Uploads Tab Content -->
+
+                                </div>
+                                <!--Media Tab Content-->
+                            </div>
+                        </div>
+                        <!-- Media Tab Content-->
+
+                        <!-- History Tab Content-->
+                        <div class="tab-pane fade" id="history-tab-pane" role="tabpanel" aria-labelledby="history-tab"
+                            tabindex="0">
+                            Dummy text for History
+                        </div>
+                        <!-- History Tab Content-->
+                    </div>
+                </div>
+                <!-- Tabs Area-->
+            </div>
+        </div>
+        <!-- Container-->
+
+
+
+
+        <!--Project Page Container-->
+        <div id="content">
+            <div class="full-lenth-area h-100">
+                <!--page breadcrums-->
+                <div class="page-bredcrums">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="javascript: void(0);">Projects</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Project 3</li>
+                        </ol>
+                    </nav>
+                </div>
+                <!--page breadcrums-->
+
+                <!--page cards Listing-->
+                <div class="cards-listing row py-4">
+                    <!--Page cards Listing 1-->
+                    <div class="col-xl-2  mb-xl-0 col-lg-4 mb-lg-4 col-sm-6 mb-sm-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="card-icon">
+                                        <img src="assets/images/card-icon-1.svg" />
+                                    </div>
+                                    <div class="card-info">
+                                        <h1 class="card-title">27</h1>
+                                        <h6 class="card-subtitle">Total Post</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Page cards Listing 1-->
+                    <!--Page cards Listing 2-->
+                    <div class="col-xl-2  mb-xl-0 col-lg-4 mb-lg-4 col-sm-6 mb-sm-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="card-icon">
+                                        <img src="assets/images/card-icon-2.svg" />
+                                    </div>
+                                    <div class="card-info">
+                                        <h1 class="card-title">36</h1>
+                                        <h6 class="card-subtitle">Published</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Page cards Listing 2-->
+                    <!--Page cards Listing 3-->
+                    <div class="col-xl-2  mb-xl-0 col-lg-4 mb-lg-4 col-sm-6 mb-sm-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="card-icon">
+                                        <img src="assets/images/card-icon-3.svg" />
+                                    </div>
+                                    <div class="card-info">
+                                        <h1 class="card-title">5</h1>
+                                        <h6 class="card-subtitle">Scheduled</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Page cards Listing 3-->
+                    <!--Page cards Listing 4-->
+                    <div class="col-xl-2  mb-xl-0 col-lg-4 mb-lg-4 col-sm-6 mb-sm-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="card-icon">
+                                        <img src="assets/images/card-icon-4.svg" />
+                                    </div>
+                                    <div class="card-info">
+                                        <h1 class="card-title">2</h1>
+                                        <h6 class="card-subtitle">Pending</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Page cards Listing 4-->
+                    <!--Page cards Listing 5-->
+                    <div class="col-xl-2  mb-xl-0 col-lg-4 mb-lg-4 col-sm-6 mb-sm-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="card-icon">
+                                        <img src="assets/images/card-icon-5.svg" />
+                                    </div>
+                                    <div class="card-info">
+                                        <h1 class="card-title">0</h1>
+                                        <h6 class="card-subtitle">Draft</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Page cards Listing 5-->
+                    <!--Page cards Listing 6-->
+                    <div class="col-xl-2  mb-xl-0 col-lg-4 mb-lg-4 col-sm-6 mb-sm-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="card-icon">
+                                        <img src="assets/images/card-icon-6.svg" />
+                                    </div>
+                                    <div class="card-info">
+                                        <h1 class="card-title">11</h1>
+                                        <h6 class="card-subtitle">Completed</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Page cards Listing 6-->
+                </div>
+                <!--page cards Listing-->
+
+                <!-- Page Tabs -->
+                <div class="projects-listing-tabs py-4 page-tabs">
+                    <ul class="nav nav-tabs" id="projects-tabs" role="tablist">
+                        <!-- Posts Tab button-->
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="posts-tab" data-bs-toggle="tab"
+                                data-bs-target="#posts-tab-pane" type="button" role="tab" aria-controls="posts-tab-pane"
+                                aria-selected="true">Posts <span class="counter">6</span></button>
+                        </li>
+                        <!-- Posts Tab button-->
+                        <!-- Keywoords Tab button-->
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="keywoords-tab" data-bs-toggle="tab"
+                                data-bs-target="#keywoords-tab-pane" type="button" role="tab"
+                                aria-controls="keywoords-tab-pane" aria-selected="false">Keywoords <span
+                                    class="counter">4</span></button>
+                        </li>
+                        <!-- Keywoords Tab button-->
+                    </ul>
+
+                    <div class="tab-content">
+
+                        <!-- Posts Tab Content-->
+                        <div class="tab-pane fade show active" id="posts-tab-pane" role="tabpanel"
+                            aria-labelledby="posts-tab" tabindex="0">
+                            <div class="grid-listing-tabs">
+                                <button class="project-content-btn cs-secondary-btn">
+                                    <img src="assets/images/plus.svg" />
+                                    Add Content</button>
+                                <ul class="nav nav-tabs" id="gridlisting-tabs" role="tablist">
+                                    <!-- listing Tab button-->
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="listing-tab" data-bs-toggle="tab"
+                                            data-bs-target="#listing-tab-pane" type="button" role="tab"
+                                            aria-controls="listing-tab-pane" aria-selected="true">
+                                            <img src="assets/images/listing-btn.svg" />
+                                        </button>
+                                    </li>
+                                    <!-- listing Tab button-->
+                                    <!-- Grid Tab button-->
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="grid-tab" data-bs-toggle="tab"
+                                            data-bs-target="#grid-tab-pane" type="button" role="tab"
+                                            aria-controls="grid-tab-pane" aria-selected="false">
+                                            <img src="assets/images/grid-btn.svg" />
+                                        </button>
+                                    </li>
+                                    <!-- Grid Tab button-->
+                                </ul>
+
+                                <div class="tab-content">
+                                    <!-- listing Tab Content-->
+                                    <div class="tab-pane fade show active" id="listing-tab-pane" role="tabpanel"
+                                        aria-labelledby="listing-tab" tabindex="0">
+                                        <div class="project-listing-table pt-4">
+                                            <!-- listing Tab Table-->
+                                            <table class="table table-striped">
+                                                <thead class="table-light">
+                                                    <tr>
+                                                        <th scope="col">TITLE</th>
+                                                        <th scope="col">WORDS</th>
+                                                        <th scope="col">MEDIA</th>
+                                                        <th scope="col">STATUS</th>
+                                                        <th scope="col">
+                                                            <select>
+                                                                <option>All</option>
+                                                                <option>Completed</option>
+                                                                <option>Published</option>
+                                                                <option>Pending Editing</option>
+                                                                <option>Pending Optimization</option>
+                                                                <option>Draft</option>
+                                                                <option>Scheduled</option>
+                                                            </select>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <strong>Exploring the Possibilities of Metaverse
+                                                                Technology</strong>
+                                                            <span class="date-time">12-30-2022 03:49 AM</span>
+                                                        </td>
+                                                        <td>2148</td>
+                                                        <td>14</td>
+                                                        <td>
+                                                            <span class="tag completed">Completed</span>
+                                                        </td>
+                                                        <td>
+                                                            <div
+                                                                class="table-action-btns d-flex justify-content-end align-items-center">
+                                                                <a href="javascript: void(0);">
+                                                                    <img src="assets/images/edit-icon-dark.svg" />
+                                                                </a>
+                                                                <a href="javascript: void(0);">
+                                                                    <img src="assets/images/trash.svg" />
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <strong>Unlocking the Benefits of Blockchain With
+                                                                Solana</strong>
+                                                            <span class="date-time">12-30-2022 03:33 AM</span>
+                                                        </td>
+                                                        <td>2691</td>
+                                                        <td>8</td>
+                                                        <td>
+                                                            <span class="tag published">Published</span>
+                                                        </td>
+                                                        <td>
+                                                            <div
+                                                                class="table-action-btns d-flex justify-content-end align-items-center">
+                                                                <a href="javascript: void(0);">
+                                                                    <img src="assets/images/edit-icon-dark.svg" />
+                                                                </a>
+                                                                <a href="javascript: void(0);">
+                                                                    <img src="assets/images/trash.svg" />
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <strong>User Experience: The Key to Service Design, UX
+                                                                Writing, and UX Research</strong>
+                                                            <span class="date-time">12-21-2022 01:21 AM</span>
+                                                        </td>
+                                                        <td>2218</td>
+                                                        <td>37</td>
+                                                        <td>
+                                                            <span class="tag pending">Pending Editing</span>
+                                                        </td>
+                                                        <td>
+                                                            <div
+                                                                class="table-action-btns d-flex justify-content-end align-items-center">
+                                                                <a href="javascript: void(0);">
+                                                                    <img src="assets/images/edit-icon-dark.svg" />
+                                                                </a>
+                                                                <a href="javascript: void(0);">
+                                                                    <img src="assets/images/trash.svg" />
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <strong>Ways to Save Water and Conserve Resources</strong>
+                                                            <span class="date-time">09-25-2022 05:37 AM</span>
+                                                        </td>
+                                                        <td>3100</td>
+                                                        <td>9</td>
+                                                        <td>
+                                                            <span class="tag pending">Pending Optimization</span>
+                                                        </td>
+                                                        <td>
+                                                            <div
+                                                                class="table-action-btns d-flex justify-content-end align-items-center">
+                                                                <a href="javascript: void(0);">
+                                                                    <img src="assets/images/edit-icon-dark.svg" />
+                                                                </a>
+                                                                <a href="javascript: void(0);">
+                                                                    <img src="assets/images/trash.svg" />
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <strong>Interest in the metaverse and play-to-earn booming
+                                                                in Asia</strong>
+                                                            <span class="date-time">09-24-2022 03:49 AM</span>
+                                                        </td>
+                                                        <td>2766</td>
+                                                        <td>15</td>
+                                                        <td>
+                                                            <span class="tag draft">Draft</span>
+                                                        </td>
+                                                        <td>
+                                                            <div
+                                                                class="table-action-btns d-flex justify-content-end align-items-center">
+                                                                <a href="javascript: void(0);">
+                                                                    <img src="assets/images/edit-icon-dark.svg" />
+                                                                </a>
+                                                                <a href="javascript: void(0);">
+                                                                    <img src="assets/images/trash.svg" />
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <strong>Creating a Good User Interface: Tips and
+                                                                Tricks</strong>
+                                                            <span class="date-time">09-23-2022 04:36 AM</span>
+                                                        </td>
+                                                        <td>2510</td>
+                                                        <td>23</td>
+                                                        <td>
+                                                            <span class="tag scheduled">Scheduled</span>
+                                                        </td>
+                                                        <td>
+                                                            <div
+                                                                class="table-action-btns d-flex justify-content-end align-items-center">
+                                                                <a href="javascript: void(0);">
+                                                                    <img src="assets/images/edit-icon-dark.svg" />
+                                                                </a>
+                                                                <a href="javascript: void(0);">
+                                                                    <img src="assets/images/trash.svg" />
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- listing Tab Table-->
+                                        </div>
+                                    </div>
+                                    <!-- listing Tab Content-->
+                                    <!-- Grid Tab Content-->
+                                    <div class="tab-pane fade" id="grid-tab-pane" role="tabpanel"
+                                        aria-labelledby="grid-tab" tabindex="0">
+                                        <div class="project-listing-box pt-4">
+                                            <div class="project-card p-3">
+                                                <img src="assets/images/dummy.jpg" class="mb-3 pr-img" alt="">
+                                                <h6 class="mb-2">
+                                                    Exploring the Possibilities of Metaverse Technology
+                                                </h6>
+                                                <div class="d-flex justify-content-between pr-status">
+                                                    <div class="time-info">
+                                                        <span class="icon"></span>
+                                                        12-30-2022 03:49 AM
+                                                    </div>
+                                                    <span class="tag completed">Completed</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="pr-info">
+                                                        <div class="info-cat">
+                                                            <span>
+                                                                Words
+                                                            </span>
+                                                            <h6>
+                                                                2148
+                                                            </h6>
+                                                        </div>
+                                                        <div class="info-cat">
+                                                            <span>
+                                                                Media
+                                                            </span>
+                                                            <h6>
+                                                                14
+                                                            </h6>
+                                                        </div>
+                                                        <div class="info-cat">
+                                                            <span>
+                                                                SEO Score
+                                                            </span>
+                                                            <h6 class="score normal">
+                                                                67
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="action-icon">
+                                                        <a href="javascript: void(0);">
+                                                            <img src="assets/images/edit-icon-dark.svg" width="19">
+                                                        </a>
+                                                        <a href="javascript: void(0);">
+                                                            <img src="assets/images/trash.svg" width="15">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="project-card p-3">
+                                                <img src="assets/images/dummy.jpg" class="mb-3 pr-img" alt="">
+                                                <h6 class="mb-2">
+                                                    Unlocking the Benefits of Blockchain With Solana
+                                                </h6>
+                                                <div class="d-flex justify-content-between pr-status">
+                                                    <div class="time-info">
+                                                        <span class="icon"></span>
+                                                        12-30-2022 03:49 AM
+                                                    </div>
+                                                    <span class="tag published">Published</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="pr-info">
+                                                        <div class="info-cat">
+                                                            <span>
+                                                                Words
+                                                            </span>
+                                                            <h6>
+                                                                2691
+                                                            </h6>
+                                                        </div>
+                                                        <div class="info-cat">
+                                                            <span>
+                                                                Media
+                                                            </span>
+                                                            <h6>
+                                                                8
+                                                            </h6>
+                                                        </div>
+                                                        <div class="info-cat">
+                                                            <span>
+                                                                SEO Score
+                                                            </span>
+                                                            <h6 class="score high">
+                                                                89
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="action-icon">
+                                                        <a href="javascript: void(0);">
+                                                            <img src="assets/images/edit-icon-dark.svg" width="19">
+                                                        </a>
+                                                        <a href="javascript: void(0);">
+                                                            <img src="assets/images/trash.svg" width="15">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="project-card p-3">
+                                                <img src="assets/images/dummy.jpg" class="mb-3 pr-img" alt="">
+                                                <h6 class="mb-2">
+                                                    User Experience: The Key to Service Design, UX Wri…
+                                                </h6>
+                                                <div class="d-flex justify-content-between pr-status">
+                                                    <div class="time-info">
+                                                        <span class="icon"></span>
+                                                        12-30-2022 03:49 AM
+                                                    </div>
+                                                    <span class="tag pending">Pending Editing</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="pr-info">
+                                                        <div class="info-cat">
+                                                            <span>
+                                                                Words
+                                                            </span>
+                                                            <h6>
+                                                                2218
+                                                            </h6>
+                                                        </div>
+                                                        <div class="info-cat">
+                                                            <span>
+                                                                Media
+                                                            </span>
+                                                            <h6>
+                                                                37
+                                                            </h6>
+                                                        </div>
+                                                        <div class="info-cat">
+                                                            <span>
+                                                                SEO Score
+                                                            </span>
+                                                            <h6 class="score average">
+                                                                53
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="action-icon">
+                                                        <a href="javascript: void(0);">
+                                                            <img src="assets/images/edit-icon-dark.svg" width="19">
+                                                        </a>
+                                                        <a href="javascript: void(0);">
+                                                            <img src="assets/images/trash.svg" width="15">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="project-card p-3">
+                                                <img src="assets/images/dummy.jpg" class="mb-3 pr-img" alt="">
+                                                <h6 class="mb-2">
+                                                    Ways to Save Water and Conserve Resources
+                                                </h6>
+                                                <div class="d-flex justify-content-between pr-status">
+                                                    <div class="time-info">
+                                                        12-30-2022 03:49 AM
+                                                    </div>
+                                                    <span class="tag pending">Pending Optimization</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="pr-info">
+                                                        <div class="info-cat">
+                                                            <span>
+                                                                Words
+                                                            </span>
+                                                            <h6>
+                                                                3100
+                                                            </h6>
+                                                        </div>
+                                                        <div class="info-cat">
+                                                            <span>
+                                                                Media
+                                                            </span>
+                                                            <h6>
+                                                                9
+                                                            </h6>
+                                                        </div>
+                                                        <div class="info-cat">
+                                                            <span>
+                                                                SEO Score
+                                                            </span>
+                                                            <h6 class="score low">
+                                                                19
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="action-icon">
+                                                        <a href="javascript: void(0);">
+                                                            <img src="assets/images/edit-icon-dark.svg" width="19">
+                                                        </a>
+                                                        <a href="javascript: void(0);">
+                                                            <img src="assets/images/trash.svg" width="15">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="project-card p-3">
+                                                <img src="assets/images/dummy.jpg" class="mb-3 pr-img" alt="">
+                                                <h6 class="mb-2">
+                                                    Interest in the metaverse and play-to-earn booming…
+                                                </h6>
+                                                <div class="d-flex justify-content-between pr-status">
+                                                    <div class="time-info">
+                                                        12-30-2022 03:49 AM
+                                                    </div>
+                                                    <span class="tag draft">Draft</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="pr-info">
+                                                        <div class="info-cat">
+                                                            <span>
+                                                                Words
+                                                            </span>
+                                                            <h6>
+                                                                2766
+                                                            </h6>
+                                                        </div>
+                                                        <div class="info-cat">
+                                                            <span>
+                                                                Media
+                                                            </span>
+                                                            <h6>
+                                                                15
+                                                            </h6>
+                                                        </div>
+                                                        <div class="info-cat">
+                                                            <span>
+                                                                SEO Score
+                                                            </span>
+                                                            <h6 class="score low">
+                                                                23
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="action-icon">
+                                                        <a href="javascript: void(0);">
+                                                            <img src="assets/images/edit-icon-dark.svg" width="19">
+                                                        </a>
+                                                        <a href="javascript: void(0);">
+                                                            <img src="assets/images/trash.svg" width="15">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="project-card p-3">
+                                                <img src="assets/images/dummy.jpg" class="mb-3 pr-img" alt="">
+                                                <h6 class="mb-2">
+                                                    Creating a Good User Interface: Tips and Tricks
+                                                </h6>
+                                                <div class="d-flex justify-content-between pr-status">
+                                                    <div class="time-info">
+                                                        12-30-2022 03:49 AM
+                                                    </div>
+                                                    <span class="tag scheduled">Scheduled</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="pr-info">
+                                                        <div class="info-cat">
+                                                            <span>
+                                                                Words
+                                                            </span>
+                                                            <h6>
+                                                                1510
+                                                            </h6>
+                                                        </div>
+                                                        <div class="info-cat">
+                                                            <span>
+                                                                Media
+                                                            </span>
+                                                            <h6>
+                                                                23
+                                                            </h6>
+                                                        </div>
+                                                        <div class="info-cat">
+                                                            <span>
+                                                                SEO Score
+                                                            </span>
+                                                            <h6 class="score high">
+                                                                80
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="action-icon">
+                                                        <a href="javascript: void(0);">
+                                                            <img src="assets/images/edit-icon-dark.svg" width="19">
+                                                        </a>
+                                                        <a href="javascript: void(0);">
+                                                            <img src="assets/images/trash.svg" width="15">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Grid Tab Content-->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Posts Tab Content-->
+                        <!-- Keywords Tab Content-->
+                        <div class="tab-pane fade" id="keywoords-tab-pane" role="tabpanel"
+                            aria-labelledby="keywoords-tab" tabindex="0">
+                            dummy text 2
+                        </div>
+                        <!-- Keywords Tab Content-->
+                    </div>
+                </div>
+                <!-- Page Tabs -->
+            </div>
+
+            <!--Fixed SideBar Tabs-->
+            <div class="fixed-sidebar-right tabs-area-main collapes-side">
+                <div class="close-sidebar"></div>
+                <div class="toggle-btn-sidebar">
+                    <a href="javascript: void(0);" class="show-sidebar">
+                        <img src="assets/images/pre-icon.svg" />
+                    </a>
+                </div>
+                <!--Fixed SideBar Tabs buttons-->
+                <ul class="nav nav-tabs" id="integrationsTabs" role="tablist">
+                    <!--Manage Settings tab Button-->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" type="button" id="m-setting-tab" data-bs-toggle="tab"
+                            data-bs-target="#m-setting-tab-pane" role="tab" aria-controls="m-setting-tab-pane"
+                            aria-selected="true"><span><img src="assets/images/settings.svg" /></span> Manage
+                            Settings </button>
+                    </li>
+                    <!--Manage Settings tab Button-->
+                    <!--Manage Users tab Button-->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" type="button" id="m-user-tab" data-bs-toggle="tab"
+                            data-bs-target="#m-user-tab-pane" role="tab" aria-controls="m-user-tab-pane"
+                            aria-selected="false"><span><img src="assets/images/users-icon.svg" /></span> Manage
+                            user </button>
+                    </li>
+                    <!--Manage User tab Button-->
+                    <!--Media tab Button-->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" type="button" id="m-media-tab" data-bs-toggle="tab"
+                            data-bs-target="#m-media-tab-pane" role="tab" aria-controls="m-media-tab-pane"
+                            aria-selected="false"><span><img src="assets/images/featured-image.svg" /></span> Media
+                        </button>
+                    </li>
+                    <!--Media tab Button-->
+                    <!--Integrations Settings tab Button-->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" type="button" id="m-integration-tab" data-bs-toggle="tab"
+                            data-bs-target="#m-integration-tab-pane" role="tab" aria-controls="m-integration-tab-pane"
+                            aria-selected="false"><span><img src="assets/images/connect-icon.svg" /></span> Integrations
+                        </button>
+                    </li>
+                    <!--Integrations Settings tab Button-->
+                </ul>
+                <!--Fixed SideBar Tabs buttons-->
+
+                <!--Fixed SideBar Tabs Content-->
+                <div class="tab-content">
+                    <!--Manage Settings tab Content-->
+                    <div class="tab-pane fade show active" id="m-setting-tab-pane" aria-labelledby="m-setting-tab"
+                        tabindex="0">
+                        <div class="side-bar-tabs d-flex h-100">
+                            <div class="scroll-bar-adj">
+                                <!--Manage Settings tab SideBar-->
+                                <div class="nav flex-column nav-pills" id="pills-sidebar-tab" role="tablist"
+                                    aria-orientation="vertical">
+                                    <!--General Tab Button-->
+                                    <button class="nav-link active" id="general-tab" data-bs-toggle="pill"
+                                        data-bs-target="#general-pill" type="button" role="tab"
+                                        aria-controls="general-pill" aria-selected="true">
+                                        <span><img src="assets/images/general-icon.svg" /></span>
+                                        General
+                                    </button>
+                                    <!--General Tab Button-->
+                                    <!--Post Automation Tab Button-->
+                                    <button class="nav-link" id="automation-tab" data-bs-toggle="pill"
+                                        data-bs-target="#automation-pill" type="button" role="tab"
+                                        aria-controls="automation-pill" aria-selected="false">
+                                        <span><img src="assets/images/automation-icon.svg" /></span>
+                                        Post Automations
+                                    </button>
+                                    <!--Post Automation Tab Button-->
+                                    <!--Call To Action Tab Button-->
+                                    <button class="nav-link" id="action-tab" data-bs-toggle="pill"
+                                        data-bs-target="#action-pill" type="button" role="tab"
+                                        aria-controls="action-pill" aria-selected="false">
+                                        <span><img src="assets/images/action-icon.svg" /></span>
+                                        Call to Action
+                                    </button>
+                                    <!--Call To Action Tab Button-->
+                                </div>
+                                <!--Manage Settings tab SideBar-->
+                            </div>
+                            <!--Manage Settings tab Content-->
+                            <div class="tab-content side-bar-content p-4" id="m-pills-tabContent">
+                                <!--General tab Content-->
+                                <div class="tab-pane fade show active" id="general-pill" role="tabpanel"
+                                    aria-labelledby="general-tab" tabindex="0">
+                                    <div class="d-flex flex-column h-100">
+                                        <div class="d-flex justify-content-between align-items-start mt-2">
+                                            <h6 class="tab-title m-0">General Settings</h6>
+                                            <button class="p-btn m-0 mb-3 edit-profile-feilds"
+                                                type="button">Edit</button>
+                                        </div>
+                                        <form class="d-flex justify-content-between flex-column">
+                                            <div class="d-flex justify-content-center flex-column">
+                                                <div class="general-setting-profile position-relative mb-3">
+                                                    <img src="assets/images/profile-image.png" class="profile-avatar" />
+                                                    <input type="file" class="edit-profile-avatar-btn" />
+                                                </div>
+                                                <h2 class="profile-user-name">Metazone</h2>
+                                            </div>
+                                            <div
+                                                class="social-network-area position-relative d-flex justify-content-center align-items-center py-4">
+                                                <div class="s-network linked-in">
+                                                    <a href="javascript: void(0);">
+                                                        <img src="assets/images/linked-in-icon.svg" />
+                                                    </a>
+                                                    <input type="text" placeholder="www.linkedin.com/in/metazone" />
+                                                </div>
+
+
+                                                <div class="s-network instagram">
+                                                    <a href="javascript: void(0);">
+                                                        <img src="assets/images/instagram-icon.svg" />
+                                                    </a>
+                                                    <input type="text" placeholder="www.instagram.com/metazone" />
+                                                </div>
+
+                                                <div class="s-network facebook">
+                                                    <a href="javascript: void(0);">
+                                                        <img src="assets/images/facebook-icon.svg" />
+                                                    </a>
+                                                    <input type="text" placeholder="www.facebook.com/metazone" />
+                                                </div>
+
+
+                                                <div class="s-network twitter">
+                                                    <a href="javascript: void(0);">
+                                                        <img src="assets/images/twitter-icon.svg" />
+                                                    </a>
+                                                    <input type="text" placeholder="www.twitter.com/metazone" />
+                                                </div>
+                                            </div>
+
+                                            <div class="profile-info-feilds pt-5 pb-4 d-flex flex-wrap">
+                                                <div class="info-feild">
+                                                    <label>Project Name</label>
+                                                    <input type="text" value="Metaverse Technology Project" disabled />
+                                                </div>
+                                                <div class="info-feild">
+                                                    <label>Project URL</label>
+                                                    <input type="url" value="http://www.metaverseproject.com"
+                                                        disabled />
+                                                </div>
+                                                <div class="info-feild">
+                                                    <label>Project Context</label>
+                                                    <input type="text" value="Metaverse, Blockchain" disabled />
+                                                </div>
+                                                <div class="info-feild">
+                                                    <label>Target Audicence</label>
+                                                    <input type="text" value="WEB3 Customers" disabled />
+                                                </div>
+                                                <div class="info-feild">
+                                                    <label>Start Date</label>
+                                                    <input type="text" value="06/01/2023" disabled />
+                                                </div>
+                                                <div class="info-feild">
+                                                    <label>Post/Month:</label>
+                                                    <input type="text" value="30" disabled />
+                                                </div>
+                                                <div class="info-feild">
+                                                    <label>Ton of Voıice</label>
+                                                    <input type="text" value="-" disabled />
+                                                </div>
+                                                <div class="info-feild">
+                                                    <label>Translation Language</label>
+                                                    <select disabled>
+                                                        <option>English (EN)</option>
+                                                        <option>English (US)</option>
+                                                        <option>German</option>
+                                                        <option>Spanish</option>
+                                                    </select>
+                                                </div>
+                                                <div class="info-feild">
+                                                    <label>World Count</label>
+                                                    <select disabled>
+                                                        <option>2.000 to 3.000 words (Default)</option>
+                                                        <option>3.000 to 5.000 words</option>
+                                                        <option>5.000 to 8.000 words</option>
+                                                        <option>8.000 to 10.000 words</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-end mb-4">
+                                                <button type="submit" class="p-btn p-btn-bg" disabled>Save</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!--General tab Content-->
+                                <!--Automations tab Content-->
+                                <div class="tab-pane fade" id="automation-pill" role="tabpanel"
+                                    aria-labelledby="automation-tab" tabindex="0">
+                                    <h6 class="tab-title m-0 mt-2 mb-1">Call to Action</h6>
+                                    <div class="form-check form-switch pt-4 toggle-switch d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" role="switch"
+                                            id="flexSwitchCheckDefault" checked>
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">
+                                            Takeaways
+                                            <button class="tooltip-btn ms-2" type="button" data-bs-toggle="tooltip"
+                                                data-bs-placement="right" title="Important Info">
+                                                <img src="assets/images/info-button.svg" />
+                                            </button>
+                                        </label>
+                                    </div>
+                                    <div class="pt-4 d-flex justify-content-start align-items-center gap-30">
+                                        <div class="color-picker-feilds">
+                                            <label>Font Color</label>
+                                            <span>
+                                                <input type="color" value="#171616" />
+                                            </span>
+                                        </div>
+                                        <div class="color-picker-feilds">
+                                            <label>Background Color</label>
+                                            <span>
+                                                <input type="color" value="#cecece" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="pt-4 d-flex align-items-center gap-20">
+                                        <div class="automation-feilds">
+                                            <label>Select An Icon</label>
+                                            <select class="icons-library"
+                                                style="font-family: 'FontAwesome', 'sans-serif';">
+                                                <option value="fa-align-left">&#xf0a2;</option>
+                                                <option value="fa-align-right">&#xf007;</option>
+                                            </select>
+                                        </div>
+                                        <div class="automation-feilds">
+                                            <label>Section Label</label>
+                                            <select>
+                                                <option>Key Takeaway</option>
+                                                <option>Key Takeaway</option>
+                                                <option>Key Takeaway</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-check form-switch pt-4 toggle-switch d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" role="switch"
+                                            id="flexSwitchCheckDefault" checked>
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">
+                                            Click to Tweet
+                                            <button class="tooltip-btn ms-2" type="button" data-bs-toggle="tooltip"
+                                                data-bs-placement="right" title="Important Info">
+                                                <img src="assets/images/info-button.svg" />
+                                            </button>
+                                        </label>
+                                    </div>
+                                    <div class="automation-feilds pt-4">
+                                        <label>Twitte Handle</label>
+                                        <input type="text" placeholder="Add Twitter handle like content" />
+                                    </div>
+                                    <div class="form-check form-switch pt-4 toggle-switch d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" role="switch"
+                                            id="flexSwitchCheckDefault" checked>
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">
+                                            TOC
+                                            <button class="tooltip-btn ms-2" type="button" data-bs-toggle="tooltip"
+                                                data-bs-placement="right" title="Important Info">
+                                                <img src="assets/images/info-button.svg" />
+                                            </button>
+                                        </label>
+                                    </div>
+                                    <div class="automation-feilds pt-4">
+                                        <label>Shortcode</label>
+                                        <input type="text" placeholder="Add shortcode" />
+                                    </div>
+                                    <div class="d-flex justify-content-end pt-5">
+                                        <button type="submit" class="p-btn p-btn-bg mt-5">Save</button>
+                                    </div>
+                                </div>
+                                <!--Automations tab Content-->
+                                <!--Call to Action tab Content-->
+                                <div class="tab-pane fade" id="action-pill" role="tabpanel" aria-labelledby="action-tab"
+                                    tabindex="0">
+                                    <div class="d-flex flex-column h-100">
+                                        <h6 class="tab-title m-0 mt-2 mb-1">Call to Action</h6>
+                                        <form class="d-flex justify-content-between flex-column">
+                                            <div class="feilds-area">
+                                                <div class="post-feilds pt-4">
+                                                    <label>
+                                                        Post Intro CTA
+                                                        <button class="tooltip-btn ms-2" type="button"
+                                                            data-bs-toggle="tooltip" data-bs-placement="right"
+                                                            title="Important Info">
+                                                            <img src="assets/images/info-button.svg" />
+                                                        </button>
+                                                    </label>
+                                                    <textarea placeholder="Add Project Post-Intro CTA"></textarea>
+                                                </div>
+                                                <div class="post-feilds pt-4">
+                                                    <label>
+                                                        Post Conclusion CTA
+                                                        <button class="tooltip-btn ms-2" type="button"
+                                                            data-bs-toggle="tooltip" data-bs-placement="right"
+                                                            title="Important Info">
+                                                            <img src="assets/images/info-button.svg" />
+                                                        </button>
+                                                    </label>
+                                                    <textarea placeholder="Add Project Post-Conclusion CTA"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-end align-items-center">
+                                                <button class="p-btn-bg p-btn" type="submit">Save</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!--Call to Action tab Content-->
+                            </div>
+                            <!--Manage Settings tab Content-->
+                        </div>
+                    </div>
+                    <!--Manage Settings tab Content-->
+                    <!--Manage User tab Content-->
+                    <div class="tab-pane fade" id="m-user-tab-pane" aria-labelledby="m-user-tab" tabindex="0">
+                        <div class="side-bar-tabs d-flex h-100">
+                            <div class="scroll-bar-adj">
+                            </div>
+                            <!--Manage User tab Content-->
+                            <div class="tab-content side-bar-content p-4">
+                                <h6 class="tab-title">Add User to Project</h6>
+                                <div class="automation-feilds py-4">
+                                    <label>Add a User</label>
+                                    <select>
+                                        <option>Type name here</option>
+                                        <option>Admin</option>
+                                        <option>Publisher</option>
+                                    </select>
+                                    <div class="d-flex justify-content-end">
+                                        <button type="button" class="p-btn">Add</button>
+                                    </div>
+                                </div>
+                                <div class="pt-4">
+                                    <h6 class="tab-subtitle mb-4">Project Members</h6>
+                                    <div class="mange-user-table">
+                                        <table class="table">
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Last Active</th>
+                                                    <th scope="col">Access Level</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <strong>Jonathan Doe</strong>
+                                                        <span class="date-time">jonathandoe@metazone.com</span>
+                                                    </td>
+                                                    <td>14.01.2023 - 05:32</td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-between align-items-center gap-10">
+                                                            <span>Admin</span>
+                                                            <a href="javascript: void(0);">
+                                                                <img src="assets/images/edit-icon.svg" />
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <strong>Juan J. Ramirez</strong>
+                                                        <span class="date-time">jramirez@metazone.com</span>
+                                                    </td>
+                                                    <td>17.01.2023 - 09:46</td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-between align-items-center gap-10">
+                                                            <span>Publisher</span>
+                                                            <a href="javascript: void(0);">
+                                                                <img src="assets/images/edit-icon.svg" />
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Manage User tab Content-->
+                    <!--Manage Media tab Content-->
+                    <div class="tab-pane fade" id="m-media-tab-pane" aria-labelledby="m-media-tab" tabindex="0">
+                        <div class="tab-content side-bar-content">
+                            Dummy text for Manage Media
+                        </div>
+                    </div>
+                    <!--Manage Media tab Content-->
+                    <!--Manage Integration tab Content-->
+                    <div class="tab-pane fade" id="m-integration-tab-pane" aria-labelledby="m-integration-tab"
+                        tabindex="0">
+                        <div class="tab-content side-bar-content">
+                            Dummy text for Manage Integrations
+                        </div>
+                    </div>
+                    <!--Manage Integration tab Content-->
+                </div>
+                <!--Fixed SideBar Tabs Content-->
+            </div>
+            <!--Fixed SideBar Tabs-->
+        </div>
+        <!--Project Page Container-->
+    </div>
+    <!-- Wrapper-->
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="assets/js/custom.js" type="text/javascript"></script>
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></scrip>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
+</body>
+
+</html>
