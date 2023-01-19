@@ -60,3 +60,13 @@ $(".close-sidebar").click(function () {
 $(".close-menu").click(function () {
     $("#sidebar").removeClass("active");
 });
+
+$(".forgot").click(function () {
+    $(".forgot-area").css("display", "flex");
+    $(".login-area").css("display", "none");
+});
+
+$(".back a").click(function () {
+    $(".forgot-area").css("display", "none");
+    $(".login-area").css("display", "flex");
+});
