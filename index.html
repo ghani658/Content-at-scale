@@ -790,8 +790,8 @@
                                                             </div>
                                                         </th>
                                                         <th scope="col">WORDS</th>
-                                                        <th scope="col">MEDIA</th>
-                                                        <th scope="col">STATUS</th>
+                                                        <th scope="col" style="width: 16%;">MEDIA</th>
+                                                        <th scope="col" class="text-start">STATUS</th>
                                                         <th scope="col">
                                                             <select>
                                                                 <option>All</option>
@@ -819,7 +819,7 @@
                                                         </td>
                                                         <td>2148</td>
                                                         <td>14</td>
-                                                        <td>
+                                                        <td class="text-start">
                                                             <span class="tag completed">Completed</span>
                                                         </td>
                                                         <td>
@@ -847,7 +847,7 @@
                                                         </td>
                                                         <td>2691</td>
                                                         <td>8</td>
-                                                        <td>
+                                                        <td class="text-start">
                                                             <span class="tag published">Published</span>
                                                         </td>
                                                         <td>
@@ -875,7 +875,7 @@
                                                         </td>
                                                         <td>2218</td>
                                                         <td>37</td>
-                                                        <td>
+                                                        <td class="text-start">
                                                             <span class="tag pending">Pending Editing</span>
                                                         </td>
                                                         <td>
@@ -902,7 +902,7 @@
                                                         </td>
                                                         <td>3100</td>
                                                         <td>9</td>
-                                                        <td>
+                                                        <td class="text-start">
                                                             <span class="tag pending">Pending Optimization</span>
                                                         </td>
                                                         <td>
@@ -930,7 +930,7 @@
                                                         </td>
                                                         <td>2766</td>
                                                         <td>15</td>
-                                                        <td>
+                                                        <td class="text-start">
                                                             <span class="tag draft">Draft</span>
                                                         </td>
                                                         <td>
@@ -958,7 +958,7 @@
                                                         </td>
                                                         <td>2510</td>
                                                         <td>23</td>
-                                                        <td>
+                                                        <td class="text-start">
                                                             <span class="tag scheduled">Scheduled</span>
                                                         </td>
                                                         <td>
@@ -974,6 +974,11 @@
                                                         </td>
                                                     </tr>
                                                 </tbody>
+                                                <tfoot>
+                                                    <td colspan="5">
+                                                        <button type="button" class="cs-secondary-btn-outline edit-status" data-bs-target="#editStatus" data-bs-toggle="modal" data-bs-dismiss="modal" disabled>Edit Status</button>
+                                                    </td>
+                                                </tfoot>
                                             </table>
                                             <!-- listing Tab Table-->
                                         </div>
@@ -1015,7 +1020,7 @@
                                                         </div>
                                                         <div class="info-cat">
                                                             <span>
-                                                                SEO Score
+                                                                Score
                                                             </span>
                                                             <h6 class="score normal">
                                                                 67
@@ -1064,7 +1069,7 @@
                                                         </div>
                                                         <div class="info-cat">
                                                             <span>
-                                                                SEO Score
+                                                                Score
                                                             </span>
                                                             <h6 class="score high">
                                                                 89
@@ -1113,7 +1118,7 @@
                                                         </div>
                                                         <div class="info-cat">
                                                             <span>
-                                                                SEO Score
+                                                                Score
                                                             </span>
                                                             <h6 class="score average">
                                                                 53
@@ -1161,7 +1166,7 @@
                                                         </div>
                                                         <div class="info-cat">
                                                             <span>
-                                                                SEO Score
+                                                                Score
                                                             </span>
                                                             <h6 class="score low">
                                                                 19
@@ -1209,7 +1214,7 @@
                                                         </div>
                                                         <div class="info-cat">
                                                             <span>
-                                                                SEO Score
+                                                                Score
                                                             </span>
                                                             <h6 class="score low">
                                                                 23
@@ -1257,7 +1262,7 @@
                                                         </div>
                                                         <div class="info-cat">
                                                             <span>
-                                                                SEO Score
+                                                                Score
                                                             </span>
                                                             <h6 class="score high">
                                                                 80
@@ -1284,7 +1289,121 @@
                         <!-- Keywords Tab Content-->
                         <div class="tab-pane fade" id="keywoords-tab-pane" role="tabpanel"
                             aria-labelledby="keywoords-tab" tabindex="0">
-                            dummy text 2
+                            <div class="project-listing-table pt-4">
+                                <!-- listing Tab Table-->
+                                <table class="table table-striped">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th scope="col">
+                                                <div class="d-flex gap-20 align-items-center">
+                                                    <input type="checkbox" name="" id="">KEYWORD
+                                                </div>
+                                            </th>
+                                            <th scope="col" class="text-start">DETAILS</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex gap-20 align-items-center">
+                                                    <input type="checkbox" name="" id="">
+                                                    <div class="pr-name">
+                                                        <strong>Metaverse Technology</strong>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-start detail-text">
+                                                <strong>Context:</strong> UX strategy, British Council, Product Design, UX Design, UX Process
+                                            </td>
+                                            <td>
+                                                <div
+                                                    class="table-action-btns d-flex justify-content-end align-items-center">
+                                                    <a href="javascript: void(0);" data-bs-toggle="modal" data-bs-target="#keywordEdit">
+                                                        <img src="assets/images/edit-icon-dark.svg" />
+                                                    </a>
+                                                    <a href="javascript: void(0);">
+                                                        <img src="assets/images/trash.svg" />
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex gap-20 align-items-center">
+                                                    <input type="checkbox" name="" id="">
+                                                    <div class="pr-name">
+                                                        <strong>Blockchain</strong>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-start detail-text">
+                                                <strong>Context:</strong> Blockchain, technology
+                                            </td>
+                                            <td>
+                                                <div
+                                                    class="table-action-btns d-flex justify-content-end align-items-center">
+                                                    <a href="javascript: void(0);" data-bs-toggle="modal" data-bs-target="#keywordEdit">
+                                                        <img src="assets/images/edit-icon-dark.svg" />
+                                                    </a>
+                                                    <a href="javascript: void(0);">
+                                                        <img src="assets/images/trash.svg" />
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex gap-20 align-items-center">
+                                                    <input type="checkbox" name="" id="">
+                                                    <div class="pr-name">
+                                                        <strong>Double Diamond</strong>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-start detail-text">
+                                                <strong>Context:</strong> Double diamond, Biritish Council, Design Council
+                                            </td>
+                                            <td>
+                                                <div
+                                                    class="table-action-btns d-flex justify-content-end align-items-center">
+                                                    <a href="javascript: void(0);" data-bs-toggle="modal" data-bs-target="#keywordEdit">
+                                                        <img src="assets/images/edit-icon-dark.svg" />
+                                                    </a>
+                                                    <a href="javascript: void(0);">
+                                                        <img src="assets/images/trash.svg" />
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex gap-20 align-items-center">
+                                                    <input type="checkbox" name="" id="">
+                                                    <div class="pr-name">
+                                                        <strong>Nielsen Norman</strong>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-start detail-text">
+                                                <strong>Context:</strong> NN Group, Design Academy, Design Foundation
+                                            </td>
+                                            <td>
+                                                <div
+                                                    class="table-action-btns d-flex justify-content-end align-items-center">
+                                                    <a href="javascript: void(0);" data-bs-toggle="modal" data-bs-target="#keywordEdit">
+                                                        <img src="assets/images/edit-icon-dark.svg" />
+                                                    </a>
+                                                    <a href="javascript: void(0);">
+                                                        <img src="assets/images/trash.svg" />
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- listing Tab Table-->
+                            </div>
                         </div>
                         <!-- Keywords Tab Content-->
                     </div>
@@ -1454,7 +1573,12 @@
                                                 </div>
                                                 <div class="info-feild">
                                                     <label>Ton of Voıice</label>
-                                                    <input type="text" value="-" disabled />
+                                                    <select disabled>
+                                                        <option>-</option>
+                                                        <option>Voıice 1</option>
+                                                        <option>Voıice 2</option>
+                                                        <option>Voıice 3</option>
+                                                    </select>
                                                 </div>
                                                 <div class="info-feild">
                                                     <label>Translation Language</label>
@@ -1485,7 +1609,7 @@
                                 <!--Automations tab Content-->
                                 <div class="tab-pane fade" id="automation-pill" role="tabpanel"
                                     aria-labelledby="automation-tab" tabindex="0">
-                                    <h6 class="tab-title m-0 mt-2 mb-1">Call to Action</h6>
+                                    <h6 class="tab-title m-0 mt-2 mb-1">Post Automations</h6>
                                     <div class="form-check form-switch pt-4 toggle-switch d-flex align-items-center">
                                         <input class="form-check-input" type="checkbox" role="switch"
                                             id="flexSwitchCheckDefault" checked>
@@ -1548,7 +1672,7 @@
                                         <input class="form-check-input" type="checkbox" role="switch"
                                             id="flexSwitchCheckDefault" checked>
                                         <label class="form-check-label" for="flexSwitchCheckDefault">
-                                            TOC
+                                            Table of Contents
                                             <button class="tooltip-btn ms-2" type="button" data-bs-toggle="tooltip"
                                                 data-bs-placement="right" title="Important Info">
                                                 <img src="assets/images/info-button.svg" />
@@ -1698,6 +1822,81 @@
         <!--Project Page Container-->
     </div>
     <!-- Wrapper-->
+
+    
+    <!-- Modals -->
+    <!-- Keyword Edit Modal -->
+    <div class="modal fade" id="keywordEdit" tabindex="-1" aria-labelledby="keywordEditLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title mt-3" id="keywordEditLabel">KEYWORD EDIT</h5>
+            <a href="javascript:void(0)" class="close-modal">
+                <img src="assets/images/close-modal.svg" data-bs-dismiss="modal" aria-label="Close" alt="">
+            </a>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="fields">
+                            <label>What Keyword Do You Want To Rank For?</label>
+                            <input type="text" placeholder="Double Diamond" name="" id="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="fields">
+                            <label>Words Count</label>
+                            <select>
+                                <option>2,000 to 3,000 words (Default)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="fields">
+                            <label>Additional Context (Optional)</label>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Additional Context (Optional)"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="cs-secondary-btn-outline">Customize</button>
+            <button type="button" class="cs-secondary-btn">Update Kewydord</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Keyword Edit Modal -->
+
+     <!-- Edit Status -->
+     <div class="modal fade" id="editStatus" tabindex="-1" aria-labelledby="editStatus" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="editStatus">STATUS EDIT</h5>
+            <a href="javascript:void(0)" class="close-modal">
+                <img src="assets/images/close-modal.svg" data-bs-dismiss="modal" aria-label="Close" alt="">
+            </a>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="fields">
+                            <select>
+                                <option>Pending Optimization</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="cs-secondary-btn-outline" data-bs-dismiss="modal" aria-label="Close" >Cancel</button>
+            <button type="button" class="cs-secondary-btn">Update</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Edit Status -->
 
 
 

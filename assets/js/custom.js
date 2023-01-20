@@ -70,3 +70,14 @@ $(".back a").click(function () {
     $(".forgot-area").css("display", "none");
     $(".login-area").css("display", "flex");
 });
+
+$(".project-listing-table input:checkbox").change(function() {
+    if(this.checked) {
+        $('.edit-status').removeAttr("disabled");
+    } else {
+        if ($(".project-listing-table input:checkbox:checked").length < 1) {
+            $('.edit-status').prop('disabled', true);
+        }
+
+    }
+});
