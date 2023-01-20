@@ -36,6 +36,10 @@ img {
     width: 100%;
 }
 
+input[type=checkbox] {
+    accent-color: #674FF1;
+}
+
 header {
     background: #171616;
     height: 80px;
@@ -700,12 +704,17 @@ header .notification-alert {
     outline: none;
 }
 
+.table input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
+
 .table thead {
     vertical-align: middle;
 }
 
 .table thead th {
-    padding: 30px 44px;
+    padding: 27px;
 }
 
 .table thead th,
@@ -731,7 +740,7 @@ header .notification-alert {
 }
 
 .table tbody td {
-    padding: 18px 44px;
+    padding: 18px 27px;
     font-size: 0.88rem;
     font-weight: 700;
     color: #171616;
@@ -780,6 +789,10 @@ header .notification-alert {
 .table-action-btns a {
     padding: 10px;
     margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .table-striped>tbody>tr:nth-of-type(odd) {
@@ -1444,7 +1457,6 @@ button.p-btn:disabled {
                 gap: 6px;
 
                 input[type=checkbox] {
-                    accent-color: #674FF1;
                     width: 18px;
                     height: 18px;
                 }
