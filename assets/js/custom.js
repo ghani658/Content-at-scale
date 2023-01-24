@@ -81,3 +81,13 @@ $(".project-listing-table input:checkbox").change(function() {
 
     }
 });
+
+$(".project-data").click(function () {
+    $(".project-listing-screen").hide();
+    $(".project-detail-screen").show();
+});
+
+$(".create-project").click(function () {
+    $(".project-listing-screen").hide();
+    $(".create-project").show();
+});

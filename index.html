@@ -605,7 +605,440 @@
 
         <!--Project Page Container-->
         <div id="content">
-            <div class="full-lenth-area h-100">
+            <!-- create project screen (3.0)  -->
+            <div class="full-lenth-area h-100 create-project" style="display: none;">
+                <!--page breadcrums-->
+                <div class="page-bredcrums">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Projects</li>
+                        </ol>
+                    </nav>
+                </div>
+                <!--page breadcrums-->
+                <div class="d-flex justify-content-center align-items-center info-text">
+                    <img src="assets/images/info.svg" alt=""> You don’t have a project yet. You can quickly create a new one
+                </div>
+                <div class="project-fields mx-auto">
+                    <h5>CREATE A PROJECT</h5>
+                    <p>For the best AI output, each website where the content will be published, should be it’s own project.</p>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="fields">
+                                    <label>Project Name</label>
+                                    <input type="text" placeholder="Company or Website Name" name="" id="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="fields">
+                                    <label>Project URL</label>
+                                    <input type="text" placeholder="Project URL" name="" id="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="fields">
+                                    <label>Project Context ( Strongly Recommended)</label>
+                                    <input type="text" placeholder="What is this website about?" name="" id="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="fields">
+                                    <label>Monthly Post</label>
+                                    <input type="text" placeholder="Monthly Post" value="1" name="" id="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="fields">
+                                    <label>Target Audience</label>
+                                    <input type="text" placeholder="Who reads your blog? What is their profession or description?" name="" id="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="fields">
+                                    <label>Tone Of Voice</label>
+                                    <select>
+                                        <option>Choose Tone of Voice</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="fields">
+                                    <label>Translation Language</label>
+                                    <select>
+                                        <option>English (EN)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="fields">
+                                    <label>Words Count</label>
+                                    <select>
+                                        <option>2,000 to 3,000 words (Default)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 d-flex justify-content-end">
+                                <button type="submit" class="cs-secondary-btn create-project">
+                                    Create Project
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- create project screen (3.0)  -->
+
+            <!-- project listing screen (3.1) -->
+            <div class="full-lenth-area h-100 project-listing-screen">
+                <!--page breadcrums-->
+                <div class="page-bredcrums d-flex justify-content-between align-items-center">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="javascript: void(0);">Projects</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Project 3</li>
+                        </ol>
+                    </nav>
+                    <button class="cs-secondary-btn create-project">
+                        Create Project
+                    </button>
+                </div>
+                <!--page breadcrums-->
+                <div class="listing-cat">
+                    <span class="pr-count">
+                        You have <strong>2</strong> projects
+                    </span>
+                    <div class="grid-listing-tabs">
+                        <ul class="nav nav-tabs" id="gridlisting-tabs" role="tablist">
+                            <!-- listing Tab button-->
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="listing-project" data-bs-toggle="tab"
+                                    data-bs-target="#listing-project-pane" type="button" role="tab"
+                                    aria-controls="listing-project-pane" aria-selected="true">
+                                    <img src="assets/images/listing-btn.svg" />
+                                </button>
+                            </li>
+                            <!-- listing Tab button-->
+                            <!-- Grid Tab button-->
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="grid-project" data-bs-toggle="tab"
+                                    data-bs-target="#grid-tab-pane" type="button" role="tab"
+                                    aria-controls="grid-project-pane" aria-selected="false">
+                                    <img src="assets/images/grid-btn.svg" />
+                                </button>
+                            </li>
+                            <!-- Grid Tab button-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content all-projects">
+                    <div class="tab-pane fade" id="listing-project-pane" role="tabpanel" aria-labelledby="listing-project" tabindex="0">
+                        Dummy text to show
+                    </div>
+                    <div class="tab-pane fade show active" id="grid-tab-pane" role="tabpanel" aria-labelledby="grid-project" tabindex="0">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-4">
+                                <div class="single-project px-3 pt-3">
+                                    <div class="project-action dropdown">
+                                        <button class="dropdown-toggle" id="dropdownAction" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="dots"></span>
+                                            <span class="dots"></span>
+                                            <span class="dots"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownAction">
+                                            <li>
+                                                <a class="dropdown-item" href="javascript: void(0);">
+                                                    <img src="assets/images/edit-icon.svg" />
+                                                    Edit
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="javascript: void(0);">
+                                                    <img src="assets/images/trash.svg" />
+                                                    Delete
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="project-data">
+                                        <div class="project-info">
+                                            <div class="pr-img">
+                                                <img src="assets/images/pr-img.png" alt="">
+                                                <span class="status non-active"></span>
+                                            </div>
+                                            <h5 class="pr-name">Metazone New Project</h5>
+                                            <div class="pr-member">
+                                                <img src="assets/images/pr-avatar.png" alt="">
+                                                <img src="assets/images/pr-avatar.png" alt="">
+                                                <img src="assets/images/pr-avatar.png" alt="">
+                                                <span class="more">
+                                                    +6
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="project-numbers">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="inner-number">
+                                                        <span>
+                                                            Post Created
+                                                        </span>
+                                                        <h3>
+                                                            16
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="inner-number">
+                                                        <span>
+                                                            In Queue
+                                                        </span>
+                                                        <h3>
+                                                            7
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="inner-number">
+                                                        <span>
+                                                            Post Published
+                                                        </span>
+                                                        <div class="post">
+                                                            <h3>
+                                                                21
+                                                            </h3>
+                                                            <div class="days">
+                                                                <span>(7)</span> Last 30 Days
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="other-info">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span>
+                                                            Draft
+                                                        </span>
+                                                        <span class="tag">
+                                                            6
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span>
+                                                            Optimization
+                                                        </span>
+                                                        <span class="tag">
+                                                            0
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span>
+                                                            Editing
+                                                        </span>
+                                                        <span class="tag">
+                                                            0
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span>
+                                                            Scheduled
+                                                        </span>
+                                                        <span class="tag">
+                                                            4
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span>
+                                                            Publish
+                                                        </span>
+                                                        <span class="tag">
+                                                            4
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span>
+                                                            Renewal Day
+                                                        </span>
+                                                        <span class="tag">
+                                                            23rd
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4">
+                                <div class="single-project px-3 pt-3">
+                                    <div class="project-action dropdown">
+                                        <button class="dropdown-toggle" id="dropdownAction" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="dots"></span>
+                                            <span class="dots"></span>
+                                            <span class="dots"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownAction">
+                                            <li>
+                                                <a class="dropdown-item" href="javascript: void(0);">
+                                                    <img src="assets/images/edit-icon.svg" />
+                                                    Edit
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="javascript: void(0);">
+                                                    <img src="assets/images/trash.svg" />
+                                                    Delete
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="project-data">
+                                        <div class="project-info">
+                                            <div class="pr-img">
+                                                <img src="assets/images/pr-img.png" alt="">
+                                                <span class="status active"></span>
+                                            </div>
+                                            <h5 class="pr-name">Metazone New Project</h5>
+                                            <div class="pr-member">
+                                                <img src="assets/images/pr-avatar.png" alt="">
+                                                <img src="assets/images/pr-avatar.png" alt="">
+                                                <img src="assets/images/pr-avatar.png" alt="">
+                                                <span class="more">
+                                                    +6
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="project-numbers">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="inner-number">
+                                                        <span>
+                                                            Post Created
+                                                        </span>
+                                                        <h3>
+                                                            16
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="inner-number">
+                                                        <span>
+                                                            In Queue
+                                                        </span>
+                                                        <h3>
+                                                            7
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="inner-number">
+                                                        <span>
+                                                            Post Published
+                                                        </span>
+                                                        <div class="post">
+                                                            <h3>
+                                                                21
+                                                            </h3>
+                                                            <div class="days">
+                                                                <span>(7)</span> Last 30 Days
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="other-info">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span>
+                                                            Draft
+                                                        </span>
+                                                        <span class="tag">
+                                                            6
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span>
+                                                            Optimization
+                                                        </span>
+                                                        <span class="tag">
+                                                            0
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span>
+                                                            Editing
+                                                        </span>
+                                                        <span class="tag">
+                                                            0
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span>
+                                                            Scheduled
+                                                        </span>
+                                                        <span class="tag">
+                                                            4
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span>
+                                                            Publish
+                                                        </span>
+                                                        <span class="tag">
+                                                            4
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span>
+                                                            Renewal Day
+                                                        </span>
+                                                        <span class="tag">
+                                                            23rd
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- project listing screen (3.1) -->
+
+            <!-- project details screens (2.0 - 2.6) -->
+            <div class="full-lenth-area h-100 project-detail-screen" style="display: none;">
                 <!--page breadcrums-->
                 <div class="page-bredcrums">
                     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
@@ -1410,6 +1843,7 @@
                 </div>
                 <!-- Page Tabs -->
             </div>
+            <!-- project details screens (2.0 - 2.6) -->
 
             <!--Fixed SideBar Tabs-->
             <div class="fixed-sidebar-right tabs-area-main collapes-side">
