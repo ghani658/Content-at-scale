@@ -771,6 +771,9 @@ header .notification-alert {
   font-weight: 700;
   color: #171616;
 }
+.table tbody td .pr-name {
+  flex: 1;
+}
 .table tbody td.detail-text {
   font-weight: normal;
 }

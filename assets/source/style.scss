@@ -773,6 +773,10 @@ header .notification-alert {
     font-weight: 700;
     color: #171616;
 
+    .pr-name {
+        flex: 1;
+    }
+
     &.detail-text {
         font-weight: normal;
 
