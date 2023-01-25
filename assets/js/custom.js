@@ -87,7 +87,28 @@ $(".project-data").click(function () {
     $(".project-detail-screen").show();
 });
 
+$("a.open").click(function () {
+    $(".project-listing-screen").hide();
+    $(".project-detail-screen").show();
+});
+
 $(".create-project").click(function () {
     $(".project-listing-screen").hide();
     $(".create-project").show();
+});
+
+$(document).ready(function() {
+    $('.select2').select2();
+
+    function iformat(icon) {
+        var originalOption = icon.element;
+        return $('<span><i class="bx ' + $(originalOption).data('icon') + '"></i> ' + icon.text + '</span>');
+    }
+
+    $('.icons_select2').select2({
+        width: "100%",
+        templateSelection: iformat,
+        templateResult: iformat,
+        allowHtml: true
+    });
 });
