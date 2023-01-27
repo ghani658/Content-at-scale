@@ -112,3 +112,22 @@ $(document).ready(function() {
         allowHtml: true
     });
 });
+
+function togglePasswordVisibility($pw, on) {
+    $pw.attr('type', on ? 'password' : 'text');
+}
+$(document).ready(function() {
+    $('[data-id]').on('click', function() {
+      const $this = $(this);
+      const id = $this.data('id')
+      const $pw = $(`#${id}`);
+
+      if('password' == $pw.attr('type')){
+        togglePasswordVisibility($pw, false);
+        $this.children("i").removeClass('bx-show').addClass('bx-hide');
+        }else{
+            togglePasswordVisibility($pw, true);
+            $this.children("i").addClass('bx-show').removeClass('bx-hide');
+        }
+    });
+  });

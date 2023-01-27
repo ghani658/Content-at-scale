@@ -1620,6 +1620,7 @@ button.p-btn:disabled {
     flex-direction: column;
     gap: 7px;
     margin-bottom: 16px;
+    position: relative;
 
     label {
         font-size: 0.875rem;
@@ -1643,7 +1644,14 @@ button.p-btn:disabled {
         padding: 16px;
         font-size: 0.8125rem;
         resize: none;
+    }
 
+    .show-password {
+        position: absolute;
+        right: 18px;
+        top: 47px;
+        color: #0A1429;
+        font-size: 1.6rem;
     }
 }
 
