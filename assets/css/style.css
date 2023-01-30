@@ -538,7 +538,7 @@ header .notification-alert {
   content: "";
   position: absolute;
   left: 0;
-  top: 0;
+  top: 9px;
   background: url("../images/check.svg") no-repeat;
   width: 20px;
   height: 16px;
@@ -548,7 +548,7 @@ header .notification-alert {
   content: "";
   position: absolute;
   left: 0;
-  top: 0;
+  top: 9px;
   background: url("../images/close.svg") no-repeat;
   width: 20px;
   height: 16px;
@@ -2019,6 +2019,84 @@ span.status.active {
 }
 
 /* project listing screens */
+/* prject details screens*/
+.custom-templates-area {
+  padding: 1.875rem;
+}
+
+.filter-options {
+  display: flex;
+  gap: 20px;
+}
+.filter-options .select2-container {
+  width: 300px !important;
+}
+.filter-options .select2-container--default .select2-selection--single {
+  border: 1px solid #E8E8E8;
+  width: 300px;
+  height: 46px;
+  border-radius: 6px;
+}
+.filter-options .select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border: 0;
+  background: url(../images/down-arrow.svg) no-repeat;
+  width: 12px;
+  height: 7px;
+}
+.filter-options .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+  rotate: 180deg;
+}
+.filter-options .select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #000;
+  line-height: 1;
+  height: 100%;
+  font-weight: 400;
+  padding: 15px;
+}
+.filter-options .select2-container--default .select2-selection--single .select2-selection__arrow {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 20px;
+  bottom: 0;
+  height: 100%;
+}
+
+.optimize-info {
+  border-bottom: 1px solid #393939;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.optimize-info .info-title {
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.optimize-info .info-title h5 {
+  color: #FFF700;
+  font-size: 0.936rem;
+  margin: 0;
+  line-height: 1;
+}
+.optimize-info .info-title .title-action {
+  gap: 10px;
+  color: #E4E4E4;
+}
+.optimize-info p {
+  margin: 0;
+}
+
+.editor-section {
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.0588235294);
+  border: 1px solid #E8E8E8;
+  border-radius: 12px;
+  padding: 10px;
+  background: #fff;
+}
+
+.act-btn button {
+  min-width: 160px;
+}
+
 /* select2 */
 .fields .select2-container {
   width: 100% !important;
