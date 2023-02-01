@@ -50,11 +50,34 @@
                         <img src="assets/images/bell-icon.svg" />
                         <span class="notification-alert"></span>
                     </a>
-                    <a href="javascript: void(0);" class="d-flex align-items-center px-4">
-                        <img src="assets/images/avatar.png" class="avatar" />
-                        <strong class="ms-2">jonathan Doe <img src="assets/images/downarrow.svg"
-                                class="ms-1" /></strong>
-                    </a>
+                    <div class="drop-down user-option">
+                        <a href="javascript: void(0);" class="d-flex align-items-center px-4" id="userAction" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/images/avatar.png" class="avatar" />
+                            <strong class="ms-2">jonathan Doe <img src="assets/images/downarrow.svg"
+                                    class="ms-1" /></strong>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right pb-0"  aria-labelledby="userAction">
+                            <a class="dropdown-item" href="javacript:void(0)">
+                                <i class="bx bx-user-circle me-2"></i> Edit Profile
+                            </a>
+                            <a class="dropdown-item" href="javacript:void(0)">
+                                <i class="bx bx-message-dots me-2"></i> Custom Status
+                            </a>
+                            <a class="dropdown-item" href="javacript:void(0)">
+                                <i class="bx bx-download me-2"></i> Download WP Plugin
+                            </a>
+                            <a class="dropdown-item" href="javacript:void(0)">
+                                <i class="bx bx-credit-card me-2"></i> Billing
+                            </a>
+                            <a class="dropdown-item" href="javacript:void(0)">
+                                <i class="bx bx-user me-2"></i> Users
+                            </a>
+                            <div class="dropdown-divider mb-0"></div>
+                            <a class="dropdown-item" href="javacript:void(0)">
+                                <i class="bx bx-power-off me-2"></i> Logout
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

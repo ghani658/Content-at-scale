@@ -51,6 +51,38 @@ header .logo {
 
 header img.avatar {
     width: 41px;
+    height: 41px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.user-option {
+    .dropdown-menu {
+        margin: 0.5rem 0 0 !important;
+        box-shadow: -7px 8px 16px 0px rgb(0 0 0 / 20%);
+        border-radius: 8px;
+        background-color: #1c1c1c;
+        color: #fff;
+    }
+    .dropdown-item {
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        padding: 0.8rem 1.6rem;
+        color: #fff;
+
+        .bx {
+            font-size: 1.2rem;
+        }
+
+        .dropdown-divider {
+            border-top: 1px solid rgb(255 255 255 / 37%);
+        }
+
+        &:hover, &:active {
+            background-color: #252627;
+        }
+    }
 }
 
 .profile-view-area strong img {
@@ -530,29 +562,23 @@ header .notification-alert {
 }
 
 .checklist-area-list ul li {
-    padding-left: 40px;
-    line-height: 36px;
-    position: relative;
-}
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 
-.checklist-area-list ul li.verified:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 9px;
-    background: url('../images/check.svg') no-repeat;
-    width: 20px;
-    height: 16px;
-}
+    i {
+        font-size: 35px;
+        margin-left: -8px;
 
-.checklist-area-list ul li.not-verified:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 9px;
-    background: url('../images/close.svg') no-repeat;
-    width: 20px;
-    height: 16px;
+        &.bx-x {
+            color: #FF4C17;
+        }
+
+        &.bx-check {
+            color: #22D5C0;
+        }
+    }
 }
 
 .full-lenth-area {
@@ -582,6 +608,10 @@ header .notification-alert {
 
 .cards-listing .card-body .d-flex {
     gap: 20px;
+
+    .card-icon img {
+        width: 53px;
+    }
 }
 
 .cards-listing .card-body .card-title {
@@ -2235,6 +2265,111 @@ span.status {
     }
     p {
         margin: 0;
+    }
+
+    .stats, .score {
+        flex: 1;
+    }
+
+    .stats .info-title {
+        padding-left: 2rem;
+        margin-bottom: 24px;
+    }
+
+    .graph-img {
+        max-width: 220px;
+        margin-top: 26px;
+    }
+
+    .stats-info {
+        font-size: 0.75rem;
+        color: #E4E4E4;
+        .words {
+            gap: 5px;
+
+            h4 {
+                margin: 0;
+                color: #E4E4E4;
+                font-size: 1.313rem;
+            }
+        }
+        .wr-limit {
+            color: #888888;
+        }
+        .col-md-6 {
+            border-bottom: 1px solid #393939;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            position: relative;
+
+            &:nth-last-child(1), &:nth-last-child(2) {
+                border-bottom: 0;
+                margin-bottom: 0;
+            }
+
+            &:nth-child(odd) {
+                &::before {
+                    content: "";
+                    height: 81px;
+                    width: 1px;
+                    background: #393939;
+                    position: absolute;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    .chip {
+        font-size: 0.75rem;
+        display: inline-flex;
+        padding: 7px 14px;
+        margin-bottom: 16px;
+        vertical-align: middle;
+        justify-content: center;
+        position: relative;
+        border-radius: 99px;
+        color: #fff;
+        height: 40px;
+
+        .chip-body {
+            display: flex;
+            justify-content: space-between;
+
+            .avatar {
+                display: flex;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+                color: #FFFFFF;
+                transform: translate(-8px);
+            }
+
+            .chip-text {
+                vertical-align: middle;
+                align-self: center;
+            }
+        }
+
+        &.border-warning {
+            background: #2C2111;
+        }
+
+        &.border-success {
+            background: #112623;
+        }
+
+        &.border-danger {
+            background: #241311;
+        }
+    }
+
+    &:last-child {
+        border-bottom: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
 }
 

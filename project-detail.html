@@ -54,11 +54,34 @@
                         <img src="assets/images/bell-icon.svg" />
                         <span class="notification-alert"></span>
                     </a>
-                    <a href="javascript: void(0);" class="d-flex align-items-center px-4">
-                        <img src="assets/images/avatar.png" class="avatar" />
-                        <strong class="ms-2">jonathan Doe <img src="assets/images/downarrow.svg"
-                                class="ms-1" /></strong>
-                    </a>
+                    <div class="drop-down user-option">
+                        <a href="javascript: void(0);" class="d-flex align-items-center px-4" id="userAction" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/images/avatar.png" class="avatar" />
+                            <strong class="ms-2">jonathan Doe <img src="assets/images/downarrow.svg"
+                                    class="ms-1" /></strong>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right pb-0"  aria-labelledby="userAction">
+                            <a class="dropdown-item" href="javacript:void(0)">
+                                <i class="bx bx-user-circle me-2"></i> Edit Profile
+                            </a>
+                            <a class="dropdown-item" href="javacript:void(0)">
+                                <i class="bx bx-message-dots me-2"></i> Custom Status
+                            </a>
+                            <a class="dropdown-item" href="javacript:void(0)">
+                                <i class="bx bx-download me-2"></i> Download WP Plugin
+                            </a>
+                            <a class="dropdown-item" href="javacript:void(0)">
+                                <i class="bx bx-credit-card me-2"></i> Billing
+                            </a>
+                            <a class="dropdown-item" href="javacript:void(0)">
+                                <i class="bx bx-user me-2"></i> Users
+                            </a>
+                            <div class="dropdown-divider mb-0"></div>
+                            <a class="dropdown-item" href="javacript:void(0)">
+                                <i class="bx bx-power-off me-2"></i> Logout
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -242,6 +265,175 @@
                                             </div>
                                             <p>Find out how blockchain technology can be used to improve user experience in a variety of different industries</p>
                                         </div>
+                                        <div class="optimize-info d-flex">
+                                            <div class="score">
+                                                <div class="info-title d-flex align-items-center">
+                                                    <h5>Optimization Score</h5>
+                                                </div>
+                                                <img src="assets/images/graph.png" class="graph-img" alt="">
+                                            </div>
+                                            <div class="stats">
+                                                <div class="info-title d-flex align-items-center">
+                                                    <h5>Stats</h5>
+                                                </div>
+                                                <div class="stats-info">
+                                                    <div class="row">
+                                                        <div class="col-md-6 total-amount">
+                                                            <div class="d-flex align-items-center words justify-content-center mb-2">
+                                                                <h4 class="words-counter">
+                                                                    1699
+                                                                </h4>
+                                                                <span class="word-counter-icon">
+                                                                    <i class="bx bx-up-arrow-alt " style="color:#22A99A;"></i>
+                                                                </span>
+                                                            </div>
+                                                            <div class="text-center mb-2">
+                                                                <span>Words</span>
+                                                            </div>
+                                                            <div class="wr-limit text-center">
+                                                                <span class="w-lower-limit">1317</span> - <span class="w-upper-limit">1455</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 total-amount">
+                                                            <div class="d-flex align-items-center words justify-content-center mb-2">
+                                                                <h4 class="words-counter">
+                                                                    0
+                                                                </h4>
+                                                                <span class="word-counter-icon">
+                                                                    <i class="bx bx-down-arrow-alt " style="color:#ff7373;"></i>
+                                                                </span>
+                                                            </div>
+                                                            <div class="text-center mb-2">
+                                                                <span>Media</span>
+                                                            </div>
+                                                            <div class="wr-limit text-center">
+                                                                <span class="w-lower-limit">2</span> - <span class="w-upper-limit">2</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 total-amount">
+                                                            <div class="d-flex align-items-center words justify-content-center mb-2">
+                                                                <h4 class="words-counter">
+                                                                    129
+                                                                </h4>
+                                                                <span class="word-counter-icon">
+                                                                    <i class="bx bx-up-arrow-alt " style="color:#22A99A;"></i>
+                                                                </span>
+                                                            </div>
+                                                            <div class="text-center mb-2">
+                                                                <span>Links</span>
+                                                            </div>
+                                                            <div class="wr-limit text-center">
+                                                                <span class="w-lower-limit">100</span> - <span class="w-upper-limit">200</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 total-amount">
+                                                            <div class="d-flex align-items-center words justify-content-center mb-2">
+                                                                <h4 class="words-counter">
+                                                                    17
+                                                                </h4>
+                                                                <span class="word-counter-icon">
+                                                                    <i class="bx bx-down-arrow-alt " style="color:#ff7373;"></i>
+                                                                </span>
+                                                            </div>
+                                                            <div class="text-center mb-2">
+                                                                <span>Checklist</span>
+                                                            </div>
+                                                            <div class="wr-limit text-center">
+                                                                <span class="w-lower-limit">7</span> - <span class="w-upper-limit">17</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="optimize-info">
+                                            <div class="info-title d-flex align-items-center">
+                                                <h5>Keywords and Entities:</h5>
+                                            </div>
+                                            <div class="keyword-items">
+                                                <div class="chip border me-2 keyword-item border-warning">
+                                                    <div class="chip-body">
+                                                        <div class="avatar bg-warning">
+                                                            <span>H</span>
+                                                        </div>
+                                                        <span class="chip-text">
+                                                            <span class="keyword-text">Metaverse</span> 
+                                                                <span class="key-count">
+                                                                    <span class="key-done">70</span>/
+                                                                    <span class="key-need">
+                                                                    <span class="min-need">12</span>
+                                                                    - <span class="max-need">38</span></span>
+                                                                </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="chip border me-2 keyword-item border-success">
+                                                    <div class="chip-body">
+                                                        <span class="chip-text">
+                                                            <span class="keyword-text">credit card transactions</span> 
+                                                                <span class="key-count">
+                                                                    <span class="key-done">0</span>/
+                                                                    <span class="key-need">
+                                                                    <span class="min-need">1</span>
+                                                                    - <span class="max-need">1</span></span>
+                                                                </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="chip border me-2 keyword-item border-success">
+                                                    <div class="chip-body">
+                                                        <span class="chip-text">
+                                                            <span class="keyword-text">debit card</span> 
+                                                                <span class="key-count">
+                                                                    <span class="key-done">0</span>/
+                                                                    <span class="key-need">
+                                                                    <span class="min-need">2</span>
+                                                                    - <span class="max-need">3</span></span>
+                                                                </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="chip border me-2 keyword-item border-success">
+                                                    <div class="chip-body">
+                                                        <span class="chip-text">
+                                                            <span class="keyword-text">building blocks </span> 
+                                                                <span class="key-count">
+                                                                    <span class="key-done">0</span>/
+                                                                    <span class="key-need">
+                                                                    <span class="min-need">2</span>
+                                                                    - <span class="max-need">3</span></span>
+                                                                </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="chip border me-2 keyword-item border-danger">
+                                                    <div class="chip-body">
+                                                        <span class="chip-text">
+                                                            <span class="keyword-text">crypto prices</span> 
+                                                                <span class="key-count">
+                                                                    <span class="key-done">0</span>/
+                                                                    <span class="key-need">
+                                                                    <span class="min-need">1</span>
+                                                                    - <span class="max-need">1</span></span>
+                                                                </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="chip border me-2 keyword-item border-success">
+                                                    <div class="chip-body">
+                                                        <span class="chip-text">
+                                                            <span class="keyword-text">step-by-step guide</span> 
+                                                                <span class="key-count">
+                                                                    <span class="key-done">0</span>/
+                                                                    <span class="key-need">
+                                                                    <span class="min-need">1</span>
+                                                                    - <span class="max-need">1</span></span>
+                                                                </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>    
                                     </div>
                                     <!-- Optimize Tab Content -->
 
@@ -251,23 +443,74 @@
                                         <h6 class="tab-title">On-page Checklist</h6>
                                         <div class="checklist-area-list">
                                             <ul>
-                                                <li class="verified">Title is optimal length </li>
-                                                <li class="verified">Title includes primary keyword</li>
-                                                <li class="verified">Meta includes primary keyword</li>
-                                                <li class="verified">Meta is optimal length</li>
-                                                <li class="verified">URL includes primary keyword</li>
-                                                <li class="not-verified">1st paragraph includes primary keyword</li>
-                                                <li class="verified">A subheading include primary keyword</li>
-                                                <li class="verified">Primary keyword twice in first 4 paragraphs</li>
-                                                <li class="verified">Featured image + media added</li>
-                                                <li class="verified">Click to Tweet added</li>
-                                                <li class="verified">Periods at end of long list items</li>
-                                                <li class="verified">Paragraphs are 3 sentences or less</li>
-                                                <li class="not-verified">Outbound links exist</li>
-                                                <li class="verified">Featured image + media added</li>
-                                                <li class="not-verified">Placeholder images replaced</li>
-                                                <li class="verified">No images within first/last 3 paragraphs</li>
-                                                <li class="verified">Table of contents in place</li>
+                                                <li class="checklist-item">
+                                                    <i class="bx bx-check"></i>
+                                                    Title is optimal length 
+                                                </li>
+                                                <li class="checklist-item">
+                                                    <i class="bx bx-check"></i>
+                                                    Title includes primary keyword
+                                                </li>
+                                                <li class="checklist-item">
+                                                    <i class="bx bx-check"></i>
+                                                    Meta includes primary keyword
+                                                </li>
+                                                <li class="checklist-item">
+                                                    <i class="bx bx-check"></i>
+                                                    Meta is optimal length
+                                                </li>
+                                                <li class="checklist-item">
+                                                    <i class="bx bx-check"></i>
+                                                    URL includes primary keyword
+                                                </li>
+                                                <li class="checklist-item">
+                                                    <i class="bx bx-x"></i>
+                                                    1st paragraph includes primary keyword
+                                                </li>
+                                                <li class="checklist-item">
+                                                    <i class="bx bx-check"></i>
+                                                    A subheading include primary keyword
+                                                </li>
+                                                <li class="checklist-item">
+                                                    <i class="bx bx-check"></i>
+                                                    Primary keyword twice in first 4 paragraphs
+                                                </li>
+                                                <li class="checklist-item">
+                                                    <i class="bx bx-check"></i>
+                                                    Featured image + media added
+                                                </li>
+                                                <li class="checklist-item">
+                                                    <i class="bx bx-check"></i>
+                                                    Click to Tweet added
+                                                </li>
+                                                <li class="checklist-item">
+                                                    <i class="bx bx-check"></i>
+                                                    Periods at end of long list items
+                                                </li>
+                                                <li class="checklist-item">
+                                                    <i class="bx bx-check"></i>
+                                                    Paragraphs are 3 sentences or less
+                                                </li>
+                                                <li class="checklist-item">
+                                                    <i class="bx bx-x"></i>
+                                                    Outbound links exist
+                                                </li>
+                                                <li class="checklist-item">
+                                                    <i class="bx bx-check"></i>
+                                                    Featured image + media added
+                                                </li>
+                                                <li class="checklist-item">
+                                                    <i class="bx bx-x"></i>
+                                                    Placeholder images replaced
+                                                </li>
+                                                <li class="checklist-item">
+                                                    <i class="bx bx-check"></i>
+                                                    No images within first/last 3 paragraphs
+                                                </li>
+                                                <li class="checklist-item">
+                                                    <i class="bx bx-check"></i>
+                                                    Table of contents in place
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
