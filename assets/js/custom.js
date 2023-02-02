@@ -131,3 +131,16 @@ $(document).ready(function() {
         }
     });
   });
+
+$('.toggleFields').on('click', function(){
+    $(this).hide()
+    $(this).parent().siblings('.showSpanonClick').hide()
+    $(this).parent().siblings('.showFieldonClick').toggle().children('input, textarea').focus();
+})
+
+$('.showFieldonClick input, .showFieldonClick textarea').on('blur', function(){
+    $(this).parent('.showFieldonClick').hide()
+    $(this).parent('.showFieldonClick').parent().children('.showSpanonClick').text($(this).val())
+    $(this).parent('.showFieldonClick').parent().children('.showSpanonClick').show()
+    $(this).parent('.showFieldonClick').parent().children().children('.toggleFields').show()
+})

@@ -1378,7 +1378,7 @@
                         <div class="tab-pane fade show active" id="posts-tab-pane" role="tabpanel"
                             aria-labelledby="posts-tab" tabindex="0">
                             <div class="grid-listing-tabs">
-                                <button class="project-content-btn cs-secondary-btn">
+                                <button class="project-content-btn cs-secondary-btn" data-bs-toggle="modal" data-bs-target="#addContent">
                                     <img src="assets/images/plus.svg" />
                                     Add Content</button>
                                 <ul class="nav nav-tabs" id="gridlisting-tabs" role="tablist">
@@ -2502,6 +2502,55 @@
         </div>
     </div>
     <!-- Keyword Edit Modal -->
+
+     <!-- Add content Modal -->
+     <div class="modal fade" id="addContent" tabindex="-1" aria-labelledby="addContentLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title mt-3" id="addContentLabel">ADD CONTENT</h5>
+            <a href="javascript:void(0)" class="close-modal">
+                <img src="assets/images/close-modal.svg" data-bs-dismiss="modal" aria-label="Close" alt="">
+            </a>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="fields">
+                            <label>What Keyword Do You Want To Rank For?</label>
+                            <div class="input-group">
+                                <input type="text" placeholder="Enter the target keyword here" name="" id="">
+                                <span class="input-group-text">
+                                    <img src="assets/images/attach.svg" alt="">
+                                </span>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="fields">
+                            <label>Words Count</label>
+                            <select class="select2">
+                                <option>2,000 to 3,000 words (Default)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="fields">
+                            <label>Additional Context (Optional)</label>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Talk about how you can do X, the benefits, and what to watch for when doing Y."></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="cs-secondary-btn-outline">Customize</button>
+            <button type="button" class="cs-secondary-btn-outline">Add to Keyword Queue</button>
+            <button type="button" class="cs-secondary-btn">Create Content Now</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Add content Modal -->
 
      <!-- Edit Status -->
      <div class="modal fade" id="editStatus" tabindex="-1" aria-labelledby="editStatus" aria-hidden="true">

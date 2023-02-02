@@ -533,6 +533,11 @@ header .notification-alert {
   min-width: 138px;
   transition: 0.3s;
 }
+.p-btn.rerun-popup {
+  padding: 12px 28px;
+  font-size: 0.8125rem;
+  min-width: 128px;
+}
 
 .p-btn:hover {
   background: #fff800;
@@ -1615,6 +1620,26 @@ button.p-btn:disabled {
   padding: 16px;
   font-size: 0.8125rem;
 }
+.fields .input-group {
+  width: 100%;
+  flex-wrap: nowrap;
+}
+.fields .input-group input {
+  width: 100%;
+}
+.fields .input-group .input-group-text {
+  width: 57px;
+  border: 1px solid #CECECE;
+  border-left: 0;
+  margin: 0 !important;
+  border-radius: 9px !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+.fields .input-group .input-group-text img {
+  width: auto;
+  margin: 0 auto;
+}
 .fields textarea {
   border: 1px solid #CECECE;
   border-radius: 9px;
@@ -2105,6 +2130,24 @@ span.status.active {
 .optimize-info p {
   margin: 0;
 }
+.optimize-info .showFieldonClick {
+  width: 100%;
+}
+.optimize-info .showFieldonClick input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  color: #888888;
+  outline: none;
+}
+.optimize-info .showFieldonClick textarea {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  color: #888888;
+  resize: none;
+  outline: none;
+}
 .optimize-info .stats, .optimize-info .score {
   flex: 1;
 }
@@ -2204,6 +2247,122 @@ span.status.active {
 
 .act-btn button {
   min-width: 160px;
+}
+
+.brief-content .accordion-item {
+  background-color: #1C1C1C;
+  border: 0;
+  border-radius: 9px;
+  overflow: hidden;
+  margin-bottom: 8px;
+  padding: 0 20px;
+}
+.brief-content .accordion-button {
+  padding: 24.6px 0px;
+  color: #E4E4E4;
+  background-color: transparent;
+  border-radius: 0px !important;
+  cursor: pointer;
+  align-items: center;
+  gap: 8px;
+}
+.brief-content .accordion-button:not(.collapsed) {
+  color: #E4E4E4;
+  background-color: transparent;
+  box-shadow: unset;
+}
+.brief-content .accordion-button:focus {
+  border-color: unset;
+  outline: 0;
+  box-shadow: unset;
+}
+.brief-content .accordion-button::after {
+  background-image: url("../images/ac-arrow.svg");
+  width: 6px;
+  height: 12px;
+  transform: unset;
+  background-size: contain;
+}
+.brief-content .accordion-button:not(.collapsed)::after {
+  transform: rotate(90deg);
+}
+.brief-content .accordion-body {
+  padding: 20px 0px;
+  background: transparent;
+  border-top: 1px solid #2F2F2F;
+}
+.brief-content .accordion-body .open-link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 0.875rem;
+  margin-bottom: 20px;
+}
+.brief-content .accordion-body .open-link img {
+  width: 17px;
+}
+.brief-content .accordion-body .sub-accordion .accordion-item {
+  background: #151515;
+  padding: 0;
+}
+.brief-content .accordion-body .sub-accordion .accordion-item .accordion-button {
+  padding: 18px 20px;
+}
+.brief-content .accordion-body .sub-accordion .accordion-item .accordion-body {
+  padding: 10px 20px;
+  border: 0;
+  background: #fff;
+}
+.brief-content .accordion-body .sub-accordion .accordion-item .accordion-body p {
+  font-size: 0.75rem;
+  color: #383838;
+  margin-bottom: 1.5rem;
+}
+.brief-content .accordion-body .sub-accordion .accordion-item .accordion-body p:last-child {
+  margin-bottom: 0;
+}
+
+.return .modal {
+  position: absolute;
+  height: auto;
+  top: 130%;
+  box-shadow: 0px 1px 18px rgba(0, 0, 0, 0.4549019608);
+  z-index: 1;
+}
+.return .modal .modal-dialog {
+  margin: 0;
+  max-width: 100%;
+}
+.return .modal .modal-content {
+  border-radius: 9px;
+  padding: 30px 15px;
+  background: #1C1C1C;
+  border: 1px solid #393939;
+}
+.return .modal .modal-header {
+  padding: 0 20px 20px;
+  margin-bottom: 27px;
+  border-bottom: 1px solid #393939;
+}
+.return .modal .modal-title {
+  color: #FFF700;
+}
+.return .modal .close-modal img {
+  filter: brightness(0) saturate(100%) invert(49%) sepia(11%) saturate(25%) hue-rotate(319deg) brightness(96%) contrast(86%);
+}
+.return .modal .modal-body {
+  padding: 0 20px;
+}
+.return .modal .fields label {
+  color: #fff;
+}
+.return .modal .modal-footer {
+  padding: 13px 20px 0;
+}
+.return .modal .modal-footer button {
+  min-width: 137px;
+  padding: 9px 28px;
+  font-size: 0.875rem;
 }
 
 /* select2 */

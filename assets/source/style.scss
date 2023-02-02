@@ -538,6 +538,12 @@ header .notification-alert {
     font-weight: 600;
     min-width: 138px;
     transition: 0.3s;
+
+    &.rerun-popup {
+        padding: 12px 28px;
+        font-size: 0.8125rem;
+        min-width: 128px;
+    }
 }
 
 .p-btn:hover {
@@ -1667,6 +1673,28 @@ button.p-btn:disabled {
         font-size: 0.8125rem;
     }
 
+    .input-group {
+        width: 100%;
+        flex-wrap: nowrap;
+        input {
+            width: 100%;
+        }
+        .input-group-text {
+            width: 57px;
+            border: 1px solid #CECECE;
+            border-left: 0;
+            margin: 0 !important;
+            border-radius: 9px !important;
+            border-top-left-radius: 0 !important;
+            border-bottom-left-radius: 0 !important;
+
+            img {
+                width: auto;
+                margin:0 auto;
+            }
+        }
+    }
+
     textarea {
         border: 1px solid #CECECE;
         border-radius: 9px;
@@ -2266,6 +2294,25 @@ span.status {
     p {
         margin: 0;
     }
+    .showFieldonClick {
+        width: 100%;
+
+        input {
+            width: 100%;
+            background: transparent;
+            border: 0;
+            color: #888888;
+            outline: none;
+        }
+        textarea {
+            width: 100%;
+            background: transparent;
+            border: 0;
+            color: #888888;
+            resize: none;
+            outline: none;
+        }
+    }
 
     .stats, .score {
         flex: 1;
@@ -2384,6 +2431,142 @@ span.status {
 .act-btn {
     button {
         min-width: 160px;
+    }
+}
+
+.brief-content {
+    .accordion-item {
+        background-color: #1C1C1C;
+        border: 0;
+        border-radius: 9px;
+        overflow: hidden;
+        margin-bottom: 8px;
+        padding: 0 20px;
+    }
+    .accordion-button {
+        padding: 24.6px 0px;
+        color: #E4E4E4;
+        background-color: transparent;
+        border-radius: 0px !important;
+        cursor: pointer;
+        align-items: center;
+        gap: 8px;
+
+        &:not(.collapsed) {
+            color: #E4E4E4;
+            background-color: transparent;
+            box-shadow: unset;
+        }
+
+        &:focus {
+            border-color: unset;
+            outline: 0;
+            box-shadow: unset;
+        }
+
+        &::after {
+            background-image: url('../images/ac-arrow.svg');
+            width: 6px;
+            height: 12px;
+            transform: unset;
+            background-size: contain;
+        }
+
+        &:not(.collapsed)::after {
+            transform: rotate(90deg);
+        }
+    }
+    .accordion-body {
+        padding: 20px 0px;
+        background: transparent;
+        border-top: 1px solid #2F2F2F;
+
+        .open-link {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            font-size: 0.875rem;
+            margin-bottom: 20px;
+
+            img {
+                width: 17px;
+            }
+        }
+
+        .sub-accordion {
+            .accordion-item {
+                background: #151515;
+                padding: 0;
+
+                .accordion-button {
+                    padding: 18px 20px;
+                }
+
+                .accordion-body {
+                    padding: 10px 20px;
+                    border: 0;
+                    background: #fff;
+
+                    p {
+                        font-size: 0.75rem;
+                        color: #383838;
+                        margin-bottom: 1.5rem;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.return {
+    .modal {
+        position: absolute;
+        height: auto;
+        top: 130%;
+        box-shadow: 0px 1px 18px #00000074;
+        z-index: 1;
+
+        .modal-dialog {
+            margin: 0;
+            max-width: 100%;
+        }
+        .modal-content {
+            border-radius: 9px;
+            padding: 30px 15px;
+            background: #1C1C1C;
+            border: 1px solid #393939;
+        }
+        .modal-header {
+            padding: 0 20px 20px;
+            margin-bottom: 27px;
+            border-bottom: 1px solid #393939;
+        }
+        .modal-title {
+            color: #FFF700;
+        }
+        .close-modal {
+            img {
+                filter: brightness(0) saturate(100%) invert(49%) sepia(11%) saturate(25%) hue-rotate(319deg) brightness(96%) contrast(86%);
+            }
+        }
+        .modal-body {
+            padding: 0 20px;
+        }
+        .fields label {
+            color: #fff;
+        }
+        .modal-footer {
+            padding: 13px 20px 0;
+            button {
+                min-width: 137px;
+                padding: 9px 28px;
+                font-size: 0.875rem;
+            }
+        }
     }
 }
 
