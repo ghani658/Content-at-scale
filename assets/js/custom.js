@@ -144,3 +144,53 @@ $('.showFieldonClick input, .showFieldonClick textarea').on('blur', function(){
     $(this).parent('.showFieldonClick').parent().children('.showSpanonClick').show()
     $(this).parent('.showFieldonClick').parent().children().children('.toggleFields').show()
 })
+
+$(".view-all-suspects").click(function () {
+    $(this).addClass('active');
+    $(".remove-all-suspects").removeClass('active');
+});
+
+$(".remove-all-suspects").click(function () {
+    $(this).addClass('active');
+    $(".view-all-suspects").removeClass('active');
+});
+
+//slider Jquery
+
+$prev = '<a href="" class="prev"><img src="assets/images/ac-arrow.svg" alt=""></a>';
+$next = '<a href="" class="next"><img src="assets/images/ac-arrow.svg" alt=""></a>';
+
+$(document).ready(function(){
+    $('.tag-slider').slick({
+        dots: false,
+        infinite: false,
+        speed: 100,
+        slidesToShow: 5,
+        variableWidth: true,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        arrows: true,
+        prevArrow: $prev,
+        nextArrow: $next,
+    });
+    $('.tag-slider2').slick({
+        dots: false,
+        infinite: true,
+        speed: 100,
+        slidesToShow: 1,
+        variableWidth: true,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        arrows: true,
+        prevArrow: $prev,
+        nextArrow: $next,
+    });
+    $(".slides").slick({
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        prevArrow: $prev,
+        nextArrow: $next,
+    });
+});    
