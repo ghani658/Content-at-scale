@@ -194,3 +194,7 @@ $(document).ready(function(){
         nextArrow: $next,
     });
 });    
+
+$('button[data-bs-toggle="pill"]').on('shown.bs.tab', function (e) {
+    $('.slides').slick('setPosition');
+})

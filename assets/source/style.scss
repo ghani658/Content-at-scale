@@ -549,6 +549,10 @@ header .notification-alert {
         font-size: 0.8125rem;
         min-width: 128px;
     }
+    &.text-box{
+        padding: 19px 28px;
+        font-size: 1rem;
+    }
 }
 
 .p-btn:hover {
@@ -1638,6 +1642,33 @@ button.p-btn:disabled {
 
                 .submit {
                     margin-top: 13px;
+                }
+
+                .reset-success {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 0.875rem;
+
+                    img {
+                        width: auto;
+                        margin-bottom: 32px;
+                    }
+
+                    h3 {
+                        font-size: 1.688rem;
+                        margin-bottom: 12px;
+                    }
+                    
+                    span {
+                        margin-bottom: 21px;
+                    }
+
+                    a.submit {
+                        text-align: center;
+                        line-height: 57px;
+                    }
                 }
             }
         }
@@ -2731,6 +2762,7 @@ span.status {
                 justify-content: center;
                 color: #FFFFFF;
                 position: relative;
+                background: #252627;
             }
 
             .timeline-img {
@@ -2802,11 +2834,17 @@ span.status {
             padding: 0 6px;
         }
 
-        .single-image img {
-            height: 116px;
-            object-fit: cover;
+        .single-image {
             margin-bottom: 12px;
-        }
+            background: #1c1c1c;
+            height: 116px;
+            width: 100%;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        } 
     }
 }
 
@@ -2908,6 +2946,69 @@ span.status {
     }
     .tab-content>.active {
         height: auto;
+    }
+}
+.add-text {
+    color: #E4E4E4;
+
+    .listing-text {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .text-category {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 85px;
+            background: #1C1C1C;
+            padding: 0 22px;
+            border-radius: 9px;
+
+            h3, h6 {
+                margin: 0;
+            }
+
+            img {
+                width: auto;
+            }
+
+            small {
+                font-size: 0.75rem;
+            }
+        }
+    }
+}
+.files-tab {
+    .gallery-area .row .single-image {
+        background: #fff;
+        border-radius: 6px;
+
+        img {
+            border-radius: 6px;
+        }
+    }
+    .fields .select2-container--default .select2-selection--single {
+        border: 1px solid #454545;
+        border-radius: 9px;
+        height: 64px;
+        padding: 18px 16px;
+        font-size: 1.125rem;
+        background: #1A1B1C;
+
+        .select2-selection__rendered {
+            color: #fff;
+        }
+
+        .select2-selection__arrow {
+            right: 17px;
+            b {
+                width: 14px;
+                height: 8px;
+                filter: brightness(0) saturate(100%) invert(97%) sepia(97%) saturate(13%) hue-rotate(198deg) brightness(103%) contrast(104%);
+                background-size: cover;
+            }
+        }    
     }
 }
 /* progress bar color */

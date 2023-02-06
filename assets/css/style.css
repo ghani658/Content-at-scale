@@ -541,6 +541,10 @@ header .notification-alert {
   font-size: 0.8125rem;
   min-width: 128px;
 }
+.p-btn.text-box {
+  padding: 19px 28px;
+  font-size: 1rem;
+}
 
 .p-btn:hover {
   background: #fff800;
@@ -1593,6 +1597,28 @@ button.p-btn:disabled {
 .form-fields .form-section .field-area.reset-password .submit {
   margin-top: 13px;
 }
+.form-fields .form-section .field-area.reset-password .reset-success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.875rem;
+}
+.form-fields .form-section .field-area.reset-password .reset-success img {
+  width: auto;
+  margin-bottom: 32px;
+}
+.form-fields .form-section .field-area.reset-password .reset-success h3 {
+  font-size: 1.688rem;
+  margin-bottom: 12px;
+}
+.form-fields .form-section .field-area.reset-password .reset-success span {
+  margin-bottom: 21px;
+}
+.form-fields .form-section .field-area.reset-password .reset-success a.submit {
+  text-align: center;
+  line-height: 57px;
+}
 .form-fields .form-banner {
   flex: 1;
 }
@@ -2506,6 +2532,7 @@ span.status.active {
   justify-content: center;
   color: #FFFFFF;
   position: relative;
+  background: #252627;
 }
 .timeline ul li .timeline-img {
   width: 32px;
@@ -2567,10 +2594,16 @@ span.status.active {
 .gallery-area .row > * {
   padding: 0 6px;
 }
-.gallery-area .row .single-image img {
-  height: 116px;
-  object-fit: cover;
+.gallery-area .row .single-image {
   margin-bottom: 12px;
+  background: #1c1c1c;
+  height: 116px;
+  width: 100%;
+}
+.gallery-area .row .single-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .p-btn.use-unsplash {
@@ -2660,6 +2693,61 @@ span.status.active {
 }
 .tabs-area-main > .tab-content > .active {
   height: auto;
+}
+
+.add-text {
+  color: #E4E4E4;
+}
+.add-text .listing-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.add-text .listing-text .text-category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  background: #1C1C1C;
+  padding: 0 22px;
+  border-radius: 9px;
+}
+.add-text .listing-text .text-category h3, .add-text .listing-text .text-category h6 {
+  margin: 0;
+}
+.add-text .listing-text .text-category img {
+  width: auto;
+}
+.add-text .listing-text .text-category small {
+  font-size: 0.75rem;
+}
+
+.files-tab .gallery-area .row .single-image {
+  background: #fff;
+  border-radius: 6px;
+}
+.files-tab .gallery-area .row .single-image img {
+  border-radius: 6px;
+}
+.files-tab .fields .select2-container--default .select2-selection--single {
+  border: 1px solid #454545;
+  border-radius: 9px;
+  height: 64px;
+  padding: 18px 16px;
+  font-size: 1.125rem;
+  background: #1A1B1C;
+}
+.files-tab .fields .select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #fff;
+}
+.files-tab .fields .select2-container--default .select2-selection--single .select2-selection__arrow {
+  right: 17px;
+}
+.files-tab .fields .select2-container--default .select2-selection--single .select2-selection__arrow b {
+  width: 14px;
+  height: 8px;
+  filter: brightness(0) saturate(100%) invert(97%) sepia(97%) saturate(13%) hue-rotate(198deg) brightness(103%) contrast(104%);
+  background-size: cover;
 }
 
 /* progress bar color */
