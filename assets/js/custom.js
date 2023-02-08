@@ -97,6 +97,14 @@ $(".create-project").click(function () {
     $(".create-project").show();
 });
 
+$(".customize-btn").click(function () {
+    $(".custom-keyword").addClass('keyword-edit');
+});
+
+$(".cancel-customize").click(function () {
+    $(".custom-keyword").removeClass('keyword-edit');
+});
+
 $(document).ready(function() {
     $('.select2').select2();
 
@@ -111,6 +119,11 @@ $(document).ready(function() {
         templateResult: iformat,
         allowHtml: true
     });
+
+    $(".tags-select").select2({
+        tags: true,
+        tokenSeparators: [',', ' ']
+    })
 });
 
 function togglePasswordVisibility($pw, on) {
@@ -197,4 +210,18 @@ $(document).ready(function(){
 
 $('button[data-bs-toggle="pill"]').on('shown.bs.tab', function (e) {
     $('.slides').slick('setPosition');
+})
+
+$('input[type=file]').change(function () {
+    fileCount = this.files.length;
+    if(fileCount){
+        $('#selectColumns').modal('show');
+        $('#keywordUpload').modal('hide');
+        $('#addContent').modal('hide');
+    }
+});
+
+$('.edit-text a').on('click', function(){
+    $(this).parent().parent().hide();
+    $(this).parent().parent().siblings('.edit-fields').show();
 })

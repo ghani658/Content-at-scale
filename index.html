@@ -2110,6 +2110,14 @@
                                         Post Automations
                                     </button>
                                     <!--Post Automation Tab Button-->
+                                    <!--Post status Tab Button-->
+                                    <button class="nav-link" id="status-tab" data-bs-toggle="pill"
+                                    data-bs-target="#status-pill" type="button" role="tab"
+                                    aria-controls="status-pill" aria-selected="false">
+                                    <span><img src="assets/images/post-status.svg" /></span>
+                                    Post status
+                                </button>
+                                <!--Post Automation Tab Button-->
                                     <!--Call To Action Tab Button-->
                                     <button class="nav-link" id="action-tab" data-bs-toggle="pill"
                                         data-bs-target="#action-pill" type="button" role="tab"
@@ -2323,6 +2331,39 @@
                                     </div>
                                 </div>
                                 <!--Automations tab Content-->
+                                <!-- Post status tab  -->
+                                <div class="tab-pane fade" id="status-pill" role="tabpanel"
+                                    aria-labelledby="status-tab" tabindex="0">
+                                    <h6 class="tab-title m-0 mt-2 mb-4">Post Status</h6>
+                                    <div class="automation-feilds mb-4">
+                                        <label>
+                                            Select Available Post Status 
+                                            <a href="javascript:void(0)">
+                                                <img src="assets/images/info-button.svg" class="info-btn" alt="">
+                                            </a>
+                                        </label>
+                                        <div class="select2-wrapper">
+                                            <select class="tags-select" multiple="multiple" style="width: 100%;">
+                                                <option selected="selected">Publish</option>
+                                                <option selected="selected">Pending Editing</option>
+                                              </select>
+                                        </div>
+                                    </div>
+                                    <div class="automation-feilds">
+                                        <label>
+                                            Default Post Status Upon AI Completion
+                                            <a href="javascript:void(0)">
+                                                <img src="assets/images/info-button.svg" class="info-btn" alt="">
+                                            </a>
+                                        </label>
+                                        <div class="select2-wrapper">
+                                            <select class="select2">
+                                                <option>Pending Editing</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Post status tab  -->
                                 <!--Call to Action tab Content-->
                                 <div class="tab-pane fade" id="action-pill" role="tabpanel" aria-labelledby="action-tab"
                                     tabindex="0">
@@ -2461,44 +2502,308 @@
     
     <!-- Modals -->
     <!-- Keyword Edit Modal -->
-    <div class="modal fade" id="keywordEdit" tabindex="-1" aria-labelledby="keywordEditLabel" aria-hidden="true">
+    <div class="modal fade custom-keyword" id="keywordEdit" tabindex="-1" aria-labelledby="keywordEditLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title mt-3" id="keywordEditLabel">KEYWORD EDIT</h5>
-            <a href="javascript:void(0)" class="close-modal">
-                <img src="assets/images/close-modal.svg" data-bs-dismiss="modal" aria-label="Close" alt="">
-            </a>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="fields">
-                            <label>What Keyword Do You Want To Rank For?</label>
-                            <input type="text" placeholder="Double Diamond" name="" id="">
+            <div class="keyword-modal modal-content">
+                <div class="customize">
+                    <div class="modal-header">
+                        <h5 class="modal-title mt-3" id="addContentLabel">CUSTOMIZED BRIEF</h5>
+                        <div class="header-action mt-3">
+                            <a href="javascript:void(0)">
+                                <img src="assets/images/refresh-custom.svg" alt="">
+                            </a>
+                            <a href="javascript:void(0)" data-bs-target="#customHeading" data-bs-toggle="modal">
+                                <img src="assets/images/plus-custom.svg" alt="">
+                            </a>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="fields">
-                            <label>Words Count</label>
-                            <select>
-                                <option>2,000 to 3,000 words (Default)</option>
-                            </select>
+                    <div class="customize-list">
+                        <div class="accordion" id="customizeaccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingCollapse0">
+                                    <span class="custom-txt">
+                                        <div class="custom-action">
+                                            <a href="javascript:void(0)">
+                                                <img src="assets/images/drag.svg" alt="">
+                                            </a>
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+                                        <span class="accordion-button collapsed brief-section" data-bs-toggle="collapse" data-bs-target="#collapse0" aria-expanded="false" aria-controls="collapse0">
+                                            Introduction: A brief encounter with Bauhaus
+                                        </span>
+                                    </span>
+                                </h2>
+                                <div id="collapse0" class="accordion-collapse collapse" aria-labelledby="headingCollapse0" data-bs-parent="#customizeaccordion">
+                                    <div class="accordion-body">
+                                        <div class="custom-detail">
+                                            <p>
+                                                Learn how the Bauhaus Movement influenced design history with its emphasis on theory and practice as taught by the masters. Then we’re using on a daily basis.
+                                            </p>
+                                            <div class="edit-text">
+                                                <a href="javascript:void(0)">
+                                                    <img src="assets/images/edit-icon-dark.svg"> Edit
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="edit-fields" style="display: none;" >
+                                            <div class="fields">
+                                                <label>Title</label>
+                                                <input type="text" placeholder="Title" name="" id="">
+                                            </div>
+                                            <div class="fields">
+                                                <label>Context</label>
+                                                <textarea name="" id="" cols="30" rows="10" placeholder="Context"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingCollapse1">
+                                    <span class="custom-txt">
+                                        <div class="custom-action">
+                                            <a href="javascript:void(0)">
+                                                <img src="assets/images/drag.svg" alt="">
+                                            </a>
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+                                        <span class="accordion-button collapsed brief-section" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                            Bauhaus Revolution: Why it made a difference?
+                                        </span>
+                                    </span>
+                                </h2>
+                                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="headingCollapse1" data-bs-parent="#customizeaccordion">
+                                    <div class="accordion-body">
+                                        <div class="custom-detail">
+                                            <p>
+                                                Learn how the Bauhaus Movement influenced design history with its emphasis on theory and practice as taught by the masters. Then we’re using on a daily basis.
+                                            </p>
+                                            <div class="edit-text">
+                                                <a href="javascript:void(0)">
+                                                    <img src="assets/images/edit-icon-dark.svg"> Edit
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="edit-fields" style="display: none;" >
+                                            <div class="fields">
+                                                <label>Title</label>
+                                                <input type="text" placeholder="Title" name="" id="">
+                                            </div>
+                                            <div class="fields">
+                                                <label>Context</label>
+                                                <textarea name="" id="" cols="30" rows="10" placeholder="Context"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingCollapse3">
+                                    <span class="custom-txt">
+                                        <div class="custom-action">
+                                            <a href="javascript:void(0)">
+                                                <img src="assets/images/drag.svg" alt="">
+                                            </a>
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+                                        <span class="accordion-button collapsed brief-section" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                            Dezeen’s Bauhaus series explores the enduring influence of the school
+                                        </span>
+                                    </span>
+                                </h2>
+                                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="headingCollapse3" data-bs-parent="#customizeaccordion">
+                                    <div class="accordion-body">
+                                        <div class="custom-detail">
+                                            <p>
+                                                Learn how the Bauhaus Movement influenced design history with its emphasis on theory and practice as taught by the masters. Then we’re using on a daily basis.
+                                            </p>
+                                            <div class="edit-text">
+                                                <a href="javascript:void(0)">
+                                                    <img src="assets/images/edit-icon-dark.svg"> Edit
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="edit-fields" style="display: none;" >
+                                            <div class="fields">
+                                                <label>Title</label>
+                                                <input type="text" placeholder="Title" name="" id="">
+                                            </div>
+                                            <div class="fields">
+                                                <label>Context</label>
+                                                <textarea name="" id="" cols="30" rows="10" placeholder="Context"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingCollapse4">
+                                    <span class="custom-txt">
+                                        <div class="custom-action">
+                                            <a href="javascript:void(0)">
+                                                <img src="assets/images/drag.svg" alt="">
+                                            </a>
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+                                        <span class="accordion-button collapsed brief-section" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                            Introduction: A brief encounter with Bauhaus
+                                        </span>
+                                    </span>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="headingCollapse4" data-bs-parent="#customizeaccordion">
+                                    <div class="accordion-body">
+                                        <div class="custom-detail">
+                                            <p>
+                                                Learn how the Bauhaus Movement influenced design history with its emphasis on theory and practice as taught by the masters. Then we’re using on a daily basis.
+                                            </p>
+                                            <div class="edit-text">
+                                                <a href="javascript:void(0)">
+                                                    <img src="assets/images/edit-icon-dark.svg"> Edit
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="edit-fields" style="display: none;" >
+                                            <div class="fields">
+                                                <label>Title</label>
+                                                <input type="text" placeholder="Title" name="" id="">
+                                            </div>
+                                            <div class="fields">
+                                                <label>Context</label>
+                                                <textarea name="" id="" cols="30" rows="10" placeholder="Context"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingCollapse5">
+                                    <span class="custom-txt">
+                                        <div class="custom-action">
+                                            <a href="javascript:void(0)">
+                                                <img src="assets/images/drag.svg" alt="">
+                                            </a>
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+                                        <span class="accordion-button collapsed brief-section" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                            Bauhaus Revolution: Why it made a difference?
+                                        </span>
+                                    </span>
+                                </h2>
+                                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="headingCollapse5" data-bs-parent="#customizeaccordion">
+                                    <div class="accordion-body">
+                                        <div class="custom-detail">
+                                            <p>
+                                                Learn how the Bauhaus Movement influenced design history with its emphasis on theory and practice as taught by the masters. Then we’re using on a daily basis.
+                                            </p>
+                                            <div class="edit-text">
+                                                <a href="javascript:void(0)">
+                                                    <img src="assets/images/edit-icon-dark.svg"> Edit
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="edit-fields" style="display: none;" >
+                                            <div class="fields">
+                                                <label>Title</label>
+                                                <input type="text" placeholder="Title" name="" id="">
+                                            </div>
+                                            <div class="fields">
+                                                <label>Context</label>
+                                                <textarea name="" id="" cols="30" rows="10" placeholder="Context"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingCollapse6">
+                                    <span class="custom-txt">
+                                        <div class="custom-action">
+                                            <a href="javascript:void(0)">
+                                                <img src="assets/images/drag.svg" alt="">
+                                            </a>
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+                                        <span class="accordion-button collapsed brief-section" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                            Dezeen’s Bauhaus series explores the enduring influence of the school
+                                        </span>
+                                    </span>
+                                </h2>
+                                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="headingCollapse6" data-bs-parent="#customizeaccordion">
+                                    <div class="accordion-body">
+                                        <div class="custom-detail">
+                                            <p>
+                                                Learn how the Bauhaus Movement influenced design history with its emphasis on theory and practice as taught by the masters. Then we’re using on a daily basis.
+                                            </p>
+                                            <div class="edit-text">
+                                                <a href="javascript:void(0)">
+                                                    <img src="assets/images/edit-icon-dark.svg"> Edit
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="edit-fields" style="display: none;" >
+                                            <div class="fields">
+                                                <label>Title</label>
+                                                <input type="text" placeholder="Title" name="" id="">
+                                            </div>
+                                            <div class="fields">
+                                                <label>Context</label>
+                                                <textarea name="" id="" cols="30" rows="10" placeholder="Context"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-12">
-                        <div class="fields">
-                            <label>Additional Context (Optional)</label>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Additional Context (Optional)"></textarea>
+                    <div class="cutomize-footer">
+                        <button type="button" class="cs-secondary-btn-outline">
+                            <img src="assets/images/close-modal.svg">
+                            Remove
+                        </button>
+                        <button type="button" class="cs-secondary-btn-outline cancel-customize">Cancel</button>
+                        <button type="button" class="cs-secondary-btn">Save</button>
+
+                    </div>
+                </div>
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title mt-3" id="keywordEditLabel">KEYWORD EDIT</h5>
+                    <a href="javascript:void(0)" class="close-modal">
+                        <img src="assets/images/close-modal.svg" data-bs-dismiss="modal" aria-label="Close" alt="">
+                    </a>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="fields">
+                                    <label>What Keyword Do You Want To Rank For?</label>
+                                    <input type="text" placeholder="Double Diamond" name="" id="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="fields">
+                                    <label>Words Count</label>
+                                    <select>
+                                        <option>2,000 to 3,000 words (Default)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="fields">
+                                    <label>Additional Context (Optional)</label>
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="Additional Context (Optional)"></textarea>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="cs-secondary-btn-outline customize-btn">Customize</button>
+                    <button type="button" class="cs-secondary-btn">Update Kewydord</button>
                     </div>
                 </div>
             </div>
-            <div class="modal-footer">
-            <button type="button" class="cs-secondary-btn-outline">Customize</button>
-            <button type="button" class="cs-secondary-btn">Update Kewydord</button>
-            </div>
-        </div>
         </div>
     </div>
     <!-- Keyword Edit Modal -->
@@ -2506,51 +2811,136 @@
      <!-- Add content Modal -->
      <div class="modal fade" id="addContent" tabindex="-1" aria-labelledby="addContentLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title mt-3" id="addContentLabel">ADD CONTENT</h5>
-            <a href="javascript:void(0)" class="close-modal">
-                <img src="assets/images/close-modal.svg" data-bs-dismiss="modal" aria-label="Close" alt="">
-            </a>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="fields">
-                            <label>What Keyword Do You Want To Rank For?</label>
-                            <div class="input-group">
-                                <input type="text" placeholder="Enter the target keyword here" name="" id="">
-                                <span class="input-group-text">
-                                    <img src="assets/images/attach.svg" alt="">
-                                </span>
-                              </div>
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title mt-3" id="addContentLabel">ADD CONTENT</h5>
+                <a href="javascript:void(0)" class="close-modal">
+                    <img src="assets/images/close-modal.svg" data-bs-dismiss="modal" aria-label="Close" alt="">
+                </a>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="fields">
+                                <label>What Keyword Do You Want To Rank For?</label>
+                                <div class="input-group">
+                                    <input type="text" placeholder="Enter the target keyword here" name="" id="">
+                                    <span class="input-group-text">
+                                        <img src="assets/images/attach.svg" alt="">
+                                    </span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="fields">
-                            <label>Words Count</label>
-                            <select class="select2">
-                                <option>2,000 to 3,000 words (Default)</option>
-                            </select>
+                        <div class="col-lg-6">
+                            <div class="fields">
+                                <label>Words Count</label>
+                                <select class="select2">
+                                    <option>2,000 to 3,000 words (Default)</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="fields">
-                            <label>Additional Context (Optional)</label>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Talk about how you can do X, the benefits, and what to watch for when doing Y."></textarea>
+                        <div class="col-lg-12">
+                            <div class="fields">
+                                <label>Additional Context (Optional)</label>
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Talk about how you can do X, the benefits, and what to watch for when doing Y."></textarea>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="modal-footer">
+                <button type="button" class="cs-secondary-btn-outline">Customize</button>
+                <button type="button" class="cs-secondary-btn-outline" data-bs-toggle="modal" data-bs-target="#keywordUpload">Add to Keyword Queue</button>
+                <button type="button" class="cs-secondary-btn">Create Content Now</button>
+                </div>
             </div>
-            <div class="modal-footer">
-            <button type="button" class="cs-secondary-btn-outline">Customize</button>
-            <button type="button" class="cs-secondary-btn-outline">Add to Keyword Queue</button>
-            <button type="button" class="cs-secondary-btn">Create Content Now</button>
-            </div>
-        </div>
         </div>
     </div>
     <!-- Add content Modal -->
+
+    <!-- Bulk keyword upload -->
+    <div class="modal fade import-keyword" id="keywordUpload" tabindex="-1" aria-labelledby="keywordUploadLabel" aria-hidden="true">
+        <!-- <div class="modal-backdrop fade show"></div> -->
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title mt-3" id="keywordUploadLabel">BULK KEYWORD UPLOAD</h5>
+                <a href="javascript:void(0)" class="close-modal">
+                    <img src="assets/images/close-modal.svg" data-bs-dismiss="modal" aria-label="Close" alt="">
+                </a>
+                </div>
+                <div class="modal-body">
+                    <div class="fields mb-3">
+                        <label>Import Multiple Keywords In Bulk</label>
+                        <div class="input-group browse">
+                            <input type="text" disabled placeholder="Choose A CVS Fıle" name="" id="">
+                            <span class="input-group-text position-relative">
+                                <input type="file" name="" id="">
+                                Browse
+                            </span>
+                        </div>
+                    </div>
+                    <span class="note-text">*A new post is created for each keyword.</span>
+                    <div class="notes">
+                        <h6>Please Note:</h6>
+                        <ul>
+                            <li>
+                                All keywords will be added to the Keywords tab within the project. 
+                            </li>
+                            <li>
+                                You can add context for each keyword in it’s own column, or you can add it later from the Keywords tab.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bulk keyword upload -->
+
+     <!-- SELECT COLUMNS Modal -->
+     <div class="modal fade select-column" id="selectColumns" tabindex="-1" aria-labelledby="selectColumnsLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title mt-3" id="selectColumnsLabel">SELECT COLUMNS</h5>
+                <a href="javascript:void(0)" class="close-modal">
+                    <img src="assets/images/close-modal.svg" data-bs-dismiss="modal" aria-label="Close" alt="">
+                </a>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-5">
+                        We attempt to automatically match Keywords and Context (if any) columns. You can always add Contextlater from the Keywords tab. Context later from the Keywords tabi
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="fields">
+                                <label>Keyword Column <span class="text-danger">(required)</span></label>
+                                <select class="select2">
+                                    <option>Comparison between Maya and Blender</option>
+                                </select>
+                            </div>
+                            <div class="fields">
+                                <label>Context Column (optional)</label>
+                                <select class="select2">
+                                    <option>Context Column</option>
+                                </select>
+                            </div>
+                            <div class="fields">
+                                <label>Title (optional)</label>
+                                <select class="select2">
+                                    <option>Title</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="cs-secondary-btn">Add to Keyword Queue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SELECT COLUMNS Modal -->
 
      <!-- Edit Status -->
      <div class="modal fade" id="editStatus" tabindex="-1" aria-labelledby="editStatus" aria-hidden="true">
@@ -2581,6 +2971,35 @@
         </div>
     </div>
     <!-- Edit Status -->
+
+    <!-- ADD CUSTOM HEADING -->
+    <div class="modal fade" id="customHeading" tabindex="-1" aria-labelledby="customHeading" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="customHeading">ADD CUSTOM HEADING</h5>
+            <a href="javascript:void(0)" class="close-modal">
+                <img src="assets/images/close-modal.svg" data-bs-dismiss="modal" aria-label="Close" alt="">
+            </a>
+            </div>
+            <div class="modal-body">
+                <div class="fields">
+                    <label>Heading</label>
+                    <input type="text" placeholder="Add Custom Heading" name="" id="">
+                    <small>Add Custom heading and we will add content for it.</small>
+                </div>
+                <div class="fields">
+                    <label>Additional Context (Optional)</label>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Talk about how you can do X, the benefits, and what to watch for when doing Y."></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="cs-secondary-btn">Add Heading</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- ADD CUSTOM HEADING -->
 
 
 
