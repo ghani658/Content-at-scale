@@ -225,3 +225,10 @@ $('.edit-text a').on('click', function(){
     $(this).parent().parent().hide();
     $(this).parent().parent().siblings('.edit-fields').show();
 })
+$('.plans-listing a').on('click', function(){
+    $(".plans-listing a").removeClass('active');
+    $(this).addClass('active');
+})
+$('#sync-wordPress').change(function () {                
+    $('.wp-status').toggle(this.checked);
+}).change();
