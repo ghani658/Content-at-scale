@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53">
+  <g id="Group_1335" data-name="Group 1335" transform="translate(-708 -213)">
+    <g id="Ellipse_903" data-name="Ellipse 903" transform="translate(708 213)" fill="#fff800" stroke="#fff" stroke-width="1">
+      <circle cx="26.5" cy="26.5" r="26.5" stroke="none"/>
+      <circle cx="26.5" cy="26.5" r="26" fill="none"/>
+    </g>
+    <path id="time-add-svgrepo-com" d="M28.127,22.012h-3.67v-3.67a1.223,1.223,0,0,0-2.446,0v3.67h-3.67a1.223,1.223,0,0,0,0,2.446h3.67v3.67a1.223,1.223,0,1,0,2.446,0v-3.67h3.67a1.223,1.223,0,1,0,0-2.446ZM13.449,8.557v5.609l-3.311,3.311a1.223,1.223,0,1,0,1.73,1.73l3.669-3.67a1.223,1.223,0,0,0,.358-.865V8.557a1.223,1.223,0,0,0-2.446,0Zm4.56,17.888a12.213,12.213,0,1,1,8.44-8.434,1.223,1.223,0,1,0,2.353.663A14.665,14.665,0,1,0,18.68,28.8a1.223,1.223,0,1,0-.665-2.353Z" transform="translate(719.975 224.626)" stroke="#fff800" stroke-width="1"/>
+  </g>
+</svg>

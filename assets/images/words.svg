@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53">
+  <g id="Group_1332" data-name="Group 1332" transform="translate(-442 -213)">
+    <g id="Ellipse_902" data-name="Ellipse 902" transform="translate(442 213)" fill="#fff800" stroke="#fff" stroke-width="1">
+      <circle cx="26.5" cy="26.5" r="26.5" stroke="none"/>
+      <circle cx="26.5" cy="26.5" r="26" fill="none"/>
+    </g>
+    <g id="Group_1331" data-name="Group 1331" transform="translate(-2 -22)">
+      <g id="layer17" transform="translate(465.231 256.525)">
+        <path id="path13016" d="M3.957,2.966a.572.572,0,1,0,0,1.144h8.949a.572.572,0,1,0,0-1.144Zm0,3.589a.573.573,0,0,0,0,1.146h6.653a.573.573,0,1,0,0-1.146ZM4.006,10.1a.573.573,0,0,0,0,1.146H7.121a.573.573,0,0,0,0-1.146Zm5.2,0a.573.573,0,0,0,0,1.146h4.608a.573.573,0,0,0,0-1.146ZM4.055,13.733a.572.572,0,1,0,0,1.144h7.37a.572.572,0,1,0,0-1.144Z" transform="translate(-3.385 -2.966)"/>
+      </g>
+      <g id="refresh-svgrepo-com" transform="translate(457 248)">
+        <path id="Path_1071" data-name="Path 1071" d="M19.557,29.518A13.99,13.99,0,0,0,15.99,2C6.659,2,2,9.778,2,9.778m0,0V3.4M2,9.778H8.211" transform="translate(-2 -2)" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Path_1072" data-name="Path 1072" d="M2,12A14,14,0,0,0,15.99,25.99" transform="translate(-2 1.99)" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke-dasharray="3 3"/>
+      </g>
+    </g>
+  </g>
+</svg>

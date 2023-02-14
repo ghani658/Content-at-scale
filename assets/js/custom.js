@@ -232,3 +232,192 @@ $('.plans-listing a').on('click', function(){
 $('#sync-wordPress').change(function () {                
     $('.wp-status').toggle(this.checked);
 }).change();
+
+$(document).ready(function () {
+    $('.datepicker').datepicker();
+});
+
+// Chart js 
+
+// chart 1 
+
+var options = {
+  series: [{
+  name: 'series1',
+  data: [31, 40, 28, 51, 42, 109, 100]
+}, {
+  name: 'series2',
+  data: [11, 32, 45, 32, 34, 52, 41]
+}],
+  chart: {
+  height: 350,
+  type: 'area',
+  toolbar: {
+      show: false
+  }
+},
+colors: ["#F7C02B", "#674EF2"],
+dataLabels: {
+  enabled: false
+},
+stroke: {
+  curve: 'smooth'
+},
+xaxis: {
+  type: 'datetime',
+  categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+},
+tooltip: {
+  x: {
+    format: 'dd/MM/yy HH:mm'
+  },
+},
+};
+  
+  var chart = new ApexCharts(document.querySelector("#chart"), options);
+  
+  chart.render();
+
+//   chart 2
+
+var options = {
+    series: [{
+    data: [21, 22, 10, 21, 22, 10]
+  }],
+    chart: {
+    height: 75,
+    type: 'bar',
+    events: {
+      click: function(chart, w, e) {
+        // console.log(chart, w, e)
+      }
+    },
+    toolbar: {
+        show: false
+    }
+  },
+  colors: ["#FFE59D", "#FFE59D"],
+  plotOptions: {
+    bar: {
+      columnWidth: '35%',
+      distributed: true,
+    }
+  },
+  dataLabels: {
+    enabled: false
+  },
+  legend: {
+    show: false
+  },
+  grid: {
+    show: false, 
+    xaxis: {
+      lines: {
+        show: false
+       }
+     },  
+    yaxis: {
+      lines: { 
+        show: false
+       }
+     },   
+  },
+  xaxis: {
+    categories: [
+      ['John', 'Doe'],
+      ['Joe', 'Smith'],
+      ['Jake', 'Williams'],
+    ],
+    labels: {
+      show: false,  
+      style: {
+        colors: ["#FF1654", "#247BA0"],
+        fontSize: '12px'
+      }
+    }
+  },
+  yaxis: {
+    labels: {
+        show: false, 
+    }
+  }
+  };
+
+  var chart = new ApexCharts(document.querySelector("#line-chart"), options);
+  var chart2 = new ApexCharts(document.querySelector("#line-chart2"), options);
+  var chart3 = new ApexCharts(document.querySelector("#line-chart3"), options);
+  var chart4 = new ApexCharts(document.querySelector("#line-chart4"), options);
+  var chart5 = new ApexCharts(document.querySelector("#line-chart5"), options);
+  var chart6 = new ApexCharts(document.querySelector("#line-chart6"), options);
+  chart.render();
+  chart2.render();
+  chart3.render();
+  chart4.render();
+  chart5.render();
+  chart6.render();
+
+  // chart 3 
+
+      
+  var options = {
+    series: [ {
+    name: 'series2',
+    data: [32, 12, 35, 22, 37, 20, 31]
+  }],
+    chart: {
+    height: 30,
+    type: 'area',
+    toolbar: {
+      show: false
+    },
+    sparkline: {
+      enabled: true,
+    }
+  },
+  dataLabels: {
+    enabled: false
+  },
+  stroke: {
+    curve: 'smooth'
+  },
+  colors: ["#22D5C0"],
+  tooltip: {
+    x: {
+      format: 'dd/MM/yy HH:mm'
+    },
+  },
+  grid: {
+    show: false, 
+    xaxis: {
+      lines: {
+        show: false
+       }
+     },  
+    yaxis: {
+      lines: { 
+        show: false
+       }
+     },   
+  },
+  yaxis: {
+    labels: {
+        show: false, 
+    }
+  },
+  xaxis: {
+    labels: {
+        show: false, 
+    }
+  }
+  };
+
+  var chart = new ApexCharts(document.querySelector("#leaderboard"), options);
+  var chart2 = new ApexCharts(document.querySelector("#leaderboard2"), options);
+  var chart3 = new ApexCharts(document.querySelector("#leaderboard3"), options);
+  var chart4 = new ApexCharts(document.querySelector("#leaderboard4"), options);
+  var chart5 = new ApexCharts(document.querySelector("#leaderboard5"), options);
+  chart.render();
+  chart2.render();
+  chart3.render();
+  chart4.render();
+  chart5.render();

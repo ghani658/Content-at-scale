@@ -3352,6 +3352,172 @@ span.status.active {
 }
 
 /* Post status screen */
+/* Dashboard screen */
+.filter-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filter-area h1 {
+  font-size: 2.25rem;
+  font-weight: normal;
+  color: #171616;
+}
+.filter-area .filter-fields {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.filter-area .filter-fields input.date-fielld {
+  padding-left: 40px !important;
+}
+.filter-area .filter-fields .fields {
+  margin-bottom: 0;
+}
+.filter-area .filter-fields .fields .datepicker {
+  padding: 0;
+}
+.filter-area .filter-fields .fields input, .filter-area .filter-fields .fields select {
+  position: relative;
+  min-width: 260px;
+  height: 47px;
+  padding: 10px;
+  border: 1px solid #E8E8E8;
+  border-radius: 6px !important;
+}
+.filter-area .filter-fields .calender-icon {
+  position: absolute;
+  left: 15px;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.filter-area .filter-fields .calender-icon img {
+  width: 17px;
+}
+.filter-area .filter-fields .cs-secondary-btn, .filter-area .filter-fields .cs-secondary-btn-outline {
+  padding: 10px 18px;
+  height: 47px;
+}
+
+.dashboard .cards-listing .card {
+  background: #fff;
+}
+.dashboard .cards-listing .card .card-title sub {
+  bottom: 0;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+.dashboard .card-box {
+  background: #fff;
+}
+.dashboard .extra-info {
+  display: flex;
+  justify-content: space-between;
+}
+.dashboard .extra-info .info-data {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+.dashboard .extra-info .info-data h1 {
+  font-size: 3rem;
+}
+.dashboard .extra-info .graph {
+  width: 62%;
+}
+
+.stage {
+  display: flex;
+  justify-content: space-between;
+}
+.stage .fields select {
+  height: 28px;
+  padding: 0 6px;
+  border-radius: 99px;
+}
+
+.stage-list ul {
+  padding: 0;
+  margin: 0;
+}
+.stage-list ul li {
+  display: flex;
+  justify-content: space-between;
+  color: #0A1429;
+  font-weight: 600;
+  padding-bottom: 16.5px;
+  border-bottom: 1px solid #D3D3D3;
+  margin-bottom: 16.5px;
+}
+.stage-list ul li:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+.stage-list ul li .stage-label {
+  display: flex;
+  gap: 9px;
+  font-size: 0.875rem;
+  align-items: center;
+}
+.stage-list ul li .stage-label img {
+  width: 21px;
+}
+.stage-list ul li .total-post {
+  background: #FFF4F0;
+  color: #FF4C17;
+  font-size: 0.875rem;
+  padding: 5px;
+  margin-right: 13px;
+}
+
+.leader-bord-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 15px;
+}
+.leader-bord-list .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.leader-bord-list .user img {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.leader-bord-list .user .user-name {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.875rem;
+}
+.leader-bord-list .score {
+  min-width: 59px;
+  height: 33px;
+  border: 1px solid #CCCCCC;
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #171616;
+  font-weight: 600;
+  padding: 3px;
+}
+.leader-bord-list .chart {
+  width: 40%;
+}
+.leader-bord-list:nth-child(2n) {
+  background: #F7F7F7;
+}
+
+.sub-heading.leader {
+  padding: 1.625rem;
+}
+
+/* Dashboard screen */
 /* progress bar color */
 .progress-bar-success .progress-bar {
   background-color: #4EF2B9;
