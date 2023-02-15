@@ -776,9 +776,301 @@
                                                             </div>
                                                         </div>
                                                         <div class="modal-footer">
-                                                        <button type="button" class="p-btn" data-bs-dismiss="modal" aria-label="Close" >Customize</button>
+                                                        <button type="button" class="p-btn" id="open-customize" >Customize</button>
                                                         <button type="button" class="p-btn p-btn-bg">Rerun Post</button>
                                                         </div>
+                                                        <!-- customize breif section  -->
+                                                        <div class="customize customizion-brief" style="display: none;">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title">CUSTOMIZED BRIEF</h5>
+                                                                <div class="header-action">
+                                                                    <a href="javascript:void(0)">
+                                                                        <img src="assets/images/refresh-custom.svg" alt="">
+                                                                    </a>
+                                                                    <a href="javascript:void(0)" data-bs-target="#customHeading_s" data-bs-toggle="modal">
+                                                                        <img src="assets/images/plus-custom.svg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="customize-list">
+                                                                <div class="accordion" id="customizeaccordion">
+                                                                    <div class="accordion-item">
+                                                                        <h2 class="accordion-header" id="headingCollapse0">
+                                                                            <span class="custom-txt">
+                                                                                <div class="custom-action">
+                                                                                    <a href="javascript:void(0)">
+                                                                                        <img src="assets/images/drag.svg" alt="">
+                                                                                    </a>
+                                                                                    <input type="checkbox" name="" id="">
+                                                                                </div>
+                                                                                <span class="accordion-button collapsed brief-section" data-bs-toggle="collapse" data-bs-target="#collapse0" aria-expanded="false" aria-controls="collapse0">
+                                                                                    Introduction: A brief encounter with Bauhaus
+                                                                                </span>
+                                                                            </span>
+                                                                        </h2>
+                                                                        <div id="collapse0" class="accordion-collapse collapse" aria-labelledby="headingCollapse0" data-bs-parent="#customizeaccordion">
+                                                                            <div class="accordion-body">
+                                                                                <div class="custom-detail">
+                                                                                    <p>
+                                                                                        Learn how the Bauhaus Movement influenced design history with its emphasis on theory and practice as taught by the masters. Then we’re using on a daily basis.
+                                                                                    </p>
+                                                                                    <div class="edit-text">
+                                                                                        <a href="javascript:void(0)">
+                                                                                            <img src="assets/images/edit-icon-dark.svg"> Edit
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="edit-fields" style="display: none;" >
+                                                                                    <div class="fields">
+                                                                                        <label>Title</label>
+                                                                                        <input type="text" placeholder="Title" name="" id="">
+                                                                                    </div>
+                                                                                    <div class="fields">
+                                                                                        <label>Context</label>
+                                                                                        <textarea name="" id="" cols="30" rows="10" placeholder="Context"></textarea>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="accordion-item">
+                                                                        <h2 class="accordion-header" id="headingCollapse1">
+                                                                            <span class="custom-txt">
+                                                                                <div class="custom-action">
+                                                                                    <a href="javascript:void(0)">
+                                                                                        <img src="assets/images/drag.svg" alt="">
+                                                                                    </a>
+                                                                                    <input type="checkbox" name="" id="">
+                                                                                </div>
+                                                                                <span class="accordion-button collapsed brief-section" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                                                                    Bauhaus Revolution: Why it made a difference?
+                                                                                </span>
+                                                                            </span>
+                                                                        </h2>
+                                                                        <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="headingCollapse1" data-bs-parent="#customizeaccordion">
+                                                                            <div class="accordion-body">
+                                                                                <div class="custom-detail">
+                                                                                    <p>
+                                                                                        Learn how the Bauhaus Movement influenced design history with its emphasis on theory and practice as taught by the masters. Then we’re using on a daily basis.
+                                                                                    </p>
+                                                                                    <div class="edit-text">
+                                                                                        <a href="javascript:void(0)">
+                                                                                            <img src="assets/images/edit-icon-dark.svg"> Edit
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="edit-fields" style="display: none;" >
+                                                                                    <div class="fields">
+                                                                                        <label>Title</label>
+                                                                                        <input type="text" placeholder="Title" name="" id="">
+                                                                                    </div>
+                                                                                    <div class="fields">
+                                                                                        <label>Context</label>
+                                                                                        <textarea name="" id="" cols="30" rows="10" placeholder="Context"></textarea>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="accordion-item">
+                                                                        <h2 class="accordion-header" id="headingCollapse3">
+                                                                            <span class="custom-txt">
+                                                                                <div class="custom-action">
+                                                                                    <a href="javascript:void(0)">
+                                                                                        <img src="assets/images/drag.svg" alt="">
+                                                                                    </a>
+                                                                                    <input type="checkbox" name="" id="">
+                                                                                </div>
+                                                                                <span class="accordion-button collapsed brief-section" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                                                                    Dezeen’s Bauhaus series explores the enduring influence of the school
+                                                                                </span>
+                                                                            </span>
+                                                                        </h2>
+                                                                        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="headingCollapse3" data-bs-parent="#customizeaccordion">
+                                                                            <div class="accordion-body">
+                                                                                <div class="custom-detail">
+                                                                                    <p>
+                                                                                        Learn how the Bauhaus Movement influenced design history with its emphasis on theory and practice as taught by the masters. Then we’re using on a daily basis.
+                                                                                    </p>
+                                                                                    <div class="edit-text">
+                                                                                        <a href="javascript:void(0)">
+                                                                                            <img src="assets/images/edit-icon-dark.svg"> Edit
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="edit-fields" style="display: none;" >
+                                                                                    <div class="fields">
+                                                                                        <label>Title</label>
+                                                                                        <input type="text" placeholder="Title" name="" id="">
+                                                                                    </div>
+                                                                                    <div class="fields">
+                                                                                        <label>Context</label>
+                                                                                        <textarea name="" id="" cols="30" rows="10" placeholder="Context"></textarea>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    
+                                                                    <div class="accordion-item">
+                                                                        <h2 class="accordion-header" id="headingCollapse4">
+                                                                            <span class="custom-txt">
+                                                                                <div class="custom-action">
+                                                                                    <a href="javascript:void(0)">
+                                                                                        <img src="assets/images/drag.svg" alt="">
+                                                                                    </a>
+                                                                                    <input type="checkbox" name="" id="">
+                                                                                </div>
+                                                                                <span class="accordion-button collapsed brief-section" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                                                                    Introduction: A brief encounter with Bauhaus
+                                                                                </span>
+                                                                            </span>
+                                                                        </h2>
+                                                                        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="headingCollapse4" data-bs-parent="#customizeaccordion">
+                                                                            <div class="accordion-body">
+                                                                                <div class="custom-detail">
+                                                                                    <p>
+                                                                                        Learn how the Bauhaus Movement influenced design history with its emphasis on theory and practice as taught by the masters. Then we’re using on a daily basis.
+                                                                                    </p>
+                                                                                    <div class="edit-text">
+                                                                                        <a href="javascript:void(0)">
+                                                                                            <img src="assets/images/edit-icon-dark.svg"> Edit
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="edit-fields" style="display: none;" >
+                                                                                    <div class="fields">
+                                                                                        <label>Title</label>
+                                                                                        <input type="text" placeholder="Title" name="" id="">
+                                                                                    </div>
+                                                                                    <div class="fields">
+                                                                                        <label>Context</label>
+                                                                                        <textarea name="" id="" cols="30" rows="10" placeholder="Context"></textarea>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="accordion-item">
+                                                                        <h2 class="accordion-header" id="headingCollapse5">
+                                                                            <span class="custom-txt">
+                                                                                <div class="custom-action">
+                                                                                    <a href="javascript:void(0)">
+                                                                                        <img src="assets/images/drag.svg" alt="">
+                                                                                    </a>
+                                                                                    <input type="checkbox" name="" id="">
+                                                                                </div>
+                                                                                <span class="accordion-button collapsed brief-section" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                                                                    Bauhaus Revolution: Why it made a difference?
+                                                                                </span>
+                                                                            </span>
+                                                                        </h2>
+                                                                        <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="headingCollapse5" data-bs-parent="#customizeaccordion">
+                                                                            <div class="accordion-body">
+                                                                                <div class="custom-detail">
+                                                                                    <p>
+                                                                                        Learn how the Bauhaus Movement influenced design history with its emphasis on theory and practice as taught by the masters. Then we’re using on a daily basis.
+                                                                                    </p>
+                                                                                    <div class="edit-text">
+                                                                                        <a href="javascript:void(0)">
+                                                                                            <img src="assets/images/edit-icon-dark.svg"> Edit
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="edit-fields" style="display: none;" >
+                                                                                    <div class="fields">
+                                                                                        <label>Title</label>
+                                                                                        <input type="text" placeholder="Title" name="" id="">
+                                                                                    </div>
+                                                                                    <div class="fields">
+                                                                                        <label>Context</label>
+                                                                                        <textarea name="" id="" cols="30" rows="10" placeholder="Context"></textarea>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="accordion-item">
+                                                                        <h2 class="accordion-header" id="headingCollapse6">
+                                                                            <span class="custom-txt">
+                                                                                <div class="custom-action">
+                                                                                    <a href="javascript:void(0)">
+                                                                                        <img src="assets/images/drag.svg" alt="">
+                                                                                    </a>
+                                                                                    <input type="checkbox" name="" id="">
+                                                                                </div>
+                                                                                <span class="accordion-button collapsed brief-section" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                                                                    Dezeen’s Bauhaus series explores the enduring influence of the school
+                                                                                </span>
+                                                                            </span>
+                                                                        </h2>
+                                                                        <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="headingCollapse6" data-bs-parent="#customizeaccordion">
+                                                                            <div class="accordion-body">
+                                                                                <div class="custom-detail">
+                                                                                    <p>
+                                                                                        Learn how the Bauhaus Movement influenced design history with its emphasis on theory and practice as taught by the masters. Then we’re using on a daily basis.
+                                                                                    </p>
+                                                                                    <div class="edit-text">
+                                                                                        <a href="javascript:void(0)">
+                                                                                            <img src="assets/images/edit-icon-dark.svg"> Edit
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="edit-fields" style="display: none;" >
+                                                                                    <div class="fields">
+                                                                                        <label>Title</label>
+                                                                                        <input type="text" placeholder="Title" name="" id="">
+                                                                                    </div>
+                                                                                    <div class="fields">
+                                                                                        <label>Context</label>
+                                                                                        <textarea name="" id="" cols="30" rows="10" placeholder="Context"></textarea>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="cutomize-footer">
+                                                                <button type="button" class="p-btn">
+                                                                    <img src="assets/images/close-modal.svg">
+                                                                    Remove
+                                                                </button>
+                                                                <button type="button" class="p-btn" id="close-customize">Cancel</button>
+                                                                <button type="button" class="p-btn p-btn-bg">Save</button>
+
+                                                            </div>
+                                                            <!-- ADD CUSTOM HEADING -->
+                                                            <div class="modal fade add-heading" data-bs-backdrop="false" id="customHeading_s" tabindex="-1" aria-labelledby="customHeading_s" aria-hidden="true">
+                                                                <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                    <h5 class="modal-title" id="customHeading_s">ADD CUSTOM HEADING</h5>
+                                                                    <a href="javascript:void(0)" class="close-modal">
+                                                                        <img src="assets/images/close-modal.svg" class="hide-custom" alt="">
+                                                                    </a>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <div class="fields">
+                                                                            <label>Heading</label>
+                                                                            <input type="text" placeholder="Add Custom Heading" name="" id="">
+                                                                            <small>Add Custom heading and we will add content for it.</small>
+                                                                        </div>
+                                                                        <div class="fields">
+                                                                            <label>Additional Context (Optional)</label>
+                                                                            <textarea name="" id="" cols="30" rows="10" placeholder="Talk about how you can do X, the benefits, and what to watch for when doing Y."></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                    <button type="button" class="p-btn p-btn-bg">Add Heading</button>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- ADD CUSTOM HEADING -->
+                                                        </div>
+                                                        <!-- customize breif section  -->
                                                     </div>
                                                     </div>
                                                 </div>
@@ -1155,53 +1447,61 @@
                                                     <div>
                                                         <a class="p-btn use-unsplash" href="javascript:void(0)">Use as Featured</a>
                                                     </div>
-                                                    <div class="filter-search-area w-100 position-relative mb-4">
+                                                    <div class="filter-search-area with-btn w-100 position-relative mb-4">
                                                         <span class="search-icon"><img src="assets/images/search-icon.svg"></span>
                                                         <input type="text" placeholder="Search">
-                                                        <a href="javascript: void(0);" class="filter-icon">
-                                                           <!-- <img src="/assets/images/filter-icon.svg" /> -->
-                                                        </a>
+                                                        <button type="button" class="p-btn p-btn-bg">
+                                                           search
+                                                        </button>
                                                      </div>
                                                      <div class="gallery-area">
                                                         <div class="row">
                                                             <div class="col-md-4">
                                                                 <div class="single-image">
                                                                     <img src="assets/images/dummy.jpg" alt="">
+                                                                    <input type="checkbox">
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <div class="single-image">
                                                                     <img src="assets/images/dummy.jpg" alt="">
+                                                                    <input type="checkbox">
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <div class="single-image">
                                                                     <img src="assets/images/dummy.jpg" alt="">
+                                                                    <input type="checkbox">
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <div class="single-image">
                                                                     <img src="assets/images/dummy.jpg" alt="">
+                                                                    <input type="checkbox">
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <div class="single-image">
                                                                     <img src="assets/images/dummy.jpg" alt="">
+                                                                    <input type="checkbox">
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <div class="single-image">
                                                                     <img src="assets/images/dummy.jpg" alt="">
+                                                                    <input type="checkbox">
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <div class="single-image">
                                                                     <img src="assets/images/dummy.jpg" alt="">
+                                                                    <input type="checkbox">
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <div class="single-image">
                                                                     <img src="assets/images/dummy.jpg" alt="">
+                                                                    <input type="checkbox">
                                                                 </div>
                                                             </div>
                                                         </div>

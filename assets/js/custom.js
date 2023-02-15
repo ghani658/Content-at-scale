@@ -233,6 +233,26 @@ $('#sync-wordPress').change(function () {
     $('.wp-status').toggle(this.checked);
 }).change();
 
+$(".hide-custom").click(function () {
+  $('#customHeading_s').modal('hide');
+});
+
+$("#open-customize").click(function () {
+  $('.customizion-brief').show();
+});
+
+$("#close-customize").click(function () {
+  $('.customizion-brief').hide();
+});
+
+$('.single-image input:checkbox').change(function(){
+  if($(this).is(":checked")) {
+      $(this).parent().addClass("active");
+  } else {
+    $(this).parent().removeClass("active");
+  }
+});
+
 $(document).ready(function () {
     $('.datepicker').datepicker();
 });
