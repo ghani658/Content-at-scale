@@ -89,6 +89,10 @@ header img.avatar {
   background-color: #252627;
 }
 
+.profile-view-area {
+  align-items: center;
+}
+
 .profile-view-area strong img {
   width: auto;
 }
@@ -141,8 +145,105 @@ header .notification-alert {
   background: #FF4C17;
   border-radius: 24px;
   border: 2px solid #171616;
-  top: 9px;
+  top: 0px;
   right: 0;
+}
+
+header .notification-section {
+  right: -10px !important;
+  left: unset !important;
+  top: 35px !important;
+  width: 400px;
+  padding: 0;
+  border-radius: 12px;
+  box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.1607843137);
+  overflow: hidden;
+  transform: unset !important;
+  border: 0;
+}
+header .notification-section .nt-header {
+  background: #171616;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 21px 15px 14px 22px;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 0;
+  border-radius: 12px 12px 0 0;
+}
+header .notification-section .nt-header h4 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+header .notification-section .nt-header a {
+  font-size: 0.75rem;
+  text-decoration: underline;
+  color: #FFF700;
+}
+header .notification-section .nt-area {
+  max-height: 23rem;
+  overflow: overlay;
+}
+header .notification-section .nt-area .nt-list {
+  display: flex;
+  align-items: center;
+  padding: 17px 13px;
+  gap: 10px;
+  border-bottom: 1px solid #E2E2E2;
+}
+header .notification-section .nt-area .nt-list .list-user img {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+header .notification-section .nt-area .nt-list .list-data {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.688rem;
+}
+header .notification-section .nt-area .nt-list .list-data h6 {
+  font-size: 0.75rem;
+  color: #0A1429;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+header .notification-section .nt-area .nt-list .list-data span {
+  margin-bottom: 6px;
+  color: #808080;
+}
+header .notification-section .nt-area .nt-list .list-data span strong {
+  font-size: 0.688rem;
+  color: #171616;
+}
+header .notification-section .nt-area .nt-list .list-data span strong.to {
+  color: #674EF2;
+}
+header .notification-section .nt-area .nt-list .list-data small {
+  font-size: 0.625rem;
+  color: #4E4E4E;
+  font-weight: 600;
+}
+header .notification-section .nt-area .nt-list:last-child {
+  border-bottom: 0px;
+}
+header .notification-section .nt-area .nt-list.unread {
+  background: #EFEDF8;
+  border-bottom: 1px solid #fff;
+}
+header .notification-section .nt-area::-webkit-scrollbar {
+  width: 14px;
+}
+header .notification-section .nt-area::-webkit-scrollbar-thumb {
+  background: rgba(199, 194, 194, 0.33) !important;
+  border: 4px solid rgba(0, 0, 0, 0) !important;
+  background-clip: padding-box !important;
+  visibility: hidden;
+}
+header .notification-section .nt-area:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
 }
 
 .wrapper {
