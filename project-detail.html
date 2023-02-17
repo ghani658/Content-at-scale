@@ -341,7 +341,14 @@
                                                 <div class="info-title d-flex align-items-center">
                                                     <h5>Optimization Score</h5>
                                                 </div>
-                                                <img src="assets/images/graph.png" class="graph-img" alt="">
+                                                <div class="optimze-graph">
+                                                    <canvas id="foo"></canvas>
+                                                    <div class="score-value">
+                                                        <span id="preview-textfield"></span>
+                                                        <small>/100</small> 
+                                                    </div>
+                                                </div>
+                                                <!-- <img src="assets/images/graph.png" class="graph-img" alt=""> -->
                                             </div>
                                             <div class="stats">
                                                 <div class="info-title d-flex align-items-center">
@@ -2152,6 +2159,65 @@
 
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+
+    
+
+    <script src="https://bernii.github.io/gauge.js/dist/gauge.min.js"></script>
+
+    <script>
+        $('button[data-bs-toggle="pill"]').on('shown.bs.tab', function (e) {
+        var opts = {
+            angle: -0.01, // The span of the gauge arc
+            lineWidth: 0.2, // The line thickness
+            radiusScale: 1.1, // Relative radius
+            pointer: {
+                length: 0.34, // // Relative to gauge radius
+                strokeWidth: 0.079, // The thickness
+                color: '#646464' // Fill color
+            },
+            limitMax: false,     // If false, max value increases automatically if value > maxValue
+            limitMin: false,     // If true, the min value of the gauge will be fixed
+            colorStart: '#6FADCF',   // Colors
+            colorStop: '#8FC0DA',    // just experiment with them
+            strokeColor: '#E0E0E0',  // to see which ones work best for you
+            generateGradient: true,
+            highDpiSupport: true,  
+            // renderTicks is Optional
+            // renderTicks: {
+            //   divisions: 0,
+            //   divWidth: 0.1,
+            //   divLength: 0.41,
+            //   divColor: '#333333',
+            //   subDivisions: 0,
+            //   subLength: 0.14,
+            //   subWidth: 3.1,
+            //   subColor: '#ffffff'
+            // },
+            staticZones: [
+            {strokeStyle: "#DB4125", min: 0, max: 25}, // Red from 70 to 80
+            {strokeStyle: "#E3A542", min: 25, max: 50}, // Yellow 80 to 90
+            {strokeStyle: "#F5D62C", min: 50, max: 75}, // Green 90 to 100
+            {strokeStyle: "#49B282", min: 75, max: 100} // Green 90 to 100
+            ],
+            staticLabels: {
+            font: "10px sans-serif",  // Specifies font
+            labels: false,  // Print labels at these values
+            color: "#000000",  // Optional: Label text color
+            fractionDigits: 0  // Optional: Numerical precision. 0=round off.
+            },
+            
+            };
+            
+            var target = document.getElementById('foo'); // your canvas element
+            var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
+            document.getElementById("preview-textfield").className = "preview-textfield"; 
+            gauge.setTextField(document.getElementById("preview-textfield"));
+            gauge.maxValue = 100; // set max gauge value
+            gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+            gauge.animationSpeed = 10; // set animation speed (32 is default value)
+            gauge.set(68); // set actual value
+        })
+    </script>
     <script src="assets/js/custom.js" type="text/javascript"></script>
 
     <!-- select 2 -->

@@ -3354,6 +3354,21 @@ span.status.active {
   color: #000000;
 }
 
+.score-value {
+  text-align: center;
+  margin-top: 0px;
+  font-size: 2.3rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 2px;
+}
+.score-value small {
+  color: #888888;
+  font-size: 1.5rem;
+}
+
 /* prject details screens*/
 /* billing screen */
 .page-heading {
