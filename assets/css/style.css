@@ -3346,6 +3346,14 @@ span.status.active {
   background-size: cover;
 }
 
+.preview-link {
+  margin-left: -14px;
+}
+.preview-link i {
+  font-size: 18px;
+  color: #000000;
+}
+
 /* prject details screens*/
 /* billing screen */
 .page-heading {
