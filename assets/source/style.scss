@@ -44,6 +44,9 @@ input[type=checkbox] {
 .text-danger {
     color: #FF4C17!important;
 }
+.f-1 {
+    font-size: 1rem !important;
+}
 
 header {
     background: #171616;
@@ -377,9 +380,9 @@ header {
     position: relative;
 }
 
-#myTabContent .tab-pane {
-    height: 100%;
-}
+// #myTabContent .tab-pane {
+//     height: 100%;
+// }
 
 .side-bar-tabs .scroll-bar-adj {
     background: #171616;
@@ -3470,6 +3473,7 @@ span.status {
 
 }
 .gallery-area {
+    min-height: 287px;
     .row {
         margin: 0 -6px;
 
@@ -3505,6 +3509,18 @@ span.status {
                 accent-color: #FFF700;
             }
         } 
+    }
+}
+
+.gallery-action {
+    display: flex;
+    justify-content: flex-end;
+    gap: 18px;
+
+    button {
+        font-size: 0.8125rem !important;
+        margin: 0;
+        padding: 10px 28px;
     }
 }
 
@@ -4350,352 +4366,4 @@ body {
     }
 }
 
-
-@media (max-width: 1800px) {
-
-    .listing-project .table thead th,
-    .listing-project .table tbody td {
-        padding: 27px 10px;
-        font-size: 0.775rem;
-    }
-}
-
-@media (min-width:1500px) {
-    .keyword-edit {
-        .modal-xl {
-            max-width: 1473px;
-        }
-    }
-}
-
-@media (max-width: 1536px) {
-
-    html {
-        font-size: 14px;
-    }
-
-    .cards-listing .card-body .card-title {
-        line-height: 1.5;
-    }
-
-    .tabs-area-main.collapes-side .nav-tabs .nav-link {
-        height: 94px;
-    }
-
-    .tabs-area-main.collapes-side .nav-tabs .nav-link img {
-        height: 20px;
-    }
-
-    .side-bar-tabs .nav-pills .nav-link {
-        height: 94px;
-    }
-
-    .side-bar-tabs .nav-pills .nav-link img {
-        height: 20px;
-    }
-
-    .side-bar-tabs .nav-pills .nav-link.active:before,
-    .side-bar-tabs .nav-pills .nav-link.active:after {
-        border: 5px solid #171616;
-    }
-}
-
-@media (max-width: 1200px) {
-
-    .table tbody td,
-    .table thead th {
-        padding: 12px 14px;
-    }
-
-    .full-lenth-area {
-        padding: 22px 140px 45px 105px;
-    }
-}
-
-@media (max-width: 1000px) {
-    .form-fields .form-banner {
-        display: none;
-    }
-}
-
-@media (max-width: 991px) {
-    .modal .modal-footer button {
-        width: 100%;
-    }
-
-    .all-projects .single-project {
-        margin-bottom: 20px;
-    }
-
-    .all-projects .single-project .project-numbers .col-md-4:not(:last-child) .inner-number::before {
-        display: none;
-    }
-}
-
-@media (max-width: 767px) {
-
-    html {
-        font-size: 12px;
-    }
-
-    .full-lenth-area {
-        padding: 15px 15px 45px 15px;
-    }
-
-    header .logo {
-        width: 130px;
-    }
-
-    .profile-view-area strong {
-        display: none;
-    }
-
-    .res-menu {
-        display: flex;
-    }
-
-    .tabs-area-main,
-    .fixed-sidebar-right,
-    .tabs-area-main.open-sidebar {
-        width: 100%;
-        left: 0;
-        top: 0;
-        transform: translate(0, 0);
-        height: 100vh;
-        background: transparent;
-        z-index: 999;
-    }
-
-    .fixed-sidebar-right .close-sidebar {
-        background: #17161675;
-        position: fixed;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-    }
-
-    .tabs-area-main,
-    .fixed-sidebar-right {
-        top: 155%;
-    }
-
-    .tabs-area-main.open-sidebar {
-        top: 0;
-    }
-
-    .toggle-btn-sidebar {
-        position: fixed;
-        top: -66%;
-        left: unset;
-        right: 25px;
-        width: 60px;
-        height: 60px;
-    }
-
-    .toggle-btn-sidebar a {
-        width: 100%;
-        height: 100%;
-        background: #171616;
-        border-radius: 90px;
-    }
-
-    .toggle-btn-sidebar .show-sidebar img,
-    .toggle-btn-sidebar .show-sidebar.active img {
-        transform: rotate(90deg);
-    }
-
-    .tabs-area-main.open-sidebar .toggle-btn-sidebar {
-        display: none;
-    }
-
-    .tabs-area-main>.tab-content,
-    .fixed-sidebar-right>.tab-content,
-    .fixed-sidebar-right.open-sidebar>.tab-content {
-        width: 100%;
-        position: fixed;
-        left: 49.9%;
-        transform: translate(-49.9%, 100px);
-        background: #252627;
-    }
-
-    .tabs-area-main .nav-tabs {
-        position: fixed;
-        width: 104%;
-        bottom: 0;
-        left: -2%;
-        right: 0;
-        height: 64px;
-        overflow: auto;
-        flex-wrap: nowrap;
-    }
-
-    .tabs-area-main .nav-tabs::-webkit-scrollbar {
-        width: 0;
-        height: 0;
-    }
-
-    .tabs-area-main .nav-tabs .nav-link {
-        font-size: 0.63rem;
-        width: 110px;
-        padding: 0;
-        margin: 0 auto;
-        padding: 0;
-        height: 56px;
-    }
-
-    .tabs-area-main .nav-tabs .nav-link.active {
-        border: none;
-        background: #252627;
-    }
-
-    .tabs-area-main .nav-link span {
-        display: inherit !important;
-    }
-
-    .tabs-area-main .nav-link span img {
-        width: auto;
-        height: 20px;
-        margin-bottom: 6px;
-    }
-
-    .side-bar-tabs .scroll-bar-adj,
-    .side-bar-content {
-        height: calc(100vh - 164px);
-    }
-
-    .side-bar-tabs .nav-pills .nav-link:first-child {
-        margin-top: 0;
-    }
-
-    .side-bar-tabs .nav-pills .nav-link.active:first-child:before {
-        display: none;
-    }
-
-    .p-btn {
-        min-width: 90px;
-    }
-
-    .side-bar-tabs .scroll-bar-adj .nav-pills {
-        width: 80px;
-    }
-
-    .side-bar-tabs .scroll-bar-adj {
-        width: 78px;
-    }
-
-    .side-bar-tabs .nav-pills .nav-link {
-        width: 78px;
-        padding: 0 8px;
-    }
-
-    .side-bar-tabs .scroll-bar-adj::-webkit-scrollbar {
-        width: 2px;
-    }
-
-    .profile-avatar {
-        width: 90px;
-        height: 90px;
-    }
-
-    .edit-profile-avatar-btn,
-    .edit-profile-avatar-btn:before {
-        width: 20px;
-        height: 20px;
-    }
-
-    .edit-profile-avatar-btn:before {
-        background: url('../images/edit-profile.svg') no-repeat;
-        background-size: 100%;
-    }
-
-    .profile-info-feilds .info-feild {
-        flex: 0 0 100%;
-    }
-
-    .toggle-switch .form-check-label {
-        font-size: 0.8rem;
-    }
-
-    .post-feilds label {
-        font-size: 0.8rem;
-    }
-
-    .project-content-btn {
-        right: 0;
-        top: -7px;
-        z-index: 9;
-    }
-
-    .page-tabs .grid-listing-tabs .nav-tabs {
-        position: relative;
-        top: unset;
-        right: unset;
-        gap: 15px;
-        margin-top: 20px;
-    }
-
-    .table thead th {
-        font-size: 0.88rem;
-    }
-
-    .project-card {
-        width: auto;
-        flex: 1;
-    }
-
-    #sidebar {
-        position: fixed;
-        width: 100%;
-        height: calc(100vh - 80px);
-        z-index: 9999;
-        background: transparent;
-        visibility: hidden;
-    }
-
-    #sidebar .close-menu {
-        background: #17161675;
-        position: fixed;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: calc(100vh - 80px);
-        width: 100%;
-    }
-
-    #sidebar ul {
-        height: 100%;
-        margin: 0 !important;
-        width: 80px;
-        background: #171616;
-        position: absolute;
-        top: 0;
-        left: -100px;
-        transition: 0.5s;
-    }
-
-    #sidebar.active {
-        visibility: visible;
-    }
-
-    #sidebar.active ul {
-        left: 0;
-        transition: 0.5s;
-    }
-
-    #sidebar li {
-        padding-top: 30px;
-    }
-
-    #sidebar li a {
-        height: 48px;
-    }
-
-    #sidebar li a img {
-        height: 22px;
-    }
-
-    .table select {
-        width: 152px;
-    }
-}
+@import 'responsive', 'taimoor';

@@ -45,6 +45,10 @@ input[type=checkbox] {
   color: #FF4C17 !important;
 }
 
+.f-1 {
+  font-size: 1rem !important;
+}
+
 header {
   background: #171616;
   height: 80px;
@@ -359,10 +363,6 @@ header .notification-section .nt-area:hover::-webkit-scrollbar-thumb {
 .tab-pane {
   color: #888888;
   position: relative;
-}
-
-#myTabContent .tab-pane {
-  height: 100%;
 }
 
 .side-bar-tabs .scroll-bar-adj {
@@ -3157,6 +3157,9 @@ span.status.active {
   opacity: 0;
 }
 
+.gallery-area {
+  min-height: 287px;
+}
 .gallery-area .row {
   margin: 0 -6px;
 }
@@ -3186,6 +3189,17 @@ span.status.active {
   right: 10px;
   top: 10px;
   accent-color: #FFF700;
+}
+
+.gallery-action {
+  display: flex;
+  justify-content: flex-end;
+  gap: 18px;
+}
+.gallery-action button {
+  font-size: 0.8125rem !important;
+  margin: 0;
+  padding: 10px 28px;
 }
 
 .p-btn.use-unsplash {

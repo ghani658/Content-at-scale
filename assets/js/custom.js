@@ -49,7 +49,7 @@ $('.twitter a').click(function () {
 $(".edit-profile-feilds").click(function () {
     $('.info-feild input').removeAttr("disabled");
     $('.info-feild select').removeAttr("disabled");
-    $('.p-btn.p-btn-bg').removeAttr("disabled");
+    $('.p-btn').removeAttr("disabled");
 });
 
 $(".close-sidebar").click(function () {
