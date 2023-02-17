@@ -1,6 +1,7 @@
 $("a.show-sidebar").click(function () {
     $(".fixed-sidebar-right").toggleClass("open-sidebar");
     $(".fixed-sidebar-right").toggleClass("collapes-side");
+    $(".project-bar").toggleClass("container-open-sidebar");
     $("a.show-sidebar").toggleClass("active");
 });
 
@@ -53,8 +54,9 @@ $(".edit-profile-feilds").click(function () {
 });
 
 $(".close-sidebar").click(function () {
-    $(".tabs-area-main").removeClass("open-sidebar");
-    $(".tabs-area-main").addClass("collapes-side");
+    $(".tabs-area-main:not(.project-bar)").removeClass("open-sidebar");
+    $(".tabs-area-main:not(.project-bar)").addClass("collapes-side");
+    $(".project-bar").toggleClass("container-open-sidebar");
 });
 
 $(".close-menu").click(function () {
