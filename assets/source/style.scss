@@ -3198,7 +3198,7 @@ span.status {
                     font-size: 0.875rem;
                     line-height: 1;
                     height: 42px;
-                    width: 112px;
+                    min-width: 112px;
                     justify-content: center;
                     gap: 5px;
 
@@ -3259,6 +3259,7 @@ span.status {
     border-bottom: 1px solid #4D4D4D;
     padding: 0 1.3rem 20px;
     margin-bottom: 30px;
+    gap: 15px;
     h5 {
         margin: 0;
         display: flex;

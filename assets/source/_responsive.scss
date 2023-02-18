@@ -46,7 +46,43 @@
         border: 5px solid #171616;
     }
 
+    .count-info h5 {
+        font-size: 1rem;
+    }
+
+    .filter-area {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 1.5rem !important;
+
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+    .cards-listing .card-body .card-title {
+        font-size: 1.5rem;
+    }
+
+    .dashboard .cards-listing .card .card-title sub {
+        font-size: 1rem;
+    }
+
 }
+
+// @media (max-width: 1700) and (min-width: 1440px) {
+
+//     .count-info {
+//         flex-direction: column;
+//         align-items: flex-start;
+//         gap: 20px;
+//         padding: 0 0 30px 0;
+
+//         span.devider {
+//             display: none;
+//         }
+//     }
+// }
 
 @media (max-width: 1440px) {
 
@@ -132,6 +168,22 @@
     }
 }
 
+@media (max-width: 1173px) {
+
+    .filter-area .filter-fields {
+        flex-wrap: wrap;
+    }
+
+    .filter-area .filter-fields .fields {
+        width: 100%;
+    }
+
+    .filter-area .filter-fields .cs-secondary-btn,
+    .filter-area .filter-fields .cs-secondary-btn-outline {
+        width: 100%;
+    }
+}
+
 @media (max-width: 1000px) {
     .form-fields .form-banner {
         display: none;
@@ -150,6 +202,17 @@
     .all-projects .single-project .project-numbers .col-md-4:not(:last-child) .inner-number::before {
         display: none;
     }
+
+    .profile-res {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .d-flex {
+        &.justify-content-end {
+            justify-content: flex-start !important;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -159,7 +222,8 @@
     }
 
     .full-lenth-area,
-    .custom-templates-area {
+    .custom-templates-area,
+    .full-lenth-area.full-section {
         padding: 15px 15px 45px 15px;
     }
 
@@ -427,6 +491,7 @@
     }
     .page-bredcrums {
         flex-direction: column;
+        align-items: flex-start !important;
 
         nav {
             width: 100%;
@@ -475,5 +540,78 @@
     .tabs-area-main.fixed-sidebar-right,
     .tabs-area-main.fixed-sidebar-right.open-sidebar {
         width: 100%;
+    }
+
+    .optimize-info {
+        flex-direction: column;
+
+        .stats {
+            margin-top: 20px;
+
+            .info-title {
+                padding-left: 0;
+            }
+
+            .col-md-6 {
+                &:nth-child(odd) {
+
+                    &::before {
+                        display: none;
+                    }
+                }
+
+                &:nth-child(3) {
+                    border-bottom: 1px solid #393939;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .optimze-graph {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .tabs-area-main .inner-subtabs .nav-tabs {
+        position: unset;
+    }
+
+    .tabs-area-main .inner-subtabs .nav-tabs .nav-link {
+        height: auto;
+    }
+
+    .tabs-area-main .inner-subtabs .nav-tabs li {
+        padding-right: 25px;
+    }
+
+    .create-project .project-fields {
+        padding: 3.125rem 2rem;
+    }
+
+    .profile-res .card-box {
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width: 515px) {
+
+    .modal .customize .cutomize-footer {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .return .modal .customize .cutomize-footer .p-btn {
+        width: 100%;
+        margin: 0;
+    }
+
+    .return .modal .modal-body {
+        padding: 0;
+    }
+
+    .return .modal .modal-footer {
+        padding: 20px 0 0;
     }
 }
