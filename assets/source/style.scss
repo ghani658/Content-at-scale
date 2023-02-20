@@ -3857,6 +3857,7 @@ span.status {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 
     a.add-card {
         border: 1px solid #707070;
@@ -3975,6 +3976,8 @@ span.status {
 /* Edit Profile */
 /* Post status screen */
 .post-status-listing {
+    
+    overflow: auto;
     .table {
         box-shadow: unset;
 

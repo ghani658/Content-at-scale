@@ -3513,6 +3513,7 @@ span.status.active {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .add-card a.add-card {
   border: 1px solid #707070;
@@ -3623,6 +3624,9 @@ span.status.active {
 
 /* Edit Profile */
 /* Post status screen */
+.post-status-listing {
+  overflow: auto;
+}
 .post-status-listing .table {
   box-shadow: unset;
 }
@@ -4479,6 +4483,16 @@ body ::-webkit-scrollbar-thumb:hover {
   .profile-res .card-box {
     padding: 3rem 2rem;
   }
+  .count-info {
+    padding: 0 0 20px;
+    flex-direction: column;
+  }
+  .count-info h5 {
+    width: 100%;
+  }
+  .count-info span {
+    display: none;
+  }
 }
 @media (max-width: 515px) {
   .modal .customize .cutomize-footer {
@@ -4494,6 +4508,9 @@ body ::-webkit-scrollbar-thumb:hover {
   }
   .return .modal .modal-footer {
     padding: 20px 0 0;
+  }
+  .result-area .highlight-button a {
+    width: 90px;
   }
 }
 

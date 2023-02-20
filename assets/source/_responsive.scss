@@ -593,6 +593,19 @@
     .profile-res .card-box {
         padding: 3rem 2rem;
     }
+
+    .count-info {
+        padding: 0 0 20px;
+        flex-direction: column;
+
+        h5 {
+            width: 100%;
+        }
+
+        span {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 515px) {
@@ -613,5 +626,9 @@
 
     .return .modal .modal-footer {
         padding: 20px 0 0;
+    }
+
+    .result-area .highlight-button a {
+        width: 90px;
     }
 }
