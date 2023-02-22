@@ -112,54 +112,147 @@
 
 <body>
   <header>
-    <div class="header-container h-100">
-        <div class="d-flex justify-content-between align-items-center px-3 h-100">
-            <div class="logo-menu-area d-flex justify-content-center align-items-center">
-                <a href="javascript: void(0);" class="res-menu me-3">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </a>
-                <div class="logo">
-                    <img src="assets/images/logo-whiteX.png" />
-                </div>
-            </div>
-            <div class="profile-view-area d-flex">
-                <a href="javascript: void(0);" class="d-flex align-items-center notifications position-relative">
-                    <img src="assets/images/bell-icon.svg" />
-                    <span class="notification-alert"></span>
-                </a>
-                <div class="drop-down user-option">
-                    <a href="javascript: void(0);" class="d-flex align-items-center px-4" id="userAction" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="assets/images/avatar.png" class="avatar" />
-                        <strong class="ms-2">jonathan Doe <img src="assets/images/downarrow.svg"
-                                class="ms-1" /></strong>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right pb-0"  aria-labelledby="userAction">
-                        <a class="dropdown-item" href="profile.html">
-                            <i class="bx bx-user-circle me-2"></i> Edit Profile
-                        </a>
-                        <a class="dropdown-item" href="post-status.html">
-                            <i class="bx bx-message-dots me-2"></i> Custom Status
-                        </a>
-                        <a class="dropdown-item" href="javacript:void(0)">
-                            <i class="bx bx-download me-2"></i> Download WP Plugin
-                        </a>
-                        <a class="dropdown-item" href="javacript:void(0)">
-                            <i class="bx bx-credit-card me-2"></i> Billing
-                        </a>
-                        <a class="dropdown-item" href="javacript:void(0)">
-                            <i class="bx bx-user me-2"></i> Users
-                        </a>
-                        <div class="dropdown-divider mb-0"></div>
-                        <a class="dropdown-item" href="javacript:void(0)">
-                            <i class="bx bx-power-off me-2"></i> Logout
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+      <div class="header-container">
+          <div class="d-flex justify-content-between align-items-center px-3 h-100">
+              <div class="logo-menu-area d-flex justify-content-center align-items-center">
+                  <a href="javascript: void(0);" class="res-menu me-3">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                  </a>
+                  <div class="logo">
+                      <img src="assets/images/logo-whiteX.png" />
+                  </div>
+                  <div class="team-selection fields">
+                      <select class="select2">
+                          <option>Team</option>
+                      </select>
+                  </div>
+              </div>
+              <div class="profile-view-area d-flex">
+                  <a href="javascript: void(0);" class="d-flex align-items-center offer position-relative">
+                      <img src="assets/images/offer-icon.svg" />
+                      <span class="notification-alert"></span>
+                  </a>
+                  <div class="available-credit">
+                      <div class="credit">
+                          CREDITS AVAILABLE
+                          <span class="badge">4</span>
+                      </div>
+                      <div class="add-more">
+                          + <a href="javascript:void(0)">Add more</a>
+                      </div>
+                  </div>
+                  <div class="search-area drop-down">
+                      <a href="javascript: void(0);" class="d-flex align-items-center search">
+                          <img src="assets/images/search.svg" />
+                      </a>
+                  </div>
+                  <div class="dropdown">
+                      <a href="javascript: void(0);" class="d-flex align-items-center notifications position-relative" id="notification" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="assets/images/bell-icon.svg" />
+                          <span class="notification-alert"></span>
+                      </a>
+                      <div class="dropdown-menu notification-section"  aria-labelledby="notification">
+                          <div class="nt-header">
+                              <h4>Notifications</h4>
+                              <a href="javascript:void(0)">
+                                  Mark all as read
+                              </a>
+                          </div>
+                          <div class="nt-area">
+                              <a href="javascript:void(0)" class="nt-list unread">
+                                  <div class="list-user">
+                                      <img src="assets/images/profile-avatar.jpg" alt="">
+                                  </div>
+                                  <div class="list-data">
+                                      <h6>Added to Project</h6>
+                                      <span>You are added to <strong class="to">FlatFilePro</strong> by <strong>Julia McCoy</strong></span>
+                                      <small>Feb 01 17:06pm</small>
+                                  </div>
+                              </a>
+                              <a href="javascript:void(0)" class="nt-list unread">
+                                  <div class="list-user">
+                                      <img src="assets/images/profile-avatar.jpg" alt="">
+                                  </div>
+                                  <div class="list-data">
+                                      <h6>Added to Project</h6>
+                                      <span>You are added to <strong class="to">FlatFilePro</strong> by <strong>Julia McCoy</strong></span>
+                                      <small>Feb 01 17:06pm</small>
+                                  </div>
+                              </a>
+                              <a href="javascript:void(0)" class="nt-list">
+                                  <div class="list-user">
+                                      <img src="assets/images/profile-avatar.jpg" alt="">
+                                  </div>
+                                  <div class="list-data">
+                                      <h6>Added to Project</h6>
+                                      <span>You are added to <strong class="to">FlatFilePro</strong> by <strong>Julia McCoy</strong></span>
+                                      <small>Feb 01 17:06pm</small>
+                                  </div>
+                              </a>
+                              <a href="javascript:void(0)" class="nt-list">
+                                  <div class="list-user">
+                                      <img src="assets/images/profile-avatar.jpg" alt="">
+                                  </div>
+                                  <div class="list-data">
+                                      <h6>Added to Project</h6>
+                                      <span>You are added to <strong class="to">FlatFilePro</strong> by <strong>Julia McCoy</strong></span>
+                                      <small>Feb 01 17:06pm</small>
+                                  </div>
+                              </a>
+                              <a href="javascript:void(0)" class="nt-list">
+                                  <div class="list-user">
+                                      <img src="assets/images/profile-avatar.jpg" alt="">
+                                  </div>
+                                  <div class="list-data">
+                                      <h6>Added to Project</h6>
+                                      <span>You are added to <strong class="to">FlatFilePro</strong> by <strong>Julia McCoy</strong></span>
+                                      <small>Feb 01 17:06pm</small>
+                                  </div>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="drop-down user-option">
+                      <a href="javascript: void(0);" class="d-flex align-items-center px-4" id="userAction" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="assets/images/avatar.png" class="avatar" />
+                          <strong class="ms-2">jonathan Doe <img src="assets/images/downarrow.svg"
+                                  class="ms-1" /></strong>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right pb-0"  aria-labelledby="userAction">
+                          <a class="dropdown-item" href="javacript:void(0)">
+                              <i class="bx bx-user-circle me-2"></i> Edit Profile
+                          </a>
+                          <a class="dropdown-item" href="javacript:void(0)">
+                              <i class="bx bx-message-dots me-2"></i> Custom Status
+                          </a>
+                          <a class="dropdown-item" href="javacript:void(0)">
+                              <i class="bx bx-download me-2"></i> Download WP Plugin
+                          </a>
+                          <a class="dropdown-item" href="javacript:void(0)">
+                              <i class="bx bx-credit-card me-2"></i> Billing
+                          </a>
+                          <a class="dropdown-item" href="javacript:void(0)">
+                              <i class="bx bx-user me-2"></i> Users
+                          </a>
+                          <div class="dropdown-divider mb-0"></div>
+                          <a class="dropdown-item" href="javacript:void(0)">
+                              <i class="bx bx-power-off me-2"></i> Logout
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              <div class="filter-search-area search-field">
+                  <span class="search-icon"><img
+                          src="assets/images/search-icon.svg"></span>
+                  <input type="text" placeholder="Explore the Content Machine">
+                  <a href="javascript:void(0)" class="hide-search">
+                      <img src="assets/images/close.svg" alt="">
+                  </a>
+              </div>
+          </div>
+      </div>
   </header>
 
   <div class="wrapper d-flex">

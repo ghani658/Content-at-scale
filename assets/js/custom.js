@@ -255,6 +255,14 @@ $('.single-image input:checkbox').change(function(){
   }
 });
 
+$(".search-area a").click(function () {
+  $(".search-field").show();
+});
+
+$("a.hide-search").click(function () {
+  $(".search-field").hide();
+});
+
 $(document).ready(function () {
     $('.datepicker').datepicker();
 });

@@ -166,6 +166,10 @@
     .full-lenth-area {
         padding: 22px 140px 45px 105px;
     }
+    header .team-selection {
+        width: 100px;
+        margin-left: 15px;
+    }
 }
 
 @media (max-width: 1173px) {
@@ -213,6 +217,14 @@
             justify-content: flex-start !important;
         }
     }
+
+    header .logo {
+        width: 175px;
+    }
+
+    .profile-view-area strong {
+        display: none;
+    }
 }
 
 @media (max-width: 767px) {
@@ -229,10 +241,6 @@
 
     header .logo {
         width: 130px;
-    }
-
-    .profile-view-area strong {
-        display: none;
     }
 
     .res-menu {
@@ -507,6 +515,10 @@
         width: 100%;
     }
 
+    .filter-options .tags-select + .select2-container {
+        min-width: unset;
+    }
+
     .preview-link {
         margin-left: 0;
     }
@@ -606,6 +618,56 @@
             display: none;
         }
     }
+    .available-credit, header .search-area, header .offer {
+        margin-right: 10px;
+    }
+    .user-option {
+        .px-4 {
+            padding-right: 0 !important;
+            padding-left: 10px !important;
+        }
+    }
+    .available-credit .credit .badge {
+        width: 20px;
+        height: 20px;
+    }
+    header .team-selection.fields .select2-container--default .select2-selection--single {
+        height: 32px;
+        padding: 3px;
+    }
+    header .offer {
+        img {
+            width: 30px;
+        }
+        .notification-alert {
+            right: -1px;
+        }
+    }
+    header .search-area .search img {
+        width: 20px;
+    }
+    header .notifications {
+        img {
+            width: 20px;
+        }
+    }
+    header img.avatar {
+        width: 30px;
+        height: 30px;
+    }
+    .available-credit {
+        position: absolute;
+        top: 5px;
+        width: 100%;
+        margin-right: 11px;
+        right: 0;
+        justify-content: end;
+        flex-direction: row;
+        gap: 5px;
+    }
+    .profile-view-area {
+        padding-top: 12px;
+    }
 }
 
 @media (max-width: 515px) {
@@ -630,5 +692,27 @@
 
     .result-area .highlight-button a {
         width: 90px;
+    }
+    header .notification-section {
+        right: -78px !important;
+        left: unset !important;
+        top: 44px !important;
+        width: 92vw;
+    }
+    .available-credit {
+
+        .credit .badge {
+            width: 15px;
+            height: 15px;
+        }
+    }
+    .team-selection {
+        position: absolute;
+        top: 5px;
+        left: -8px;
+        z-index: 10;
+    }
+    .logo-menu-area {
+        padding-top: 28px;
     }
 }

@@ -249,6 +249,58 @@ header .notification-section .nt-area::-webkit-scrollbar-thumb {
 header .notification-section .nt-area:hover::-webkit-scrollbar-thumb {
   visibility: visible;
 }
+header .team-selection {
+  width: 286px;
+  margin-bottom: 0;
+  margin-left: 60px;
+}
+header .team-selection.fields .select2-container--default .select2-selection--single {
+  border-radius: 6px;
+  height: 46px;
+  padding: 8px;
+  background: #333333;
+  border: 0;
+}
+header .team-selection.fields .select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #fff;
+}
+header .team-selection.fields .select2-container--default .select2-selection--single .select2-selection__arrow b {
+  filter: brightness(0) saturate(100%) invert(90%) sepia(24%) saturate(1%) hue-rotate(186deg) brightness(106%) contrast(101%);
+}
+header .offer {
+  margin-right: 27px;
+}
+header .offer .notification-alert {
+  right: 2px;
+}
+header .search-area {
+  margin-right: 20px;
+}
+header .search-area .search img {
+  width: 24px;
+}
+header .search-field {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  display: none;
+  z-index: 10;
+}
+header .search-field.filter-search-area input {
+  height: 100%;
+}
+header .search-field a.hide-search {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translate(0px, -50%);
+}
+header .search-field a.hide-search img {
+  width: 15px;
+  filter: brightness(0) saturate(100%) invert(90%) sepia(24%) saturate(1%) hue-rotate(186deg) brightness(106%) contrast(101%);
+}
 
 .wrapper {
   height: calc(100vh - 80px);
@@ -2571,9 +2623,13 @@ span.status.active {
 .filter-options {
   display: flex;
   gap: 20px;
+  align-items: flex-start;
 }
 .filter-options .select2-container {
   width: 300px !important;
+}
+.filter-options .tags-select + .select2-container {
+  min-width: 400px;
 }
 .filter-options .select2-container--default .select2-selection--single {
   border: 1px solid #E8E8E8;
@@ -2604,6 +2660,31 @@ span.status.active {
   width: 20px;
   bottom: 0;
   height: 100%;
+}
+.filter-options .select2-container--default .select2-selection--multiple {
+  border: 1px solid #E8E8E8;
+  outline: 0;
+  min-height: 46px;
+  border-radius: 6px;
+}
+.filter-options .select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: #252627;
+  border: 1px solid #252627;
+  border-radius: 99px;
+  padding: 5px 22px 4px 12px;
+  font-size: 0.875rem;
+  color: #fff;
+}
+.filter-options .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  color: #fff !important;
+  font-size: 1.3rem;
+  padding: 0px 4px 0;
+  left: unset;
+  top: 0;
+  right: 4px;
+  bottom: 0;
+  border-right: 0;
+  background: transparent !important;
 }
 
 .optimize-info {
@@ -4148,6 +4229,10 @@ body ::-webkit-scrollbar-thumb:hover {
   .full-lenth-area {
     padding: 22px 140px 45px 105px;
   }
+  header .team-selection {
+    width: 100px;
+    margin-left: 15px;
+  }
 }
 @media (max-width: 1173px) {
   .filter-area .filter-fields {
@@ -4183,6 +4268,12 @@ body ::-webkit-scrollbar-thumb:hover {
   .d-flex.justify-content-end {
     justify-content: flex-start !important;
   }
+  header .logo {
+    width: 175px;
+  }
+  .profile-view-area strong {
+    display: none;
+  }
 }
 @media (max-width: 767px) {
   html {
@@ -4195,9 +4286,6 @@ body ::-webkit-scrollbar-thumb:hover {
   }
   header .logo {
     width: 130px;
-  }
-  .profile-view-area strong {
-    display: none;
   }
   .res-menu {
     display: flex;
@@ -4424,6 +4512,9 @@ body ::-webkit-scrollbar-thumb:hover {
   .filter-options .select2-container--default .select2-selection--single {
     width: 100%;
   }
+  .filter-options .tags-select + .select2-container {
+    min-width: unset;
+  }
   .preview-link {
     margin-left: 0;
   }
@@ -4493,6 +4584,50 @@ body ::-webkit-scrollbar-thumb:hover {
   .count-info span {
     display: none;
   }
+  .available-credit, header .search-area, header .offer {
+    margin-right: 10px;
+  }
+  .user-option .px-4 {
+    padding-right: 0 !important;
+    padding-left: 10px !important;
+  }
+  .available-credit .credit .badge {
+    width: 20px;
+    height: 20px;
+  }
+  header .team-selection.fields .select2-container--default .select2-selection--single {
+    height: 32px;
+    padding: 3px;
+  }
+  header .offer img {
+    width: 30px;
+  }
+  header .offer .notification-alert {
+    right: -1px;
+  }
+  header .search-area .search img {
+    width: 20px;
+  }
+  header .notifications img {
+    width: 20px;
+  }
+  header img.avatar {
+    width: 30px;
+    height: 30px;
+  }
+  .available-credit {
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    margin-right: 11px;
+    right: 0;
+    justify-content: end;
+    flex-direction: row;
+    gap: 5px;
+  }
+  .profile-view-area {
+    padding-top: 12px;
+  }
 }
 @media (max-width: 515px) {
   .modal .customize .cutomize-footer {
@@ -4511,6 +4646,25 @@ body ::-webkit-scrollbar-thumb:hover {
   }
   .result-area .highlight-button a {
     width: 90px;
+  }
+  header .notification-section {
+    right: -78px !important;
+    left: unset !important;
+    top: 44px !important;
+    width: 92vw;
+  }
+  .available-credit .credit .badge {
+    width: 15px;
+    height: 15px;
+  }
+  .team-selection {
+    position: absolute;
+    top: 5px;
+    left: -8px;
+    z-index: 10;
+  }
+  .logo-menu-area {
+    padding-top: 28px;
   }
 }
 
