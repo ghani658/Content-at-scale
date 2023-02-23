@@ -226,7 +226,11 @@
         display: none;
     }
 }
-
+@media (min-width: 992px) {
+    .invite-modal.modal-lg {
+        max-width: 906px;
+    }
+}
 @media (max-width: 767px) {
 
     html {
@@ -668,6 +672,15 @@
     .profile-view-area {
         padding-top: 12px;
     }
+    .user-screen {
+        .card-box .box-header {
+            flex-direction: column;
+            align-items: baseline;
+        }
+        .fields .select2-container {
+            width: 95px !important;
+        }
+    }
 }
 
 @media (max-width: 515px) {
@@ -714,5 +727,9 @@
     }
     .logo-menu-area {
         padding-top: 28px;
+    }
+    .white-label .label-selection {
+        flex-direction: column;
+        align-items: baseline;
     }
 }

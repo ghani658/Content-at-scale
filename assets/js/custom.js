@@ -214,6 +214,10 @@ $('button[data-bs-toggle="pill"]').on('shown.bs.tab', function (e) {
     $('.slides').slick('setPosition');
 })
 
+$('button[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
+  $('.slides').slick('setPosition');
+})
+
 $('input[type=file]').change(function () {
     fileCount = this.files.length;
     if(fileCount){
@@ -265,6 +269,10 @@ $("a.hide-search").click(function () {
 
 $(document).ready(function () {
     $('.datepicker').datepicker();
+});
+
+$(".select-project input:checkbox").click(function(){
+  $('.project-list input:checkbox').not(this).prop('checked', this.checked);
 });
 
 // Chart js 

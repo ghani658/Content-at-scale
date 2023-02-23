@@ -28,6 +28,9 @@
 
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
+    <!-- slick slider CSS-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
     <title>Content at Scale</title>
 </head>
 
@@ -203,525 +206,6 @@
             </ul>
         </nav>
         <!-- Side Bar Main-->
-
-        <!-- Container -->
-        <div id="content" style="display: none;">
-            <div class="projects-page d-flex w-100 h-100">
-                <!-- Editor Area-->
-                <div class="custom-templates-area">
-
-                </div>
-                <!-- Editor Area-->
-
-                <!-- Tabs Area Main-->
-                <div class="tabs-area-main">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <!-- Seo Tab button-->
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="seo-tab" data-bs-toggle="tab" data-bs-target="#seo-tab-pane"
-                                type="button" role="tab" aria-controls="seo-tab-pane" aria-selected="false">SEO</button>
-                        </li>
-                        <!-- Seo Tab button-->
-                        <!-- Research Tab button-->
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="research-tab" data-bs-toggle="tab"
-                                data-bs-target="#research-tab-pane" type="button" role="tab"
-                                aria-controls="research-tab-pane" aria-selected="false">Research</button>
-                        </li>
-                        <!-- Research Tab button-->
-                        <!-- Media Tab button-->
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="media-tab" data-bs-toggle="tab"
-                                data-bs-target="#media-tab-pane" type="button" role="tab" aria-controls="media-tab-pane"
-                                aria-selected="true">Media</button>
-                        </li>
-                        <!-- Media Tab button-->
-                        <!-- History Tab button-->
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="history-tab" data-bs-toggle="tab"
-                                data-bs-target="#history-tab-pane" type="button" role="tab"
-                                aria-controls="history-tab-pane" aria-selected="false">History</button>
-                        </li>
-                        <!-- History Tab button-->
-                    </ul>
-                    <div class="tab-content">
-
-                        <!-- Seo Tab Content-->
-                        <div class="tab-pane fade" id="seo-tab-pane" role="tabpanel" aria-labelledby="seo-tab"
-                            tabindex="0">
-                            <div class="side-bar-tabs d-flex h-100">
-                                <!-- Seo Tab SideBar-->
-                                <div class="scroll-bar-adj">
-                                    <div class="nav flex-column nav-pills" id="pills-tab" role="tablist"
-                                        aria-orientation="vertical">
-
-                                        <!-- Optimize Tab button -->
-                                        <button class="nav-link" id="optimization-tab" data-bs-toggle="pill"
-                                            data-bs-target="#optimization-pill" type="button" role="tab"
-                                            aria-controls="optimization-pill" aria-selected="false">
-                                            <span><img
-                                                    src="assets/images/optimization-icon.svg" /></span>Optimization</button>
-                                        <!-- Optimize Tab button -->
-
-                                        <!-- Checklist Tab button -->
-                                        <button class="nav-link" id="checklist-tab" data-bs-toggle="pill"
-                                            data-bs-target="#checklist-pill" type="button" role="tab"
-                                            aria-controls="checklist-pill" aria-selected="false">
-                                            <span><img
-                                                    src="assets/images/checklist-icon.svg" /></span>Checklist</button>
-                                        <!-- Checklist Tab button -->
-
-                                        <!-- Notes Tab button -->
-                                        <button class="nav-link active" id="notes-tab" data-bs-toggle="pill"
-                                            data-bs-target="#notes-pill" type="button" role="tab"
-                                            aria-controls="notes-pill" aria-selected="true">
-                                            <span><img src="assets/images/notes-icon.svg" /></span>Notes</button>
-                                        <!-- Notes Tab button -->
-                                    </div>
-                                </div>
-                                <!-- Seo Tab SideBar-->
-
-                                <!--Seo Tab Content-->
-                                <div class="tab-content side-bar-content p-4" id="v-pills-tabContent">
-
-                                    <!-- Optimize Tab Content -->
-                                    <div class="tab-pane fade" id="optimization-pill" role="tabpanel"
-                                        aria-labelledby="optimization-tab" tabindex="0">Optimization dummy Text
-                                    </div>
-                                    <!-- Optimize Tab Content -->
-
-                                    <!-- Checklist Tab Content -->
-                                    <div class="tab-pane fade" id="checklist-pill" role="tabpanel"
-                                        aria-labelledby="checklist-tab" tabindex="0">
-                                        <h6 class="tab-title">On-page Checklist</h6>
-                                        <div class="checklist-area-list">
-                                            <ul>
-                                                <li class="verified">Title is optimal length </li>
-                                                <li class="verified">Title includes primary keyword</li>
-                                                <li class="verified">Meta includes primary keyword</li>
-                                                <li class="verified">Meta is optimal length</li>
-                                                <li class="verified">URL includes primary keyword</li>
-                                                <li class="not-verified">1st paragraph includes primary keyword</li>
-                                                <li class="verified">A subheading include primary keyword</li>
-                                                <li class="verified">Primary keyword twice in first 4 paragraphs</li>
-                                                <li class="verified">Featured image + media added</li>
-                                                <li class="verified">Click to Tweet added</li>
-                                                <li class="verified">Periods at end of long list items</li>
-                                                <li class="verified">Paragraphs are 3 sentences or less</li>
-                                                <li class="not-verified">Outbound links exist</li>
-                                                <li class="verified">Featured image + media added</li>
-                                                <li class="not-verified">Placeholder images replaced</li>
-                                                <li class="verified">No images within first/last 3 paragraphs</li>
-                                                <li class="verified">Table of contents in place</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- Checklist Tab Content -->
-
-                                    <!-- Notes Tab Content -->
-                                    <div class="tab-pane fade show active" id="notes-pill" role="tabpanel"
-                                        aria-labelledby="notes-tab" tabindex="0">
-                                        <h6 class="tab-title m-0 my-2">Notes</h6>
-                                        <!--Listing Notes Cards-->
-                                        <div class="listing-cards d-flex flex-column">
-                                            <!--Notes Cards-->
-                                            <div class="Notes-card d-flex mt-3 p-3 justify-content-between">
-                                                <div class="notes-avatar">
-                                                    <img src="assets/images/avatar.png" />
-                                                </div>
-                                                <div class="notes-info">
-                                                    <h6 class="card-title">Jonathan Doe</h6>
-                                                    <span class="issue-date">08/05/2022 10:14:01</span>
-                                                    <p>The fascinating angle is that anybody can see the data, but they
-                                                        can’t corrupt it.</p>
-                                                </div>
-                                                <div class="notes-action dropdown">
-                                                    <button class="dropdown-toggle" id="dropdownAction" type="button"
-                                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <span class="dots"></span>
-                                                        <span class="dots"></span>
-                                                        <span class="dots"></span>
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="dropdownAction">
-                                                        <li>
-                                                            <a class="dropdown-item" href="javascript: void(0);">
-                                                                <img src="assets/images/edit-icon.svg" />
-                                                                Edit
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a class="dropdown-item" href="javascript: void(0);">
-                                                                <img src="assets/images/edit-icon.svg" />
-                                                                Delete
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <!--Notes Cards-->
-
-                                            <!--Notes Cards-->
-                                            <div class="Notes-card d-flex mt-3 p-3 justify-content-between">
-                                                <div class="notes-avatar">
-                                                    <img src="assets/images/avatar.png" />
-                                                </div>
-                                                <div class="notes-info">
-                                                    <h6 class="card-title">Jonathan Doe</h6>
-                                                    <span class="issue-date">10/05/2022 17:26:57</span>
-                                                    <p>My transaction in this ledger is authorized by the digital
-                                                        signature of the owner, which authenticates the transaction and
-                                                        safeguards it from tampering.</p>
-                                                </div>
-                                                <div class="notes-action dropdown">
-                                                    <button class="dropdown-toggle" id="dropdownAction" type="button"
-                                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <span class="dots"></span>
-                                                        <span class="dots"></span>
-                                                        <span class="dots"></span>
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="dropdownAction">
-                                                        <li>
-                                                            <a class="dropdown-item" href="javascript: void(0);">
-                                                                <img src="assets/images/edit-icon.svg" />
-                                                                Edit
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a class="dropdown-item" href="javascript: void(0);">
-                                                                <img src="assets/images/edit-icon.svg" />
-                                                                Delete
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <!--Notes Cards-->
-
-                                            <!--Notes Cards-->
-                                            <div class="Notes-card d-flex mt-3 p-3 justify-content-between">
-                                                <div class="notes-avatar">
-                                                    <img src="assets/images/avatar.png" />
-                                                </div>
-                                                <div class="notes-info">
-                                                    <h6 class="card-title">Jonathan Doe</h6>
-                                                    <span class="issue-date">03/05/2022 09:47:33</span>
-                                                    <p>Research other technological infrastructures!</p>
-                                                </div>
-                                                <div class="notes-action dropdown">
-                                                    <button class="dropdown-toggle" id="dropdownAction" type="button"
-                                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <span class="dots"></span>
-                                                        <span class="dots"></span>
-                                                        <span class="dots"></span>
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="dropdownAction">
-                                                        <li>
-                                                            <a class="dropdown-item" href="javascript: void(0);">
-                                                                <img src="assets/images/edit-icon.svg" />
-                                                                Edit
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a class="dropdown-item" href="javascript: void(0);">
-                                                                <img src="assets/images/edit-icon.svg" />
-                                                                Delete
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <!--Notes Cards-->
-
-                                            <!--Notes Cards-->
-                                            <div class="Notes-card d-flex mt-3 p-3 justify-content-between">
-                                                <div class="notes-avatar">
-                                                    <img src="assets/images/avatar.png" />
-                                                </div>
-                                                <div class="notes-info">
-                                                    <h6 class="card-title">Jonathan Doe</h6>
-                                                    <span class="issue-date">02/05/2022 14:55:09</span>
-                                                    <p>Artificial intelligence and blockchain header should be added.
-                                                    </p>
-                                                </div>
-                                                <div class="notes-action dropdown">
-                                                    <button class="dropdown-toggle" id="dropdownAction" type="button"
-                                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <span class="dots"></span>
-                                                        <span class="dots"></span>
-                                                        <span class="dots"></span>
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="dropdownAction">
-                                                        <li>
-                                                            <a class="dropdown-item" href="javascript: void(0);">
-                                                                <img src="assets/images/edit-icon.svg" />
-                                                                Edit
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a class="dropdown-item" href="javascript: void(0);">
-                                                                <img src="assets/images/edit-icon.svg" />
-                                                                Delete
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <!--Notes Cards-->
-                                        </div>
-                                        <!--Listing Notes Cards-->
-                                        <!--ADD Note area-->
-                                        <div class="add-note-area">
-                                            <h4 class="grey-title">Add Note</h4>
-                                            <textarea></textarea>
-                                            <div class="d-flex justify-content-end">
-                                                <button class="p-btn" type="submit">Add Note</button>
-                                            </div>
-                                        </div>
-                                        <!--ADD Note area-->
-                                    </div>
-                                    <!-- Notes Tab Content -->
-
-                                </div>
-                                <!--Seo Tab Content-->
-                            </div>
-                        </div>
-                        <!-- Seo Tab Content-->
-
-                        <!-- Research Tab Content-->
-                        <div class="tab-pane fade" id="research-tab-pane" role="tabpanel" aria-labelledby="research-tab"
-                            tabindex="0">
-                            Dummy text for Research
-                        </div>
-                        <!-- Research Tab Content-->
-
-                        <!-- Media Tab Content-->
-                        <div class="tab-pane fade show active" id="media-tab-pane" role="tabpanel"
-                            aria-labelledby="media-tab" tabindex="0">
-                            <div class="side-bar-tabs d-flex h-100">
-                                <!-- Media Tab SideBar-->
-                                <div class="scroll-bar-adj">
-                                    <div class="nav flex-column nav-pills" id="pills-tab" role="tablist"
-                                        aria-orientation="vertical">
-                                        <!-- Featured Image Tab button -->
-                                        <button class="nav-link" id="featured-image-tab" data-bs-toggle="pill"
-                                            data-bs-target="#featured-image-pill" type="button" role="tab"
-                                            aria-controls="featured-image-pill" aria-selected="false">
-                                            <span><img src="assets/images/featured-image.svg" /></span>Featured
-                                            Image</button>
-                                        <!-- Featured Image Tab button -->
-
-                                        <!-- AI Generator Tab button -->
-                                        <button class="nav-link" id="ai-generator-tab" data-bs-toggle="pill"
-                                            data-bs-target="#ai-generator-pill" type="button" role="tab"
-                                            aria-controls="ai-generator-pill" aria-selected="false">
-                                            <span><img src="assets/images/ai-genrator-icon.svg" /></span>AI
-                                            Generator</button>
-                                        <!-- AI Generator Tab button -->
-
-                                        <!-- Design Tab button -->
-                                        <button class="nav-link active" id="design-tab" data-bs-toggle="pill"
-                                            data-bs-target="#design-pill" type="button" role="tab"
-                                            aria-controls="design-pill" aria-selected="true">
-                                            <span><img src="assets/images/design-icon.svg" /></span>Design</button>
-                                        <!-- Design Tab button -->
-
-                                        <!-- Elements Tab button -->
-                                        <button class="nav-link" id="elements-tab" data-bs-toggle="pill"
-                                            data-bs-target="#elements-pill" type="button" role="tab"
-                                            aria-controls="elements-pill" aria-selected="false">
-                                            <span><img src="assets/images/elements-icon.svg" /></span>Elements</button>
-                                        <!-- Elements Tab button -->
-
-                                        <!-- Text Tab button -->
-                                        <button class="nav-link" id="text-tab" data-bs-toggle="pill"
-                                            data-bs-target="#text-pill" type="button" role="tab"
-                                            aria-controls="text-pill" aria-selected="false">
-                                            <span><img src="assets/images/text-icon.svg" /></span>Text</button>
-                                        <!-- Text Tab button -->
-
-                                        <!-- Files Tab button -->
-                                        <button class="nav-link" id="files-tab" data-bs-toggle="pill"
-                                            data-bs-target="#files-pill" type="button" role="tab"
-                                            aria-controls="files-pill" aria-selected="false">
-                                            <span><img src="assets/images/files-icon.svg" /></span>Files</button>
-                                        <!-- Files Tab button -->
-
-                                        <!-- Upload Tab button -->
-                                        <button class="nav-link" id="upload-tab" data-bs-toggle="pill"
-                                            data-bs-target="#upload-pill" type="button" role="tab"
-                                            aria-controls="upload-pill" aria-selected="false">
-                                            <span><img src="assets/images/upload-icon.svg" /></span>Uploads</button>
-                                        <!-- Upload Tab button -->
-                                    </div>
-                                </div>
-                                <!-- Media Tab SideBar-->
-
-                                <!--Media Tab Content-->
-                                <div class="tab-content side-bar-content p-4" id="v-pills-tabContent">
-
-                                    <!-- Featured Image Tab Content -->
-                                    <div class="tab-pane fade" id="featured-image-pill" role="tabpanel"
-                                        aria-labelledby="featured-image-tab" tabindex="0">Featured Image dummy
-                                        Text</div>
-                                    <!-- Featured Image Tab Content -->
-
-                                    <!-- AI Generator Tab Content -->
-                                    <div class="tab-pane fade" id="ai-generator-pill" role="tabpanel"
-                                        aria-labelledby="ai-generator-tab" tabindex="0">AI Generator dummy Text
-                                    </div>
-                                    <!-- AI Generator Tab Content -->
-
-                                    <!-- Design Tab Content -->
-                                    <div class="tab-pane fade show active" id="design-pill" role="tabpanel"
-                                        aria-labelledby="design-tab" tabindex="0">
-                                        <h6 class="tab-title m-0 mt-2">Design</h6>
-                                        <div class="filter-search-area py-4 w-100 position-relative">
-                                            <span class="search-icon"><img src="assets/images/search-icon.svg" /></span>
-                                            <input type="text" placeholder="Search Styles" />
-                                            <a href="javascript: void(0);" class="filter-icon">
-                                                <!-- <img src="/assets/images/filter-icon.svg" /> -->
-                                            </a>
-                                        </div>
-
-                                        <!--Inner Subtabs-->
-                                        <div class="inner-subtabs">
-                                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                                <!-- Templates Tab button-->
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link" id="templates-tab" data-bs-toggle="tab"
-                                                        data-bs-target="#templates-tab-pane" type="button" role="tab"
-                                                        aria-controls="templates-tab-pane"
-                                                        aria-selected="false">Templates</button>
-                                                </li>
-                                                <!-- Templates Tab button-->
-                                                <!-- Style Tab button-->
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link active" id="style-tab" data-bs-toggle="tab"
-                                                        data-bs-target="#style-tab-pane" type="button" role="tab"
-                                                        aria-controls="style-tab-pane"
-                                                        aria-selected="true">Styles</button>
-                                                </li>
-                                                <!-- Style Tab button-->
-                                            </ul>
-                                            <div class="tab-content" id="myTabContent">
-
-                                                <!-- Templates Tab Content-->
-                                                <div class="tab-pane fade" id="templates-tab-pane" role="tabpanel"
-                                                    aria-labelledby="templates-tab" tabindex="0">
-                                                    <!--Category listing-->
-                                                    <div class="category-listing py-4 d-flex flex-nowrap">
-                                                        <button type="button">Metaverse</button>
-                                                        <button type="button">Cryptocurrency</button>
-                                                        <button type="button">Crypto</button>
-                                                        <button type="button">Technology</button>
-                                                    </div>
-                                                    <!--Category listing-->
-                                                </div>
-                                                <!-- Templates Tab Content-->
-                                                <!-- Style Tab Content-->
-                                                <div class="tab-pane fade show active" id="style-tab-pane"
-                                                    role="tabpanel" aria-labelledby="style-tab" tabindex="0">
-                                                    <!--Category listing-->
-                                                    <div class="category-listing py-4 d-flex flex-nowrap">
-                                                        <button type="button">Bold</button>
-                                                        <button type="button">Lively</button>
-                                                        <button type="button">Vibrant</button>
-                                                        <button type="button">Bright</button>
-                                                        <button type="button">Vivid</button>
-                                                    </div>
-                                                    <!--Category listing-->
-
-                                                    <!--style-design-listing -->
-                                                    <div class="select-style-design pt-2 pb-4">
-                                                        <div class="d-flex justify-content-between align-items-center">
-                                                            <h6 class="listing-title m-0">Color Palettes</h6>
-                                                            <a href="javascript: void(0);" class="see-all">see all</a>
-                                                        </div>
-                                                        <div class="loading-scale d-flex pt-3">
-                                                            <span></span>
-                                                            <span></span>
-                                                            <span></span>
-                                                            <span></span>
-                                                        </div>
-                                                    </div>
-                                                    <!--style-design-listing -->
-                                                    <!--style-design-listing -->
-                                                    <div class="select-style-design pt-2 pb-4">
-                                                        <div class="d-flex justify-content-between align-items-center">
-                                                            <h6 class="listing-title m-0">Font Sets</h6>
-                                                            <a href="javascript: void(0);" class="see-all">see all</a>
-                                                        </div>
-                                                        <div class="loading-scale d-flex pt-3">
-                                                            <span></span>
-                                                            <span></span>
-                                                            <span></span>
-                                                            <span></span>
-                                                        </div>
-                                                    </div>
-                                                    <!--style-design-listing -->
-                                                    <!--style-design-listing -->
-                                                    <div class="select-style-design pt-2 pb-4">
-                                                        <div class="d-flex justify-content-between align-items-center">
-                                                            <h6 class="listing-title m-0">Combinations</h6>
-                                                            <a href="javascript: void(0);" class="see-all">see all</a>
-                                                        </div>
-                                                        <div class="loading-scale d-flex pt-3">
-                                                            <span></span>
-                                                            <span></span>
-                                                            <span></span>
-                                                            <span></span>
-                                                        </div>
-                                                    </div>
-                                                    <!--style-design-listing -->
-                                                </div>
-                                                <!-- Style Tab Content-->
-                                            </div>
-                                        </div>
-                                        <!--Inner Subtabs-->
-
-                                    </div>
-                                    <!-- Design Tab Content -->
-
-                                    <!-- Elements Tab Content -->
-                                    <div class="tab-pane fade" id="elements-pill" role="tabpanel"
-                                        aria-labelledby="elements-tab" tabindex="0">
-
-                                    </div>
-                                    <!-- Elements Tab Content -->
-
-                                    <!-- Text Tab Content -->
-                                    <div class="tab-pane fade" id="text-pill" role="tabpanel" aria-labelledby="text-tab"
-                                        tabindex="0">Text dummy Text</div>
-                                    <!-- Text Tab Content -->
-
-                                    <!-- Files Tab Content -->
-                                    <div class="tab-pane fade" id="files-pill" role="tabpanel"
-                                        aria-labelledby="files-tab" tabindex="0">Files dummy Text</div>
-                                    <!-- Files Tab Content -->
-
-                                    <!-- Uploads Tab Content -->
-                                    <div class="tab-pane fade" id="upload-pill" role="tabpanel"
-                                        aria-labelledby="upload-tab" tabindex="0">Uploads dummy Text</div>
-                                    <!-- Uploads Tab Content -->
-
-                                </div>
-                                <!--Media Tab Content-->
-                            </div>
-                        </div>
-                        <!-- Media Tab Content-->
-
-                        <!-- History Tab Content-->
-                        <div class="tab-pane fade" id="history-tab-pane" role="tabpanel" aria-labelledby="history-tab"
-                            tabindex="0">
-                            Dummy text for History
-                        </div>
-                        <!-- History Tab Content-->
-                    </div>
-                </div>
-                <!-- Tabs Area-->
-            </div>
-        </div>
-        <!-- Container-->
 
 
 
@@ -2571,16 +2055,557 @@
                     <!--Manage User tab Content-->
                     <!--Manage Media tab Content-->
                     <div class="tab-pane fade" id="m-media-tab-pane" aria-labelledby="m-media-tab" tabindex="0">
-                        <div class="tab-content side-bar-content">
-                            Dummy text for Manage Media
+                        <div class="side-bar-tabs d-flex h-100">
+                            <!-- Media Tab SideBar-->
+                            <div class="scroll-bar-adj">
+                                <div class="nav flex-column nav-pills" id="pills-tab" role="tablist"
+                                    aria-orientation="vertical">
+
+                                    <!-- AI Generator Tab button -->
+                                    <button class="nav-link" id="ai-generator-tab" data-bs-toggle="pill"
+                                        data-bs-target="#ai-generator-pill" type="button" role="tab"
+                                        aria-controls="ai-generator-pill" aria-selected="false">
+                                        <span><img src="assets/images/ai-genrator-icon.svg" /></span>AI
+                                        Generator</button>
+                                    <!-- AI Generator Tab button -->
+
+                                    <!-- Design Tab button -->
+                                    <button class="nav-link active" id="design-tab" data-bs-toggle="pill"
+                                        data-bs-target="#design-pill" type="button" role="tab"
+                                        aria-controls="design-pill" aria-selected="true">
+                                        <span><img src="assets/images/design-icon.svg" /></span>Design</button>
+                                    <!-- Design Tab button -->
+
+                                    <!-- Elements Tab button -->
+                                    <button class="nav-link" id="elements-tab" data-bs-toggle="pill"
+                                        data-bs-target="#elements-pill" type="button" role="tab"
+                                        aria-controls="elements-pill" aria-selected="false">
+                                        <span><img src="assets/images/elements-icon.svg" /></span>Elements</button>
+                                    <!-- Elements Tab button -->
+
+                                    <!-- Text Tab button -->
+                                    <button class="nav-link" id="text-tab" data-bs-toggle="pill"
+                                        data-bs-target="#text-pill" type="button" role="tab"
+                                        aria-controls="text-pill" aria-selected="false">
+                                        <span><img src="assets/images/text-icon.svg" /></span>Text</button>
+                                    <!-- Text Tab button -->
+
+                                    <!-- Files Tab button -->
+                                    <button class="nav-link" id="files-tab" data-bs-toggle="pill"
+                                        data-bs-target="#files-pill" type="button" role="tab"
+                                        aria-controls="files-pill" aria-selected="false">
+                                        <span><img src="assets/images/files-icon.svg" /></span>Files</button>
+                                    <!-- Files Tab button -->
+
+                                    <!-- Upload Tab button -->
+                                    <button class="nav-link" id="upload-tab" data-bs-toggle="pill"
+                                        data-bs-target="#upload-pill" type="button" role="tab"
+                                        aria-controls="upload-pill" aria-selected="false">
+                                        <span><img src="assets/images/upload-icon.svg" /></span>Uploads</button>
+                                    <!-- Upload Tab button -->
+                                </div>
+                            </div>
+                            <!-- Media Tab SideBar-->
+
+                            <!--Media Tab Content-->
+                            <div class="tab-content side-bar-content p-4" id="v-pills-tabContent">
+
+                                <!-- AI Generator Tab Content -->
+                                <div class="tab-pane fade" id="ai-generator-pill" role="tabpanel"
+                                    aria-labelledby="ai-generator-tab" tabindex="0">AI Generator dummy Text
+                                </div>
+                                <!-- AI Generator Tab Content -->
+
+                                <!-- Design Tab Content -->
+                                <div class="tab-pane fade show active" id="design-pill" role="tabpanel"
+                                    aria-labelledby="design-tab" tabindex="0">
+                                    <h6 class="tab-title m-0 mt-2">Design</h6>
+                                    <div class="filter-search-area py-4 w-100 position-relative">
+                                        <span class="search-icon"><img src="assets/images/search-icon.svg" /></span>
+                                        <input type="text" placeholder="Search Styles" />
+                                        <a href="javascript: void(0);" class="filter-icon">
+                                            <!-- <img src="/assets/images/filter-icon.svg" /> -->
+                                        </a>
+                                    </div>
+
+                                    <!--Inner Subtabs-->
+                                    <div class="inner-subtabs">
+                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <!-- Templates Tab button-->
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="templates-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#templates-tab-pane" type="button" role="tab"
+                                                    aria-controls="templates-tab-pane"
+                                                    aria-selected="false">Templates</button>
+                                            </li>
+                                            <!-- Templates Tab button-->
+                                            <!-- Style Tab button-->
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="style-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#style-tab-pane" type="button" role="tab"
+                                                    aria-controls="style-tab-pane"
+                                                    aria-selected="true">Styles</button>
+                                            </li>
+                                            <!-- Style Tab button-->
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent">
+
+                                            <!-- Templates Tab Content-->
+                                            <div class="tab-pane fade" id="templates-tab-pane" role="tabpanel"
+                                                aria-labelledby="templates-tab" tabindex="0">
+                                                <!--Category listing-->
+                                                <div class="slider-section mb-4">
+                                                    <div class="category-listing my-4">
+                                                        <div class="tag-slider2 d-flex">
+                                                            <button type="button">Metaverse</button>
+                                                            <button type="button">Cryptocurrency</button>
+                                                            <button type="button">Crypto</button>
+                                                            <button type="button">Technology</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="gallery-area">
+                                                    <div class="row">
+                                                        <div class="col-6 col-md-4 col-sm-6">
+                                                            <div class="single-image">
+                                                                <img src="assets/images/dummy.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 col-md-4 col-sm-6">
+                                                            <div class="single-image">
+                                                                <img src="assets/images/dummy.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 col-md-4 col-sm-6">
+                                                            <div class="single-image">
+                                                                <img src="assets/images/dummy.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 col-md-4 col-sm-6">
+                                                            <div class="single-image">
+                                                                <img src="assets/images/dummy.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 col-md-4 col-sm-6">
+                                                            <div class="single-image">
+                                                                <img src="assets/images/dummy.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 col-md-4 col-sm-6">
+                                                            <div class="single-image">
+                                                                <img src="assets/images/dummy.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 col-md-4 col-sm-6">
+                                                            <div class="single-image">
+                                                                <img src="assets/images/dummy.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 col-md-4 col-sm-6">
+                                                            <div class="single-image">
+                                                                <img src="assets/images/dummy.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Category listing-->
+                                            </div>
+                                            <!-- Templates Tab Content-->
+                                            <!-- Style Tab Content-->
+                                            <div class="tab-pane fade show active" id="style-tab-pane"
+                                                role="tabpanel" aria-labelledby="style-tab" tabindex="0">
+                                                <!--Category listing-->
+                                                <div class="slider-section">
+                                                    <div class="category-listing my-4">
+                                                        <div class="tag-slider d-flex">
+                                                            <button type="button">Bold</button>
+                                                            <button type="button">Lively</button>
+                                                            <button type="button">Vibrant</button>
+                                                            <button type="button">Bright</button>
+                                                            <button type="button">Vivid</button>
+                                                            <button type="button">Bold</button>
+                                                            <button type="button">Lively</button>
+                                                            <button type="button">Vibrant</button>
+                                                            <button type="button">Bright</button>
+                                                            <button type="button">Vivid</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Category listing-->
+
+                                                <!--style-design-listing -->
+                                                <div class="select-style-design pt-2 pb-4">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <h6 class="listing-title m-0">Color Palettes</h6>
+                                                        <a href="javascript: void(0);" class="see-all">see all</a>
+                                                    </div>
+                                                    <div class="slider-section pt-3">
+                                                        <div class="loading-scale slides">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--style-design-listing -->
+                                                <!--style-design-listing -->
+                                                <div class="select-style-design pt-2 pb-4">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <h6 class="listing-title m-0">Font Sets</h6>
+                                                        <a href="javascript: void(0);" class="see-all">see all</a>
+                                                    </div>
+                                                    <div class="slider-section pt-3">
+                                                        <div class="loading-scale slides">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--style-design-listing -->
+                                                <!--style-design-listing -->
+                                                <div class="select-style-design pt-2 pb-4">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <h6 class="listing-title m-0">Combinations</h6>
+                                                        <a href="javascript: void(0);" class="see-all">see all</a>
+                                                    </div>
+                                                    <div class="slider-section pt-3">
+                                                        <div class="loading-scale slides">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--style-design-listing -->
+                                            </div>
+                                            <!-- Style Tab Content-->
+                                        </div>
+                                    </div>
+                                    <!--Inner Subtabs-->
+
+                                </div>
+                                <!-- Design Tab Content -->
+
+                                <!-- Elements Tab Content -->
+                                <div class="tab-pane fade" id="elements-pill" role="tabpanel"
+                                    aria-labelledby="elements-tab" tabindex="0">
+                                    <h6 class="tab-title m-0 mt-2">Elements</h6>
+                                    <div class="filter-search-area py-4 w-100 position-relative">
+                                        <span class="search-icon"><img src="assets/images/search-icon.svg" /></span>
+                                        <input type="text" placeholder="Search element" />
+                                        <a href="javascript: void(0);" class="filter-icon">
+                                            <!-- <img src="/assets/images/filter-icon.svg" /> -->
+                                        </a>
+                                    </div>
+
+                                    <!--Category listing-->
+                                    <div class="slider-section">
+                                        <div class="category-listing my-4">
+                                            <div class="tag-slider d-flex">
+                                                <button type="button">Arrow</button>
+                                                <button type="button">Line</button>
+                                                <button type="button">Circle</button>
+                                                <button type="button">Square</button>
+                                                <button type="button">Shadow</button>
+                                                <button type="button">Arrow</button>
+                                                <button type="button">Line</button>
+                                                <button type="button">Circle</button>
+                                                <button type="button">Square</button>
+                                                <button type="button">Shadow</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Category listing-->
+
+                                    <!--style-design-listing -->
+                                    <div class="select-style-design pt-2 pb-4">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="listing-title m-0">Lines & Shapes</h6>
+                                            <a href="javascript: void(0);" class="see-all">see all</a>
+                                        </div>
+                                        <div class="slider-section pt-3">
+                                            <div class="loading-scale slides">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="select-style-design pt-2 pb-4">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="listing-title m-0">Graphics</h6>
+                                            <a href="javascript: void(0);" class="see-all">see all</a>
+                                        </div>
+                                        <div class="slider-section pt-3">
+                                            <div class="loading-scale slides">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="select-style-design pt-2 pb-4">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="listing-title m-0">Stickers</h6>
+                                            <a href="javascript: void(0);" class="see-all">see all</a>
+                                        </div>
+                                        <div class="slider-section pt-3">
+                                            <div class="loading-scale slides">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--style-design-listing -->
+                                </div>
+                                <!-- Elements Tab Content -->
+
+                                <!-- Text Tab Content -->
+                                <div class="tab-pane fade" id="text-pill" role="tabpanel" aria-labelledby="text-tab"
+                                    tabindex="0">
+                                    <h6 class="tab-title m-0 mt-2">Text</h6>
+                                    <div class="filter-search-area py-4 w-100 position-relative">
+                                        <span class="search-icon"><img src="assets/images/search-icon.svg" /></span>
+                                        <input type="text" placeholder="Search text" />
+                                        <a href="javascript: void(0);" class="filter-icon">
+                                            <!-- <img src="/assets/images/filter-icon.svg" /> -->
+                                        </a>
+                                    </div>
+                                    <button class="p-btn mt-0 mb-5 text-box w-100" type="button">Add a text
+                                        box</button>
+                                    <div class="add-text">
+                                        <span class="w-100 mb-3 d-block">
+                                            Click text to add the page
+                                        </span>
+                                        <div class="listing-text">
+                                            <div class="text-category">
+                                                <h3>
+                                                    Add a heading
+                                                </h3>
+                                                <a href="javascript:void(0)">
+                                                    <img src="assets/images/plus-text.svg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="text-category">
+                                                <h6>
+                                                    Add a subheading
+                                                </h6>
+                                                <a href="javascript:void(0)">
+                                                    <img src="assets/images/plus-text.svg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="text-category">
+                                                <small>
+                                                    Add a little bit of body text
+                                                </small>
+                                                <a href="javascript:void(0)">
+                                                    <img src="assets/images/plus-text.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Text Tab Content -->
+
+                                <!-- Files Tab Content -->
+                                <div class="tab-pane fade files-tab" id="files-pill" role="tabpanel"
+                                    aria-labelledby="files-tab" tabindex="0">
+                                    <h6 class="tab-title m-0 mt-2 mb-4">Files</h6>
+                                    <div class="filter-search-area w-100 position-relative mb-3">
+                                        <span class="search-icon"><img src="assets/images/search-icon.svg"></span>
+                                        <input type="text" placeholder="Search">
+                                        <a href="javascript: void(0);" class="filter-icon">
+                                            <!-- <img src="/assets/images/filter-icon.svg" /> -->
+                                        </a>
+                                    </div>
+                                    <div class="select-project fields mb-5">
+                                        <select class="select2" style="width:100%">
+                                            <option value="">Your Projects</option>
+                                        </select>
+                                    </div>
+                                    <!--Inner Subtabs-->
+                                    <div class="inner-subtabs">
+                                        <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+                                            <!-- all Tab button-->
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="all-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#all-tab-pane" type="button" role="tab"
+                                                    aria-controls="all-tab-pane" aria-selected="false">All</button>
+                                            </li>
+                                            <!-- all Tab button-->
+                                            <!-- designs Tab button-->
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="designs-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#designs-tab-pane" type="button" role="tab"
+                                                    aria-controls="designs-tab-pane"
+                                                    aria-selected="true">designs</button>
+                                            </li>
+                                            <!-- designs Tab button-->
+                                            <!-- folders Tab button-->
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="folders-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#folders-tab-pane" type="button" role="tab"
+                                                    aria-controls="folders-tab-pane"
+                                                    aria-selected="true">Folders</button>
+                                            </li>
+                                            <!-- folders Tab button-->
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent">
+                                            <!-- all Tab Content-->
+                                            <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel"
+                                                aria-labelledby="all-tab" tabindex="0">
+                                                <div class="gallery-area">
+                                                    <div class="row">
+                                                        <div class="col-6 col-md-4 col-sm-6">
+                                                            <div class="single-image">
+                                                                <img src="assets/images/dummy.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 col-md-4 col-sm-6">
+                                                            <div class="single-image"></div>
+                                                        </div>
+                                                        <div class="col-6 col-md-4 col-sm-6">
+                                                            <div class="single-image"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- all Tab Content-->
+                                            <!-- designs Tab Content-->
+                                            <div class="tab-pane fade" id="designs-tab-pane" role="tabpanel"
+                                                aria-labelledby="designs-tab" tabindex="0">
+                                                <div class="gallery-area">
+                                                    <div class="row">
+                                                        <div class="col-6 col-md-4 col-sm-6">
+                                                            <div class="single-image">
+                                                                <img src="assets/images/dummy.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 col-md-4 col-sm-6">
+                                                            <div class="single-image"></div>
+                                                        </div>
+                                                        <div class="col-6 col-md-4 col-sm-6">
+                                                            <div class="single-image"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- designs Tab Content-->
+                                            <!-- folders Tab Content-->
+                                            <div class="tab-pane fade" id="folders-tab-pane" role="tabpanel"
+                                                aria-labelledby="folders-tab" tabindex="0">
+                                                <div class="gallery-area">
+                                                    <div class="row">
+                                                        <div class="col-6 col-md-4 col-sm-6">
+                                                            <div class="single-image">
+                                                                <img src="assets/images/dummy.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 col-md-4 col-sm-6">
+                                                            <div class="single-image"></div>
+                                                        </div>
+                                                        <div class="col-6 col-md-4 col-sm-6">
+                                                            <div class="single-image"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- folders Tab Content-->
+                                        </div>
+                                    </div>
+                                    <!--Inner Subtabs-->
+                                </div>
+                                <!-- Files Tab Content -->
+
+                                <!-- Uploads Tab Content -->
+                                <div class="tab-pane fade" id="upload-pill" role="tabpanel"
+                                    aria-labelledby="upload-tab" tabindex="0">Uploads dummy Text</div>
+                                <!-- Uploads Tab Content -->
+
+                            </div>
+                            <!--Media Tab Content-->
                         </div>
                     </div>
                     <!--Manage Media tab Content-->
                     <!--Manage Integration tab Content-->
                     <div class="tab-pane fade" id="m-integration-tab-pane" aria-labelledby="m-integration-tab"
                         tabindex="0">
-                        <div class="tab-content side-bar-content">
-                            Dummy text for Manage Integrations
+                        <div class="side-bar-tabs d-flex h-100">
+                            <div class="scroll-bar-adj">
+                            </div>
+                            <div class="tab-content p-4 side-bar-content">
+                                <h6 class="tab-title">Integrations</h6>
+                                <div class="row mt-4">
+                                    <div class="col-lg-6 mb-3">
+                                        <div class="integration-box p-4">
+                                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                                <img src="assets/images/wordpress-logo.png" style="width: 144px;" alt="">
+                                                <a href="javascript:void(0)">
+                                                    <img src="assets/images/setting-int.svg" alt="">
+                                                </a>
+                                            </div>
+                                            <h5>
+                                                Wordpress Plugin
+                                            </h5>
+                                            <p>
+                                                WordPress plugin are pieces of software that can be added to a new WordPress website to add new features or modify existing ones.
+                                            </p>
+                                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                                <a href="javascript:void(0)" class="p-btn mt-0">
+                                                    Download
+                                                </a>
+                                                <div class="form-switch toggle-switch">
+                                                    <input class="form-check-input" type="checkbox" role="switch" checked>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="integration-box p-4">
+                                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                                <img src="assets/images/shopify-logo.png" style="width: 115px;" alt="">
+                                                <a href="javascript:void(0)">
+                                                    <img src="assets/images/setting-int.svg" alt="">
+                                                </a>
+                                            </div>
+                                            <h5>
+                                                Shopify Plugin
+                                            </h5>
+                                            <p>
+                                                Shopify is an e-commerce platform that allows merchants to create online stores and sell Their products to customers.
+                                            </p>
+                                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                                <a href="javascript:void(0)" class="p-btn mt-0">
+                                                    Download
+                                                </a>
+                                                <div class="form-switch toggle-switch">
+                                                    <input class="form-check-input" type="checkbox" role="switch">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!--Manage Integration tab Content-->
@@ -3112,6 +3137,9 @@
     <!-- select 2 -->
 
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <!-- slick slider Js-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
