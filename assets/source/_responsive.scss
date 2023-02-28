@@ -43,7 +43,7 @@
 
     .side-bar-tabs .nav-pills .nav-link.active:before,
     .side-bar-tabs .nav-pills .nav-link.active:after {
-        border: 5px solid #171616;
+        border: 5px solid $dark-color;
     }
 
     .count-info h5 {
@@ -110,6 +110,10 @@
                 width: 708px;
             }
         }
+    }
+
+    header {
+        z-index: 1000;
     }
 
     .tabs-area-main.container-open-sidebar .tab-content {
@@ -732,4 +736,4 @@
         flex-direction: column;
         align-items: baseline;
     }
-}
+} 

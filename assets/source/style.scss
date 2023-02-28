@@ -1,3 +1,10 @@
+$yellow-color: #F8E03E;
+$btn-primary: #5602C4;
+$btn-secondary: #6F27E0;
+$btn-gr: #5702C4;
+$dark-color: #1D1B28;
+$side-color: #25232F;
+
 html {
     font-size: 16px;
 }
@@ -38,7 +45,7 @@ img {
 }
 
 input[type=checkbox] {
-    accent-color: #674FF1;
+    accent-color: $btn-gr;
 }
 
 .text-danger {
@@ -49,7 +56,7 @@ input[type=checkbox] {
 }
 
 header {
-    background: #171616;
+    background: $dark-color;
     height: 80px;
     position: fixed;
     top: 0;
@@ -73,7 +80,7 @@ header img.avatar {
         margin: 0.5rem 0 0 !important;
         box-shadow: -7px 8px 16px 0px rgb(0 0 0 / 20%);
         border-radius: 8px;
-        background-color: #1c1c1c;
+        background-color: $dark-color;
         color: #fff;
     }
     .dropdown-item {
@@ -92,7 +99,7 @@ header img.avatar {
         }
 
         &:hover, &:active {
-            background-color: #252627;
+            background-color: $side-color;
         }
     }
 }
@@ -123,10 +130,10 @@ header img.avatar {
         gap: 7px;
 
         .badge {
-            width: 25px;
-            height: 25px;
-            background: #FFF700;
-            border-radius: 100%;
+            min-width: 25px;
+            height: 20px;
+            background: $yellow-color;
+            border-radius: 7px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -136,13 +143,13 @@ header img.avatar {
     }
     .add-more {
         font-size: 1rem;
-        color: #FFF700;
+        color: $yellow-color;
         display: flex;
         align-items: center;
         gap: 2px;
     }
     a {
-        color: #FFF700;
+        color: $yellow-color;
         text-decoration: underline;
         font-size: 0.75rem;
     }
@@ -154,7 +161,7 @@ header .notification-alert {
     height: 11px;
     background: #FF4C17;
     border-radius: 24px;
-    border: 2px solid #171616;
+    border: 2px solid $dark-color;
     top: 0px;
     right: 0;
 }
@@ -172,7 +179,7 @@ header {
         transform: unset !important;
         border: 0;
         .nt-header {
-            background: #171616;
+            background: $dark-color;
             display: flex;
             justify-content: space-between;
             color: #fff;
@@ -189,7 +196,7 @@ header {
             a {
                 font-size: 0.75rem;
                 text-decoration: underline;
-                color: #FFF700;
+                color: $yellow-color;
             }
         }
         .nt-area {
@@ -226,9 +233,9 @@ header {
 
                         strong {
                             font-size: 0.688rem;
-                            color: #171616;
+                            color: $dark-color;
                             &.to {
-                                color: #674EF2;
+                                color: $btn-secondary;
                             }
                         }
                     }
@@ -271,7 +278,7 @@ header {
             border-radius: 6px;
             height: 46px;
             padding: 8px;
-            background: #333333;
+            background: $side-color;
             border: 0;
             .select2-selection__rendered {
                 color: #fff;
@@ -329,7 +336,7 @@ header {
 
 #sidebar {
     width: 80px;
-    background: #171616;
+    background: $dark-color;
     flex: 0 0 80px;
     position: fixed;
     top: 80px;
@@ -358,7 +365,7 @@ header {
 }
 
 #sidebar li.active a img {
-    filter: brightness(0) saturate(100%) invert(93%) sepia(93%) saturate(1129%) hue-rotate(356deg) brightness(106%) contrast(104%);
+    filter: brightness(0) saturate(100%) invert(94%) sepia(35%) saturate(6227%) hue-rotate(325deg) brightness(109%) contrast(94%);
     ;
 }
 
@@ -373,12 +380,12 @@ header {
     top: 0;
     bottom: 0;
     width: 4px;
-    background: #171616;
+    background: $dark-color;
     border-radius: 0px 6px 6px 0px;
 }
 
 #sidebar li.active a:before {
-    background: #fff700;
+    background: $yellow-color;
 }
 
 #content {
@@ -397,7 +404,7 @@ header {
 .tabs-area-main {
     flex: 0 0 38.6%;
     width: 38.6%;
-    background: #252627;
+    background: $side-color;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -410,7 +417,7 @@ header {
     align-items: center;
     border: none;
     box-shadow: 0px 1px 8px #ffffff0d;
-    background: #171616;
+    background: $dark-color;
 }
 
 .tabs-area-main .nav-tabs li {
@@ -426,7 +433,7 @@ header {
 }
 
 .tabs-area-main .nav-tabs .nav-link.active {
-    border-bottom: 4px solid #fff700;
+    border-bottom: 4px solid $yellow-color;
     background: transparent;
     color: #fff;
     font-weight: 600;
@@ -444,7 +451,7 @@ header {
 // }
 
 .side-bar-tabs .scroll-bar-adj {
-    background: #171616;
+    background: $dark-color;
     width: 98px;
     flex-wrap: nowrap;
     padding-bottom: 10px;
@@ -501,7 +508,7 @@ header {
 }
 
 .side-bar-tabs .nav-pills .nav-link.active {
-    background: #252627;
+    background: $side-color;
 }
 
 .side-bar-tabs .nav-pills .nav-link.active::before {
@@ -509,10 +516,10 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    background: #171616;
+    background: $dark-color;
     border-radius: 0px 0px 218px 0;
     width: 100%;
-    border: 6px solid #171616;
+    border: 6px solid $dark-color;
 }
 
 .side-bar-tabs .nav-pills .nav-link.active::after {
@@ -520,10 +527,10 @@ header {
     position: absolute;
     bottom: 0;
     left: 0;
-    background: #171616;
+    background: $dark-color;
     border-radius: 0px 218px 0px 0;
     width: 100%;
-    border: 6px solid #171616;
+    border: 6px solid $dark-color;
 }
 
 .side-bar-tabs .nav-pills .nav-link.active img {
@@ -531,7 +538,7 @@ header {
 }
 
 .tab-title {
-    color: #fff700;
+    color: $yellow-color;
     font-weight: 600;
 }
 
@@ -544,7 +551,7 @@ header {
 }
 
 .filter-search-area  input {
-    background: #1A1B1C;
+    background: $dark-color;
     height: 64px;
     width: 100%;
     border: none;
@@ -607,7 +614,7 @@ header {
 
 .category-listing button {
     padding: 12px 28px;
-    background: #2c2c2c;
+    background: $dark-color;
     border: 1px solid #414141;
     color: #cccccc;
     font-size: 0.95rem;
@@ -634,7 +641,7 @@ header {
 .loading-scale span {
     height: 124px;
     width: 124px;
-    background: #1c1c1c;
+    background: $dark-color;
     border-radius: 9px;
 
     &:first-child {
@@ -674,7 +681,7 @@ header {
 
 .Notes-card {
     gap: 20px;
-    background: #1C1C1C;
+    background: $dark-color;
     border-radius: 9px;
 }
 
@@ -761,7 +768,7 @@ header {
 
 .add-note-area {
     position: absolute;
-    background: #252627;
+    background: $side-color;
     padding: 24px 0;
     width: 100%;
 }
@@ -785,7 +792,7 @@ header {
 
 .p-btn {
     padding: 9px 28px;
-    border: 1px solid #FFF700;
+    border: 1px solid $yellow-color;
     margin-top: 20px;
     border-radius: 6px;
     background: transparent;
@@ -804,15 +811,19 @@ header {
         padding: 19px 28px;
         font-size: 1rem;
     }
+    &.scan-request {
+        padding: 12px 18px;
+        font-size: 0.875rem !important; 
+    }
 }
 
 .p-btn:hover {
-    background: #fff800;
+    background: $yellow-color;
     color: #000000;
 }
 
 .p-btn.p-btn-bg {
-    background: #fff800;
+    background: $yellow-color;
     color: #000000;
     font-size: 1rem;
     font-weight: 500;
@@ -917,7 +928,7 @@ header {
     position: relative;
     font-size: 0.88rem;
     font-weight: 600;
-    color: #171616;
+    color: $dark-color;
     display: flex;
     gap: 5px;
     justify-content: center;
@@ -926,7 +937,7 @@ header {
 
 .nav-tabs .nav-link.active {
     background: transparent;
-    border-bottom: 4px solid #171616;
+    border-bottom: 4px solid $dark-color;
 }
 
 .page-tabs .nav-tabs .nav-link .counter {
@@ -942,7 +953,7 @@ header {
 }
 
 .page-tabs .nav-tabs .nav-link.active .counter {
-    background: #fff800;
+    background: $yellow-color;
 }
 
 .grid-listing-tabs .nav-tabs .nav-link {
@@ -965,9 +976,9 @@ header {
 
 .cs-secondary-btn {
     padding: 12px 18px;
-    border: 1px solid #664FF1;
+    border: 1px solid $btn-primary;
     border-radius: 6px;
-    background: transparent linear-gradient(73deg, #664FF1 0%, #8467FF 51%, #674FF1 100%) 0% 0%;
+    background: transparent linear-gradient(73deg, $btn-primary 0%, $btn-secondary 51%, $btn-gr 100%) 0% 0%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -978,13 +989,13 @@ header {
 
 .cs-secondary-btn-outline {
     padding: 12px 18px;
-    border: 1px solid #674EF2;
+    border: 1px solid $btn-secondary;
     border-radius: 6px;
     background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #674EF2;
+    color: $btn-secondary;
     font-weight: 500;
     gap: 6px;
 
@@ -1032,7 +1043,7 @@ header {
 .table input[type=checkbox] {
     width: 20px;
     height: 20px;
-    accent-color: #171616;
+    accent-color: $dark-color;
 }
 
 .table thead {
@@ -1056,7 +1067,7 @@ header {
 .table thead th,
 .table tbody td,
 .table tfoot td {
-    color: #171616;
+    color: $dark-color;
     text-align: center;
     border: none;
     background: #f7f7f9;
@@ -1080,7 +1091,7 @@ header {
     padding: 18px 27px;
     font-size: 0.88rem;
     font-weight: 700;
-    color: #171616;
+    color: $dark-color;
 
     .pr-name {
         flex: 1;
@@ -1388,7 +1399,7 @@ header {
 }
 
 .profile-info-feilds .info-feild select option {
-    color: #171616;
+    color: $dark-color;
 }
 
 .profile-info-feilds .info-feild input:disabled,
@@ -1448,8 +1459,8 @@ button.p-btn:disabled {
 .form-switch.toggle-switch input.form-check-input:checked {
     background-image: none;
     box-shadow: none;
-    background-color: #FFF700;
-    border: 1px solid #FFF700;
+    background-color: $yellow-color;
+    border: 1px solid $yellow-color;
 }
 
 .form-switch.toggle-switch input.form-check-input:after {
@@ -1475,7 +1486,7 @@ button.p-btn:disabled {
     border-radius: 50%;
     width: 18px;
     height: 18px;
-    background-color: #171616;
+    background-color: $dark-color;
     margin-top: 2px;
     margin-left: 20px;
     box-shadow: none;
@@ -1553,7 +1564,7 @@ button.p-btn:disabled {
 }
 
 .automation-feilds select option {
-    color: #171616;
+    color: $dark-color;
 }
 
 .automation-feilds select.icons-library {
@@ -1601,7 +1612,7 @@ button.p-btn:disabled {
             padding: 0px 10px 7px 5px;
 
             .select2-selection__choice {
-                background-color: #FFF700;
+                background-color: $yellow-color;
                 border-radius: 99px;
                 padding: 8px 35px 8px 16px;
                 color: #000000;
@@ -1660,7 +1671,7 @@ button.p-btn:disabled {
 }
 
 .project-card h6 {
-    color: #171616;
+    color: $dark-color;
     line-height: 22px;
     font-weight: 700;
 }
@@ -1693,7 +1704,7 @@ button.p-btn:disabled {
     font-weight: 500;
     border-radius: 99px;
     cursor: default;
-    color: #171616;
+    color: $dark-color;
 }
 
 .tag.completed {
@@ -1711,7 +1722,7 @@ button.p-btn:disabled {
     font-size: 0.75rem;
     padding: 0 15px;
     border-right: 1px solid #DEDEDE;
-    color: #171616;
+    color: $dark-color;
     line-height: 24px;
     text-align: center;
 }
@@ -1727,7 +1738,7 @@ button.p-btn:disabled {
 
 .info-cat h6 {
     font-size: 1.2rem;
-    color: #171616;
+    color: $dark-color;
     font-weight: 700;
     margin: 0;
 }
@@ -1811,8 +1822,8 @@ button.p-btn:disabled {
 }
 
 .side-bar-tabs .table thead th {
-    background: #212121;
-    color: #FFF700;
+    background: $dark-color;
+    color: $yellow-color;
     padding: 12px;
     font-weight: 500;
     font-size: 0.75rem;
@@ -1904,7 +1915,7 @@ button.p-btn:disabled {
 
             a.forgot {
                 font-size: 0.75rem;
-                color: #171616;
+                color: $dark-color;
                 font-weight: 600;
             }
 
@@ -1912,7 +1923,7 @@ button.p-btn:disabled {
                 width: 100%;
                 height: 59px;
                 border-radius: 9px;
-                background: #171616;
+                background: $dark-color;
                 border: 0;
                 color: #fff;
                 font-size: 1.125rem;
@@ -1936,7 +1947,7 @@ button.p-btn:disabled {
             .back {
 
                 a {
-                    color: #171616;
+                    color: $dark-color;
                     font-size: 0.8125rem;
                     font-weight: 600;
                     display: inline-flex;
@@ -2098,8 +2109,8 @@ button.p-btn:disabled {
             margin-left: 4px;
         }
         &:checked[type=checkbox] {
-            background-color: #674EF2;
-            border: 1px solid #674EF2;
+            background-color: $btn-secondary;
+            border: 1px solid $btn-secondary;
             &:after {
                 width: 22px;
                 height: 22px;
@@ -2462,7 +2473,7 @@ span.status {
         background: #F4F4F4;
         border: 1px solid #fff;
         border-radius: 12px;
-        color: #171616;
+        color: $dark-color;
         position: relative;
         cursor: pointer;
 
@@ -2557,7 +2568,7 @@ span.status {
             h5.pr-name {
                 font-size: 1rem;
                 font-weight: 600;
-                color: #171616;
+                color: $dark-color;
                 margin-bottom: 0;
             }
 
@@ -2677,7 +2688,7 @@ span.status {
 
     .info-text {
         gap: 10px;
-        color: #171616;
+        color: $dark-color;
         margin-bottom: 50px;
 
         img {
@@ -2694,7 +2705,7 @@ span.status {
 
         h5 {
             font-size: 1.125rem;
-            color: #171616;
+            color: $dark-color;
             margin-bottom: 16px;
             font-weight: 700;
         }
@@ -2779,7 +2790,7 @@ span.status {
 
     .options {
         font-size: 0.75rem;
-        color: #171616;
+        color: $dark-color;
         display: flex;
         align-items: center;
         gap: 9px;
@@ -2825,7 +2836,7 @@ span.status {
                 align-items: center;
                 justify-content: center;
                 font-size: 1rem;
-                color: #171616;
+                color: $dark-color;
                 font-weight: 600;
                 border-radius: 6px;
 
@@ -2838,7 +2849,7 @@ span.status {
 
                 &:hover,
                 &.active {
-                    background: #171616;
+                    background: $dark-color;
                     color: #fff;
                 }
             }
@@ -2922,8 +2933,8 @@ span.status {
         border-radius: 6px;
 
         .select2-selection__choice {
-            background-color: #252627;
-            border: 1px solid #252627;
+            background-color: $side-color;
+            border: 1px solid $side-color;
             border-radius: 99px;
             padding: 5px 22px 4px 12px;
             font-size: 0.875rem;
@@ -2951,7 +2962,7 @@ span.status {
         gap: 10px;
         margin-bottom: 15px;
         h5 {
-            color: #FFF700;
+            color: $yellow-color;
             font-size: 0.936rem;
             margin: 0;
             line-height: 1;
@@ -3107,7 +3118,7 @@ span.status {
 
 .brief-content {
     .accordion-item {
-        background-color: #1C1C1C;
+        background-color: $dark-color;
         border: 0;
         border-radius: 9px;
         overflow: hidden;
@@ -3169,6 +3180,10 @@ span.status {
                 background: #151515;
                 padding: 0;
 
+                a.add-sidebar-section + .accordion-button {
+                    padding: 18px 20px 18px;
+                }
+
                 .accordion-button {
                     padding: 18px 20px;
                 }
@@ -3193,6 +3208,12 @@ span.status {
     }
 }
 
+#ranking-pill .brief-content .accordion-item .accordion-item {
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+}
+
 .return {
     .modal {
         position: absolute;
@@ -3209,7 +3230,7 @@ span.status {
         .modal-content {
             border-radius: 9px;
             padding: 30px 15px;
-            background: #1C1C1C;
+            background: $dark-color;
             border: 1px solid #393939;
         }
         .modal-header {
@@ -3218,7 +3239,7 @@ span.status {
             border-bottom: 1px solid #393939;
         }
         .modal-title {
-            color: #FFF700;
+            color: $yellow-color;
         }
         .close-modal {
             img {
@@ -3264,7 +3285,7 @@ span.status {
                     padding: 19px 16px 19px 64px;
                     background: #242526;
                     color: #ffff;
-                    border-bottom: 1px solid #1C1C1C;
+                    border-bottom: 1px solid $dark-color;
 
                     &:not(.collapsed) {
                         background: #fff;
@@ -3302,7 +3323,7 @@ span.status {
                     gap: 5px;
 
                     &:not(.p-btn-bg) {
-                        color: #FFF700;
+                        color: $yellow-color;
                     }
                     
                     img {
@@ -3369,7 +3390,7 @@ span.status {
         font-weight: normal;
 
         span {
-            color: #FFF700;
+            color: $yellow-color;
             display: flex;
             align-items: center;
             gap: 13px;
@@ -3420,8 +3441,8 @@ span.status {
             font-weight: 600;
 
             &.active {
-                background: #FFF700;
-                color: #171616;
+                background: $yellow-color;
+                color: $dark-color;
             }
         }
     }
@@ -3440,7 +3461,7 @@ span.status {
 
                 &.copy-remove-ignore {
                     i {
-                        color: #fff700;
+                        color: $yellow-color;
                     }
                 }
             }
@@ -3465,7 +3486,7 @@ span.status {
         }
         .accordion-body {
             a {
-                color: #fff700;
+                color: $yellow-color;
             }
         }
     }
@@ -3498,7 +3519,7 @@ span.status {
             }
 
             span.timeline-time {
-                border: 1px solid #FFF700;
+                border: 1px solid $yellow-color;
                 border-radius: 99px;
                 width: 81px;
                 height: 32px;
@@ -3508,7 +3529,7 @@ span.status {
                 justify-content: center;
                 color: #FFFFFF;
                 position: relative;
-                background: #252627;
+                background: $side-color;
             }
 
             .timeline-img {
@@ -3583,7 +3604,7 @@ span.status {
 
         .single-image {
             margin-bottom: 12px;
-            background: #1c1c1c;
+            background: $dark-color;
             height: 116px;
             width: 100%;
             position: relative;
@@ -3596,7 +3617,7 @@ span.status {
 
             &.active {
                 img {
-                    border: 1px solid #FFF700;
+                    border: 1px solid $yellow-color;
                 }
             }
 
@@ -3606,7 +3627,7 @@ span.status {
                 position: absolute;
                 right: 10px;
                 top: 10px;
-                accent-color: #FFF700;
+                accent-color: $yellow-color;
             }
         } 
     }
@@ -3655,7 +3676,7 @@ span.status {
             right: 9px;
 
             &::before {
-                background: linear-gradient(to right, rgba(37, 38, 39, 0), #252627);
+                background: linear-gradient(to right, rgba(37, 38, 39, 0), $side-color);
                 right: -9px;
             }
         }
@@ -3664,7 +3685,7 @@ span.status {
             left: 12px;
 
             &::before {
-                background: linear-gradient(to left, rgba(37, 38, 39, 0), #252627);
+                background: linear-gradient(to left, rgba(37, 38, 39, 0), $side-color);
                 left: -13px;
             }
 
@@ -3737,7 +3758,7 @@ span.status {
             justify-content: space-between;
             align-items: center;
             height: 85px;
-            background: #1C1C1C;
+            background: $dark-color;
             padding: 0 22px;
             border-radius: 9px;
 
@@ -3770,7 +3791,7 @@ span.status {
         height: 64px;
         padding: 18px 16px;
         font-size: 1.125rem;
-        background: #1A1B1C;
+        background: $dark-color;
 
         .select2-selection__rendered {
             color: #fff;
@@ -3830,7 +3851,7 @@ span.status {
     border-radius: 9px;
     padding: 1.625rem;
     .sub-heading {
-        color: #171616;
+        color: $dark-color;
         font-size: 1.125rem;
         font-weight: bold;
         line-height: 14px;
@@ -3877,10 +3898,10 @@ span.status {
     }
     a.link {
         font-size: 0.875rem;
-        color: #674EF2;
+        color: $btn-secondary;
 
         strong {
-            color: #171616;
+            color: $dark-color;
         }
     }
     .box-header {
@@ -3898,7 +3919,7 @@ span.status {
     flex-direction: column;
     gap: 12px;
     a {
-        color: #171616;
+        color: $dark-color;
         border: 1px solid #D5D5D5;
         border-radius: 9px;
         background: #fff;
@@ -3962,7 +3983,7 @@ span.status {
         border: 1px solid #707070;
         border-radius: 99px;
         padding: 12px 15px;
-        color: #171616;
+        color: $dark-color;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -4044,8 +4065,8 @@ span.status {
 
     .upfate-profile {
         width: 100%;
-        color: #171616;
-        border: 1px solid #171616;
+        color: $dark-color;
+        border: 1px solid $dark-color;
         border-radius: 4px;
         font-size: 0.688rem;
         height: 34px;
@@ -4103,7 +4124,7 @@ span.status {
         align-items: center;
         gap: 5px;
         font-size: 0.75rem;
-        color: #171616;
+        color: $dark-color;
         font-weight: 600;
 
         img {
@@ -4122,7 +4143,7 @@ span.status {
     h1 {
         font-size: 2.25rem;
         font-weight: normal;
-        color: #171616;
+        color: $dark-color;
     }
     .filter-fields {
         display: flex;
@@ -4273,7 +4294,7 @@ span.status {
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #171616;
+        color: $dark-color;
         font-weight: 600;
         padding: 3px;
     }
@@ -4306,7 +4327,7 @@ span.status {
         height: calc(100vh - 80px);
         transition: 0.4s;
         padding: 0;
-        background: #171616;
+        background: $dark-color;
     }
     .cGhpJi {
         display: flex;
@@ -4336,7 +4357,7 @@ span.status {
         }
     }
     .cGhpJi[aria-selected="true"], .cGhpJi:hover {
-        background: #252627;
+        background: $side-color;
 
         * {
             color: #7C828D;
@@ -4358,9 +4379,9 @@ span.status {
     }
     .dfflPR {
         padding: 12px 18px;
-        border: 1px solid #664FF1;
+        border: 1px solid $btn-primary;
         border-radius: 6px;
-        background: transparent linear-gradient(73deg, #664FF1 0%, #8467FF 51%, #674FF1 100%) 0% 0%;
+        background: transparent linear-gradient(73deg, $btn-primary 0%, $btn-secondary 51%, $btn-gr 100%) 0% 0%;
         width: 100px;
         span {
             font-size: 1rem !important;
@@ -4423,7 +4444,7 @@ span.status {
 .invited-project {
     font-size: 0.937rem;
     input[type=checkbox] {
-        accent-color: #F8E03E;
+        accent-color: $yellow-color;
         width: 19px;
         height: 19px; 
         flex: 0 0 19px;
@@ -4559,7 +4580,7 @@ span.status {
 /* White label */
 /* Integrations tab */
 .integration-box {
-    background: #1C1C1C;
+    background: $dark-color;
     border-radius: 12px;
     h5 {
         font-size: 0.75rem;
@@ -4587,9 +4608,15 @@ span.status {
     }
 }
 /* Integrations tab */
-a.add-sidebar-section {
+a.add-sidebar-section, a.add-faq-sidebar-section {
     width: 24px;
     flex: 0 0 24px;
+}
+.fr-box.fr-basic .fr-element {
+    min-height: calc(100vh - 426px) !important;
+}
+a.open img, .table-action-btns a:not(.disabled) img {
+    filter: brightness(0) saturate(100%) invert(11%) sepia(23%) saturate(623%) hue-rotate(209deg) brightness(93%) contrast(99%);
 }
 /* progress bar color */
 .progress-bar-success .progress-bar {
@@ -4678,14 +4705,37 @@ body {
     /* Handle */
     ::-webkit-scrollbar-thumb {
         border-radius: 10px;
-        background: #1c1c1c;
+        background: $dark-color;
     }
     
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
-        background: #1c1c1c;
+        background: $dark-color;
     }
 }
 
-@import 'taimoor';
+.tabs-area-main {
+
+    .nav-tabs {
+
+        .nav-link {
+
+            span {
+                display: none;
+            }
+        }
+    }
+}
+
+.container-open-sidebar {
+
+    .toggle-btn-sidebar {
+        display: none;
+    }
+}
+
+.page-bredcrums {
+    flex-wrap: wrap;
+}
+
 @import 'responsive';

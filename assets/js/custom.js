@@ -275,6 +275,10 @@ $(".select-project input:checkbox").click(function(){
   $('.project-list input:checkbox').not(this).prop('checked', this.checked);
 });
 
+$(".scan-request").click(function () {
+  $(this).hide();
+  $(".scan-head-data").show();
+});
 // Chart js 
 
 // chart 1 

@@ -428,7 +428,7 @@
                                                     <img src="assets/images/user.svg" alt="">
                                                     Roles Manager
                                                 </h1>
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#addStatus" class="cs-secondary-btn">+ Add Role</button>
+                                                <button type="button" data-bs-toggle="modal" data-bs-target="#addRole" class="cs-secondary-btn">+ Add Role</button>
                                             </div>
                                             <!-- User Role Table-->
                                             <div class="post-status-listing">
@@ -635,6 +635,102 @@
         </div>
     </div>
     <!-- INVITE USER 2-->
+
+    <!-- ADD ROLE -->
+    <div class="modal fade" id="addRole" tabindex="-1" aria-labelledby="addRole" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg invite-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="addRole">Add Role</h5>
+                <a href="javascript:void(0)" class="close-modal">
+                    <img src="assets/images/close-modal.svg" data-bs-dismiss="modal" aria-label="Close" alt="">
+                </a>
+                </div>
+                <div class="modal-body">
+                    <div class="fields">
+                        <label>Name</label>
+                        <input type="text" placeholder="Enter the full name" name="" id="">
+                    </div>
+                    <div class="fields">
+                        <label>Description</label>
+                        <textarea name="" id="" placeholder="Enter the email address" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="cs-secondary-btn next-invite" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#addRole2">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ADD ROLE -->
+    <!-- ADD ROLE 2-->
+    <div class="modal fade" id="addRole2" tabindex="-1" aria-labelledby="addRole2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg invite-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="inviteUser2">Add Role</h5>
+                <a href="javascript:void(0)" class="close-modal">
+                    <img src="assets/images/close-modal.svg" data-bs-dismiss="modal" aria-label="Close" alt="">
+                </a>
+                </div>
+                <div class="modal-body invited-project">
+                    <div class="d-flex justify-content-between invite-action mb-5">
+                        <span>
+                            Assign permissions to role
+                        </span>
+                        <span class="select-project">
+                            <input type="checkbox" name="" id="">
+                            Select all
+                        </span>
+                    </div>
+                    <div class="project-list">
+                        <div class="row align-items-start">
+                            <div class="col-md-4">
+                                <span>
+                                    <input type="checkbox" name="" id="">
+                                    Create Users
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span>
+                                    <input type="checkbox" name="" id="">
+                                    View Reporting Dashboard
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span>
+                                    <input type="checkbox" name="" id="">
+                                    Auto Add to New Projects
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span>
+                                    <input type="checkbox" name="" id="">
+                                    Purchase Credits
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span>
+                                    <input type="checkbox" name="" id="">
+                                    Install WP
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span>
+                                    <input type="checkbox" name="" id="">
+                                    Create New Posts
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="cs-secondary-btn">Add Role</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ADD ROLE 2-->
 
 
 
