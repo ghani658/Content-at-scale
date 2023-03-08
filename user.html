@@ -250,12 +250,17 @@
                                                 </div>
                                             </div>
                                             <!-- User Table-->
-                                            <div class="post-status-listing">
+                                            <div class="post-status-listing user-table">
                                                 <table class="table table-striped">
                                                     <thead class="table-light">
                                                         <tr>
                                                             <th scope="col">
-                                                                NAME
+                                                                <div class="d-flex gap-20 align-items-center">
+                                                                    <input type="checkbox" class="select-name" name="" id="">
+                                                                    <div class="pr-name">
+                                                                        NAME
+                                                                    </div>
+                                                                </div>
                                                             </th>
                                                             <th scope="col">EMAIL</th>
                                                             <th scope="col">USER LEVEL</th>
@@ -273,7 +278,12 @@
                                                     <tbody>
                                                         <tr>
                                                             <td>
-                                                                Justin Mcgill
+                                                                <div class="d-flex gap-20 align-items-center">
+                                                                    <input type="checkbox" name="" id="">
+                                                                    <div class="pr-name">
+                                                                        Justin Mcgill
+                                                                    </div>
+                                                                </div>
                                                             </td>
                                                             <td>
                                                                 justinmcgill82@gmil.com
@@ -301,7 +311,12 @@
                                                         </tr>
                                                         <tr>
                                                             <td>
-                                                                Josh Stone
+                                                                <div class="d-flex gap-20 align-items-center">
+                                                                    <input type="checkbox" name="" id="">
+                                                                    <div class="pr-name">
+                                                                        Josh Stone
+                                                                    </div>
+                                                                </div>
                                                             </td>
                                                             <td>
                                                                 josh@contentatscale.ai
@@ -328,8 +343,12 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td>
-                                                                Andie Suggs
+                                                            <td><div class="d-flex gap-20 align-items-center">
+                                                                <input type="checkbox" name="" id="">
+                                                                <div class="pr-name">
+                                                                    Andie Suggs
+                                                                </div>
+                                                            </div>
                                                             </td>
                                                             <td>
                                                                 olgatodonera@gmail.com
@@ -359,50 +378,55 @@
                                                     <tfoot>
                                                         <td colspan="6">
                                                             <div class="action-area">
-                                                                <div class="options">
-                                                                    <div class="btn-group dropup">
-                                                                        <button type="button" class="btn">
-                                                                        10
-                                                                        </button>
-                                                                        <button type="button" class="btn dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                            <i class="fa fa-sort" aria-hidden="true"></i>
-                                                                        </button>
-                                                                        <ul class="dropdown-menu">
-                                                                            <li><a class="dropdown-item" href="#">10</a></li>
-                                                                            <li><a class="dropdown-item" href="#">20</a></li>
-                                                                            <li><a class="dropdown-item" href="#">50</a></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <span>Entries per page</span>
+                                                                <div class="status-btn">
+                                                                    <button type="button" class="cs-secondary-btn-outline edit-status" disabled data-bs-target="#updateInvite" data-bs-toggle="modal" data-bs-dismiss="modal">Edit Status</button>
                                                                 </div>
-                                                                <div class="pagination-area">
-                                                                    <nav aria-label="Page navigation example">
-                                                                        <ul class="pagination">
-                                                                          <li class="page-item">
-                                                                            <a class="page-link arrow" href="#" aria-label="Previous">
-                                                                                <i class="fa fa-angle-double-left" aria-hidden="true"></i>
-                                                                            </a>
-                                                                          </li>
-                                                                          <li class="page-item">
-                                                                            <a class="page-link arrow" href="#" aria-label="Previous">
-                                                                                <i class="fa fa-angle-left" aria-hidden="true"></i>
-                                                                            </a>
-                                                                          </li>
-                                                                          <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                                                                          <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                                          <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                                          <li class="page-item">
-                                                                            <a class="page-link arrow" href="#" aria-label="Next">
-                                                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                                            </a>
-                                                                          </li>
-                                                                          <li class="page-item">
-                                                                            <a class="page-link arrow" href="#" aria-label="Next">
-                                                                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                                                                            </a>
-                                                                          </li>
-                                                                        </ul>
-                                                                      </nav>
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="options me-4">
+                                                                        <div class="btn-group dropup">
+                                                                            <button type="button" class="btn">
+                                                                            10
+                                                                            </button>
+                                                                            <button type="button" class="btn dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                <i class="fa fa-sort" aria-hidden="true"></i>
+                                                                            </button>
+                                                                            <ul class="dropdown-menu">
+                                                                                <li><a class="dropdown-item" href="#">10</a></li>
+                                                                                <li><a class="dropdown-item" href="#">20</a></li>
+                                                                                <li><a class="dropdown-item" href="#">50</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <span>Entries per page</span>
+                                                                    </div>
+                                                                    <div class="pagination-area">
+                                                                        <nav aria-label="Page navigation example">
+                                                                            <ul class="pagination">
+                                                                              <li class="page-item">
+                                                                                <a class="page-link arrow" href="#" aria-label="Previous">
+                                                                                    <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                                                                                </a>
+                                                                              </li>
+                                                                              <li class="page-item">
+                                                                                <a class="page-link arrow" href="#" aria-label="Previous">
+                                                                                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                                                                </a>
+                                                                              </li>
+                                                                              <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                                                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                                              <li class="page-item">
+                                                                                <a class="page-link arrow" href="#" aria-label="Next">
+                                                                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                                                                </a>
+                                                                              </li>
+                                                                              <li class="page-item">
+                                                                                <a class="page-link arrow" href="#" aria-label="Next">
+                                                                                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                                                                </a>
+                                                                              </li>
+                                                                            </ul>
+                                                                          </nav>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </td>
@@ -731,6 +755,154 @@
         </div>
     </div>
     <!-- ADD ROLE 2-->
+    
+    <!-- UPDATE INVITE-->
+    <div class="modal fade" id="updateInvite" tabindex="-1" aria-labelledby="updateInvite" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg invite-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="d-flex flex-column">
+                        <h5 class="modal-title" >Update Invited User</h5>
+                        <small>You selected 8 users</small>
+                    </div>
+                <a href="javascript:void(0)" class="close-modal">
+                    <img src="assets/images/close-modal.svg" data-bs-dismiss="modal" aria-label="Close" alt="">
+                </a>
+                </div>
+                <div class="modal-body invited-project">
+                    <div class="fields mb-5">
+                        <label>Role</label>
+                        <input type="text" placeholder="Enter Role" name="" id="">
+                    </div>
+                    <div class="d-flex justify-content-between invite-action mb-5">
+                        <span>
+                            Project to Invite:
+                        </span>
+                        <span class="select-project">
+                            <input type="checkbox" name="" id="">
+                            Select all
+                        </span>
+                    </div>
+                    <div class="project-list">
+                        <div class="row align-items-start">
+                            <div class="col-md-4">
+                                <span>
+                                    <input type="checkbox" name="" id="">
+                                    Angel School
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span>
+                                    <input type="checkbox" name="" id="">
+                                    Vitality
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span>
+                                    <input type="checkbox" name="" id="">
+                                    Leadfuze
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span>
+                                    <input type="checkbox" name="" id="">
+                                    Innovation Management
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span>
+                                    <input type="checkbox" name="" id="">
+                                    Politics: Democratic Party Beliefs
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span>
+                                    <input type="checkbox" name="" id="">
+                                    Design Thinking Methods
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="cs-secondary-btn" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#updateInvite2">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- UPDATE INVITE-->
+
+    <!-- UPDATE INVITE 2-->
+    <div class="modal fade" id="updateInvite2" tabindex="-1" aria-labelledby="updateInvite2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg invite-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="d-flex flex-column">
+                        <h5 class="modal-title" >Update Invited User</h5>
+                        <small>You selected 8 users</small>
+                    </div>
+                <a href="javascript:void(0)" class="close-modal">
+                    <img src="assets/images/close-modal.svg" data-bs-dismiss="modal" aria-label="Close" alt="">
+                </a>
+                </div>
+                <div class="modal-body invited-project">
+                    <div class="d-flex justify-content-between invite-action mb-5">
+                        <span>
+                            Assign permissions to role
+                        </span>
+                        <span class="select-project">
+                            <input type="checkbox" name="" id="">
+                            Select all
+                        </span>
+                    </div>
+                    <div class="project-list">
+                        <div class="row align-items-start">
+                            <div class="col-md-4">
+                                <span>
+                                    <input type="checkbox" name="" id="">
+                                    Create Users
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span>
+                                    <input type="checkbox" name="" id="">
+                                    View Reporting Dashboard
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span>
+                                    <input type="checkbox" name="" id="">
+                                    Auto Add to New Projects
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span>
+                                    <input type="checkbox" name="" id="">
+                                    Purchase Credits
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span>
+                                    <input type="checkbox" name="" id="">
+                                    Install WP
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span>
+                                    <input type="checkbox" name="" id="">
+                                    Create New Posts
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="cs-secondary-btn">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- UPDATE INVITE 2-->
 
 
 

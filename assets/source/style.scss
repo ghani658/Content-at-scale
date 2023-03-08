@@ -4577,6 +4577,25 @@ span.status {
         }
     }
 }
+.availability {
+    font-size: 0.8125rem;
+
+    .cs-secondary-btn {
+        font-size: 0.8125rem;
+        white-space: nowrap;
+    }
+    &.fields {
+        .input-group {
+            .input-group-text {
+                width: auto;
+                border-radius: 0 !important;
+            }
+            input {
+                width: 60%;
+            }
+        } 
+    } 
+}
 /* White label */
 /* Integrations tab */
 .integration-box {
@@ -4605,6 +4624,18 @@ span.status {
     .form-switch.toggle-switch input.form-check-input:not(:checked) {
         background-color: #575757;
         border: 1px solid #575757;
+    }
+    span.connection-status {
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+
+        &.connected {
+            background: #22d5c0;
+        }
+        &.not-connected {
+            background: #ff4c17; 
+        }
     }
 }
 /* Integrations tab */
@@ -4736,6 +4767,14 @@ body {
 
 .page-bredcrums {
     flex-wrap: wrap;
+}
+
+.favicon-url {
+    width: auto;
+}
+
+.fr-element a {
+    color: $btn-secondary;
 }
 
 @import 'responsive';

@@ -84,6 +84,21 @@ $(".project-listing-table input:checkbox").change(function() {
     }
 });
 
+$(".user-table input:checkbox").change(function() {
+  if(this.checked) {
+      $('.edit-status').removeAttr("disabled");
+  } else {
+      if ($(".user-table input:checkbox:checked").length < 1) {
+          $('.edit-status').prop('disabled', true);
+      }
+
+  }
+});
+
+$("input.select-name:checkbox").click(function(){
+  $('.user-table input:checkbox').not(this).prop('checked', this.checked);
+});
+
 $(".project-data").click(function () {
     $(".project-listing-screen").hide();
     $(".project-detail-screen").show();

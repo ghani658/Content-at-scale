@@ -736,4 +736,26 @@
         flex-direction: column;
         align-items: baseline;
     }
+    .availability {
+    
+        .cs-secondary-btn {
+            width: 100%;
+            border-radius: 6px !important;
+            margin-top: 13px;
+        }
+        &.fields {
+            .input-group {
+                flex-wrap: wrap;
+                .input-group-text {
+                    border-radius: 0 9px 9px 0 !important;
+                }
+            } 
+        } 
+    }
 } 
+
+@media (max-width: 400px) {
+    .availability.fields .input-group input {
+        width: 50%;
+    }
+}
